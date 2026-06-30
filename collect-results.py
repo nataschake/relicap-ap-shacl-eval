@@ -36,6 +36,9 @@ SHACL_DIR = (EVAL_DIR / ".." / "application-profiles-library" / "CGMES"
 GITHUB_BLOB = ("https://github.com/nikolatulechki/application-profiles-library"
                "/blob/main/CGMES/CurrentRelease/SHACL")
 
+# This repository on GitHub, used to link each row to its source report.
+EVAL_REPO_BLOB = "https://github.com/nikolatulechki/relicap-ap-shacl-eval/blob/main"
+
 GRAPHDB_RESOURCE = "https://cim.ontotext.com/graphdb/resource"
 GRAPHDB_REPO = "relicapgrid"
 
@@ -199,6 +202,7 @@ def github_link(term: str | None, shacl_file: str,
 # ---------------------------------------------------------------------------
 COLUMNS = [
     "Profile",
+    "Report",
     "sh:focusNode",
     "rsx:shapesGraph",
     "sh:resultPath",
@@ -233,6 +237,7 @@ def main() -> int:
             ss_disp, ss_href = github_link(r.get("sh:sourceShape"), shacl_file, index)
             rows.append({
                 "profile": profile,
+                "report_href": f"{EVAL_REPO_BLOB}/{profile}/validation-report.ttl",
                 "focus_disp": focus_disp, "focus_href": focus_href,
                 "shapes_graph": shorten(r.get("rsx:shapesGraph")),
                 "result_path": shorten(r.get("sh:resultPath")),
@@ -259,9 +264,9 @@ def write_csv(rows: list[dict], path: Path) -> None:
         w.writerow(COLUMNS + ["focusNode URL", "sourceConstraint URL", "sourceShape URL"])
         for r in rows:
             w.writerow([
-                r["profile"], r["focus_disp"], r["shapes_graph"], r["result_path"],
-                r["sc_disp"], r["scc"], r["severity"], r["message"], r["ss_disp"],
-                r["value"], r["focus_href"], r["sc_href"], r["ss_href"],
+                r["profile"], r["report_href"], r["focus_disp"], r["shapes_graph"],
+                r["result_path"], r["sc_disp"], r["scc"], r["severity"], r["message"],
+                r["ss_disp"], r["value"], r["focus_href"], r["sc_href"], r["ss_href"],
             ])
 
 
@@ -288,6 +293,7 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
         body_rows.append(
             "<tr>"
             f"<td>{cell(r['profile'])}</td>"
+            f"<td>{link_cell('report', r['report_href'])}</td>"
             f"<td>{link_cell(r['focus_disp'], r['focus_href'])}</td>"
             f"<td>{cell(r['shapes_graph'])}</td>"
             f"<td>{cell(r['result_path'])}</td>"
