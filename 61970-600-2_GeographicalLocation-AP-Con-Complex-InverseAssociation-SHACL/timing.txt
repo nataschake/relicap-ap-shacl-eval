@@ -1,0 +1,5 @@
+file: 61970-600-2_GeographicalLocation-AP-Con-Complex-InverseAssociation-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 0.030
+finished_at: 2026-06-30T14:42:55+03:00

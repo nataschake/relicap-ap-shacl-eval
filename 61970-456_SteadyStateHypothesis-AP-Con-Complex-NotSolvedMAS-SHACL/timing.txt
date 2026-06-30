@@ -1,0 +1,5 @@
+file: 61970-456_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 0.143
+finished_at: 2026-06-30T14:40:59+03:00

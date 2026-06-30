@@ -1,0 +1,67 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a7745865-bc9e-4352-98fc-98c7f44669a4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value false;
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.isExcludedFromAreaInterchange>;
+      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#BoundaryPoint.isExcludedFromAreaInterchange-requiredTieFlowSparql>;
+      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "There is either TieFlow modelled in case the value is true or there are no TieFlow modelled in case the value is false. Id of the Terminal: urn:uuid:3b7d5055-2785-41ec-9829-db927ef7fa0b. ID of the TieFlow: {?tieflow}.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#BoundaryPoint.isExcludedFromAreaInterchange-requiredTieFlow>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#BoundaryPoint.isExcludedFromAreaInterchange-requiredTieFlow>
+  a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:name "C:301:EQBD:BoundaryPoint.isExcludedFromAreaInterchange:requiredTieFlow";
+  sh:description "If true, this boundary point is on the interconnection that is excluded from control area interchange calculation and consequently has no related tie flows. Otherwise, the interconnection is included in control area interchange and a TieFlow is required at all sides of the boundary point (default).";
+  sh:order 0;
+  sh:group <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#IGMEQBDunsolvedGroup>;
+  sh:path <https://cim.ucaiug.io/ns/eu#BoundaryPoint.isExcludedFromAreaInterchange>;
+  sh:sparql <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#BoundaryPoint.isExcludedFromAreaInterchange-requiredTieFlowSparql> .
+
+<http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#BoundaryPoint.isExcludedFromAreaInterchange-requiredTieFlowSparql>
+  a sh:SPARQLConstraint;
+  sh:select """
+			SELECT  $this ?value ?terminal ?tieflow
+			WHERE {
+             ?terminal1 cim:Terminal.ConductingEquipment ?condeq .
+             ?terminal1 cim:ACDCTerminal.sequenceNumber 1 .
+             ?terminal1 cim:Terminal.ConnectivityNode ?cn1 .
+             
+             OPTIONAL {?terminal2 cim:Terminal.ConductingEquipment ?condeq}.
+             OPTIONAL {?terminal2 cim:ACDCTerminal.sequenceNumber 2}.
+             OPTIONAL {?terminal2 cim:Terminal.ConnectivityNode ?cn2}.
+             
+             OPTIONAL {$this $PATH ?value}.
+             $this eu:BoundaryPoint.ConnectivityNode ?cnbp .
+             OPTIONAL {?terminal cim:Terminal.ConnectivityNode ?cnbp }.
+             OPTIONAL {?tieflow cim:TieFlow.Terminal ?terminal }.
+           
+				FILTER ((bound(?value) && ?value=false && !bound(?tieflow) && (?cnbp=?cn1 || ?cnbp=?cn2) && bound(?terminal1) && bound(?terminal2) && ?cn1!=?cn2 && (?terminal=?terminal1 || ?terminal=?terminal2)) || (!bound(?value) && !bound(?tieflow) && (?cnbp=?cn1 || ?cnbp=?cn2) && bound(?terminal1) && bound(?terminal2) && ?cn1!=?cn2 && (?terminal=?terminal1 || ?terminal=?terminal2))|| (bound(?value) && ?value=true && bound(?tieflow) && (?cnbp=?cn1 || ?cnbp=?cn2) && bound(?terminal1) && bound(?terminal2) && ?cn1!=?cn2 && (?terminal=?terminal1 || ?terminal=?terminal2))) .
+			}""";
+  sh:message "There is either TieFlow modelled in case the value is true or there are no TieFlow modelled in case the value is false. Id of the Terminal: {?terminal}. ID of the TieFlow: {?tieflow}.";
+  sh:prefixes <https://cim.ucaiug.io/ns#> .
+
+<https://cim.ucaiug.io/ns#> sh:declare [
+      sh:prefix "cim";
+      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "rdf";
+      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "eu";
+      sh:namespace "https://cim.ucaiug.io/ns/eu#"^^xsd:anyURI
+    ] .

@@ -1,0 +1,522 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ffec3556-5e03-35a3-80a7-4f22b598a2f5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7ab6767d-9ca1-9972-8c25-13c831c95b93>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a9bb608d-7e93-cd9c-03bb-77c175befc39>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f079f04c-604b-e408-5c3a-e93025400df9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7976cd48-d51c-8e4b-9595-56299cb5b4f8>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a3e1a51f-cc76-155c-543f-ea7cb0c6db20>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8fe8c999-a939-5d43-b857-02dd312f2dea>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:af1d901f-98de-574f-abc3-6c3025e7a685>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e364f3e7-a2a8-3561-5540-6e74801a20ff>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a7745865-bc9e-4352-98fc-98c7f44669a4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f55e441a-6fef-2657-4229-355ca95df87e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "GA";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c65325ed-92a7-384a-834b-99c1ceea32ef>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "SD";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:082e267e-53e4-cb00-c6ed-be67d80701c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "SD";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fd0e36b7-817f-4547-9e0f-a07011aecd48>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "SD";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:32ce7243-65f1-7183-1eab-9a0db513868a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:983cb0bc-264d-a9a1-c642-960cd4a767de>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "SD";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:afa96836-2de5-e633-1c07-491489b89b52>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "SD";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d4ac0227-f443-a68f-fadd-09dfc0bcd7a1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "SD";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f3954bf0-0bf9-54ff-eb28-b1559373568d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "SD";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ffec3556-5e03-35a3-80a7-4f22b598a2f5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "PH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7ab6767d-9ca1-9972-8c25-13c831c95b93>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "PH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a9bb608d-7e93-cd9c-03bb-77c175befc39>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "PH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f079f04c-604b-e408-5c3a-e93025400df9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7976cd48-d51c-8e4b-9595-56299cb5b4f8>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a3e1a51f-cc76-155c-543f-ea7cb0c6db20>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8fe8c999-a939-5d43-b857-02dd312f2dea>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:af1d901f-98de-574f-abc3-6c3025e7a685>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e364f3e7-a2a8-3561-5540-6e74801a20ff>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a7745865-bc9e-4352-98fc-98c7f44669a4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "NH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f55e441a-6fef-2657-4229-355ca95df87e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "NH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c65325ed-92a7-384a-834b-99c1ceea32ef>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:082e267e-53e4-cb00-c6ed-be67d80701c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fd0e36b7-817f-4547-9e0f-a07011aecd48>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "BO";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:32ce7243-65f1-7183-1eab-9a0db513868a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:983cb0bc-264d-a9a1-c642-960cd4a767de>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:afa96836-2de5-e633-1c07-491489b89b52>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d4ac0227-f443-a68f-fadd-09dfc0bcd7a1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f3954bf0-0bf9-54ff-eb28-b1559373568d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b828844-4098-f2ed-ac49-710ae66bec66>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "-150"^^xsd:float;
+      sh:resultPath <https://cim.ucaiug.io/ns#DCConductingEquipment.ratedUdc>;
+      sh:sourceConstraintComponent sh:MinExclusiveConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value is negative or zero.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#DCConductingEquipment.ratedUdc-valueRange>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:df9dbdfe-0573-355a-e660-c71bd6ed4688>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "-150"^^xsd:float;
+      sh:resultPath <https://cim.ucaiug.io/ns#DCConductingEquipment.ratedUdc>;
+      sh:sourceConstraintComponent sh:MinExclusiveConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value is negative or zero.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#DCConductingEquipment.ratedUdc-valueRange>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:305637bc-66b8-482c-858a-04f4b6ebc662>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <urn:uuid:4f596733-a6a7-4c69-b9b7-86e51e4c4ba2>;
+      sh:resultPath _:3854140dc48fcc60;
+      sh:sourceConstraintComponent sh:OrConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "The terminal is not a terminal of a PowerTransformer or a Switch.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ACDCConverter.PccTerminal-valueType>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:df16b3dd-c905-4a6f-84ee-f067be86f5da>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <urn:uuid:69ef0dbd-da79-4eef-a02f-690cb8a28361>;
+      sh:resultPath <https://cim.ucaiug.io/ns#Equipment.EquipmentContainer>;
+      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ConductingEquipment.BaseVoltage-usageSparql>;
+      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The association ConductingEquipment.BaseVoltage is defined for a ConductingEquipment contained in a VoltageLevel.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ConductingEquipment.BaseVoltage-usage>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:52a42184-83c4-4d03-853a-e92b1a7dc79a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <urn:uuid:52a42184-83c4-4d03-853a-e92b1a7dc79a>;
+      sh:sourceConstraintComponent sh:AndConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "CurveData associated with a ReactiveCapabilityCurve does not have both .y1value and .y2value defined.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ReactiveCapabilityCurve-curveYvalues>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+  a sh:PropertyShape;
+  sh:message "Not valid two-character ISO code for Europe.";
+  sh:severity sh:Violation;
+  sh:name "C:301:EQ:BoundaryPoint.fromEndIsoCode:valueValidity";
+  sh:description "The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).";
+  sh:order 56;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#EQ301UML>;
+  sh:path <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+  sh:in ("AL" "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IS"
+      "IE" "IT" "LV" "LI" "LT" "LU" "MT" "MD" "ME" "NL" "NO" "PL" "PT" "RO" "RS" "SK" "SI"
+      "ES" "SE" "CH" "TR" "UA" "MK" "GB" "BA" "BY" "TN" "MA" "RU") .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+  a sh:PropertyShape;
+  sh:message "Not valid two-character ISO code for Europe.";
+  sh:severity sh:Violation;
+  sh:name "C:301:EQ:BoundaryPoint.toEndIsoCode:valueValidity";
+  sh:description "The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).";
+  sh:order 57;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#EQ301UML>;
+  sh:path <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+  sh:in ("AL" "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IS"
+      "IE" "IT" "LV" "LI" "LT" "LU" "MT" "MD" "ME" "NL" "NO" "PL" "PT" "RO" "RS" "SK" "SI"
+      "ES" "SE" "CH" "TR" "UA" "MK" "GB" "BA" "BY" "TN" "MA" "RU") .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#DCConductingEquipment.ratedUdc-valueRange>
+  a sh:PropertyShape;
+  sh:message "The value is negative or zero.";
+  sh:severity sh:Violation;
+  sh:name "C:301:EQ:DCConductingEquipment.ratedUdc:valueRange";
+  sh:description "The attribute shall be a positive value.";
+  sh:order 30;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#EQ301UML>;
+  sh:path <https://cim.ucaiug.io/ns#DCConductingEquipment.ratedUdc>;
+  sh:minExclusive "0.0"^^xsd:float .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ACDCConverter.PccTerminal-valueType>
+  a sh:PropertyShape;
+  sh:message "The terminal is not a terminal of a PowerTransformer or a Switch.";
+  sh:severity sh:Warning;
+  sh:name "C:301:EQ:ACDCConverter.PccTerminal:valueType";
+  sh:description "It is typically the terminal on the power transformer (or switch) closest to the AC network.";
+  sh:order 1;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#EQ301UMLvarious>;
+  sh:path _:3854140dc48fcc60;
+  sh:or ([ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#PowerTransformer>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#Switch>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#Disconnector>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#Fuse>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#GroundDisconnector>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#Jumper>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#Breaker>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#DisconnectingCircuitBreaker>
+      ] [ a sh:NodeShape;
+        sh:class <https://cim.ucaiug.io/ns#LoadBreakSwitch>
+      ]) .
+
+[] rdf:first <https://cim.ucaiug.io/ns#ACDCConverter.PccTerminal>;
+  rdf:rest (<https://cim.ucaiug.io/ns#Terminal.ConductingEquipment>) .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ConductingEquipment.BaseVoltage-usage>
+  a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:name "C:301:EQ:ConductingEquipment.BaseVoltage:usage";
+  sh:description "Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.";
+  sh:order 3;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#EQ301UMLvarious>;
+  sh:path <https://cim.ucaiug.io/ns#Equipment.EquipmentContainer>;
+  sh:sparql <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ConductingEquipment.BaseVoltage-usageSparql> .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ConductingEquipment.BaseVoltage-usageSparql>
+  a sh:SPARQLConstraint;
+  sh:select """
+			SELECT $this ?value
+			WHERE {
+        $this $PATH ?value .
+        #?value rdf:type ?type .
+        ?value rdf:type cim:VoltageLevel .
+        $this rdf:type ?condeqtype .
+        BIND(EXISTS{$this cim:ConductingEquipment.BaseVoltage ?basevoltage} AS ?hasbv).
+        #$this cim:ConductingEquipment.BaseVoltage ?basevoltage .
+        #FILTER (!isLiteral(?basevoltage) && ?type=cim:VoltageLevel && ?condeqtype!=cim:ACLineSegment && ?condeqtype!=cim:EquivalentBranch && ?condeqtype!=cim:SeriesCompensator) .
+        FILTER (?hasbv=true && ?condeqtype!=cim:ACLineSegment && ?condeqtype!=cim:EquivalentBranch && ?condeqtype!=cim:SeriesCompensator && ?condeqtype!=cim:Equipment) .        
+			}""";
+  sh:message "The association ConductingEquipment.BaseVoltage is defined for a ConductingEquipment contained in a VoltageLevel.";
+  sh:prefixes <https://cim.ucaiug.io/ns#> .
+
+<https://cim.ucaiug.io/ns#> sh:declare [
+      sh:prefix "cim";
+      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "rdf";
+      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "eu";
+      sh:namespace "https://cim.ucaiug.io/ns/eu#"^^xsd:anyURI
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ReactiveCapabilityCurve-curveYvalues>
+  a sh:NodeShape;
+  sh:targetClass <https://cim.ucaiug.io/ns#CurveData>;
+  sh:message "CurveData associated with a ReactiveCapabilityCurve does not have both .y1value and .y2value defined.";
+  sh:severity sh:Violation;
+  sh:and ([ a sh:PropertyShape;
+        sh:path <https://cim.ucaiug.io/ns#CurveData.y1value>;
+        sh:minCount 1;
+        sh:maxCount 1
+      ] [ a sh:PropertyShape;
+        sh:path <https://cim.ucaiug.io/ns#CurveData.y2value>;
+        sh:minCount 1;
+        sh:maxCount 1
+      ]) .

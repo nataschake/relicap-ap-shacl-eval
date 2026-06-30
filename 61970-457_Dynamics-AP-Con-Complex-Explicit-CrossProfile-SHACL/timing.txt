@@ -1,0 +1,5 @@
+file: 61970-457_Dynamics-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 0.034
+finished_at: 2026-06-30T14:42:48+03:00

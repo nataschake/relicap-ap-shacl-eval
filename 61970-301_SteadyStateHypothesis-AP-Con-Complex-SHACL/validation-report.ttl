@@ -1,0 +1,76 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "180"^^xsd:float;
+      sh:resultPath <https://cim.ucaiug.io/ns#CsConverter.maxAlpha>;
+      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#CsConverter.maxAlpha-valueRangeTypicalSparql>;
+      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "The value is greater than 18.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#CsConverter.maxAlpha-valueRangeTypical>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ec2a2385-872d-4cf7-b50b-f9e8a7210dbb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "-2500"^^xsd:float;
+      sh:resultPath <https://cim.ucaiug.io/ns#ActivePowerLimit.value>;
+      sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value is negative.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#ActivePowerLimit.value-valueRange>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#CsConverter.maxAlpha-valueRangeTypical>
+  a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:name "C:301:EQ:CsConverter.maxAlpha:valueRangeTypical";
+  sh:description "The attributes minAlpha and maxAlpha define the range of firing angles for rectifier operation between which no discrete tap changer action takes place. The range is typically 10-18 degrees.";
+  sh:order 19;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#ValueConstraintsGroup>;
+  sh:path <https://cim.ucaiug.io/ns#CsConverter.maxAlpha>;
+  sh:sparql <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#CsConverter.maxAlpha-valueRangeTypicalSparql> .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#CsConverter.maxAlpha-valueRangeTypicalSparql>
+  a sh:SPARQLConstraint;
+  sh:select """
+			SELECT  $this ?value
+			WHERE {
+        $this cim:CsConverter.operatingMode cim:CsOperatingModeKind.rectifier .
+        $this $PATH ?value .
+        FILTER (?value>18) .        
+			}""";
+  sh:message "The value is greater than 18.";
+  sh:prefixes <https://cim.ucaiug.io/ns#> .
+
+<https://cim.ucaiug.io/ns#> sh:declare [
+      sh:prefix "cim";
+      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "rdf";
+      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "eu";
+      sh:namespace "https://cim.ucaiug.io/ns/eu#"^^xsd:anyURI
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#ActivePowerLimit.value-valueRange>
+  a sh:PropertyShape;
+  sh:message "The value is negative.";
+  sh:severity sh:Violation;
+  sh:name "C:301:SSH:ActivePowerLimit.value:valueRange";
+  sh:description "The attribute shall be a positive value or zero.";
+  sh:order 2;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/3.0#ValueConstraintsGroup>;
+  sh:path <https://cim.ucaiug.io/ns#ActivePowerLimit.value>;
+  sh:minInclusive "0.0"^^xsd:float .

@@ -1,0 +1,5 @@
+file: 61970-452_ShortCircuit-AP-Con-Complex-CrossProfile-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 0.031
+finished_at: 2026-06-30T14:40:57+03:00

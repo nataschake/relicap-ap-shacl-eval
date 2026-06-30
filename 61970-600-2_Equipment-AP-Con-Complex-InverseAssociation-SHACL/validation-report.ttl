@@ -1,0 +1,55 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:18993b11-2966-4bce-bab9-d86103f83b53>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath _:2e4a5fe099cb081a;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Wrong number of associated instances.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/inverseAssociations/3.0#GeneratingUnit.RotatingMachine-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:59ff1e53-0e1a-44c0-ada5-7a0b3a660170>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath _:2e4a5fe099cb0810;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Wrong number of associated instances.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/inverseAssociations/3.0#ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines-cardinality>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/inverseAssociations/3.0#GeneratingUnit.RotatingMachine-cardinality>
+  a sh:PropertyShape;
+  sh:message "Wrong number of associated instances.";
+  sh:severity sh:Violation;
+  sh:name "GeneratingUnit.RotatingMachine-cardinality";
+  sh:description "This constraint validates the cardinality of the association at the inverse direction.";
+  sh:order 2;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/inverseAssociations/3.0#InverseAssociationsCardinality>;
+  sh:path _:2e4a5fe099cb081a;
+  sh:minCount 1 .
+
+_:2e4a5fe099cb081a sh:inversePath <https://cim.ucaiug.io/ns#RotatingMachine.GeneratingUnit> .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/inverseAssociations/3.0#ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines-cardinality>
+  a sh:PropertyShape;
+  sh:message "Wrong number of associated instances.";
+  sh:severity sh:Violation;
+  sh:name "ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines-cardinality";
+  sh:description "This constraint validates the cardinality of the association at the inverse direction.";
+  sh:order 12;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/inverseAssociations/3.0#InverseAssociationsCardinality>;
+  sh:path _:2e4a5fe099cb0810;
+  sh:minCount 1 .
+
+_:2e4a5fe099cb0810 sh:inversePath <https://cim.ucaiug.io/ns#SynchronousMachine.InitialReactiveCapabilityCurve> .

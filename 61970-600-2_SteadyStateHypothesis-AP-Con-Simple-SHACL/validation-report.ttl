@@ -1,0 +1,914 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cb856fe5-5c29-4f1e-b886-266e3853ee87>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:54b8e12b-1201-4e8b-932e-a8c80f45d0bb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6f014d4c-c1b0-4eed-8d6d-bae3bc87afcf>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c875730a-5f7d-427a-869c-61128fb54380>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:14b352cb-5574-40c5-bf83-0ed3574554a3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:579381e6-1e32-457b-a208-32f905b1e19e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9dc33660-e284-4c74-bb9a-44604390634e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:24413233-26c3-4f7e-9f72-4461796938be>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e710a2e3-a70f-4261-508f-a4d925d1deb9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b8a39d36-f5e3-9995-ba5a-e77d3392890f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b24417f8-c669-44e5-6525-17fce5cd57d1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5631ccc0-d9d2-11e2-bb49-005056c00008>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:adcbb277-4ef5-22b8-4957-2cc29d68dc6a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5631f3d0-d9d2-11e2-bb49-005056c00008>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5631f3d4-d9d2-11e2-bb49-005056c00008>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d9c3a8ae-95bb-2d51-e365-0841add2a15c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:820d95d7-26d4-4311-8b1f-026f8605b86d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:2aa11f1c-5971-f620-4fce-bd66d2f92e6c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:12baa3f3-23b1-44e0-956f-d331e1527f37>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cab82e1c-1435-447b-bba0-74b592539eac>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b0442899-8dbe-48c1-a1fa-adb2a5929273>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:83bea592-913e-4473-8d17-969968ff83a2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e8cef25f-c0e1-4e8a-a55b-60a7cad81b20>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6538ee49-99fd-4150-80a1-ba7dca295214>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:be3dee27-ce09-4de3-8417-8e6f8f79c5e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ce437259-5cdd-4e3f-93a3-d333c0951454>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:24c845f6-ad68-4472-8d01-6491769a2f31>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bfe2d3b9-21c4-44fd-b86f-a0bb381afafb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:46f50bf7-4f81-efb5-1b8e-667cad94dfd4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cb856fe5-5c29-4f1e-b886-266e3853ee87>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:54b8e12b-1201-4e8b-932e-a8c80f45d0bb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6f014d4c-c1b0-4eed-8d6d-bae3bc87afcf>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c875730a-5f7d-427a-869c-61128fb54380>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:14b352cb-5574-40c5-bf83-0ed3574554a3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:579381e6-1e32-457b-a208-32f905b1e19e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9dc33660-e284-4c74-bb9a-44604390634e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:24413233-26c3-4f7e-9f72-4461796938be>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8b12d85c-b26d-713e-a29e-988c21d97b97>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e710a2e3-a70f-4261-508f-a4d925d1deb9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b8a39d36-f5e3-9995-ba5a-e77d3392890f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b24417f8-c669-44e5-6525-17fce5cd57d1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5631ccc0-d9d2-11e2-bb49-005056c00008>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:adcbb277-4ef5-22b8-4957-2cc29d68dc6a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5631f3d0-d9d2-11e2-bb49-005056c00008>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5631f3d4-d9d2-11e2-bb49-005056c00008>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d9c3a8ae-95bb-2d51-e365-0841add2a15c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:820d95d7-26d4-4311-8b1f-026f8605b86d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:2aa11f1c-5971-f620-4fce-bd66d2f92e6c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:12baa3f3-23b1-44e0-956f-d331e1527f37>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cab82e1c-1435-447b-bba0-74b592539eac>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b0442899-8dbe-48c1-a1fa-adb2a5929273>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:83bea592-913e-4473-8d17-969968ff83a2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e8cef25f-c0e1-4e8a-a55b-60a7cad81b20>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6538ee49-99fd-4150-80a1-ba7dca295214>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:be3dee27-ce09-4de3-8417-8e6f8f79c5e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ce437259-5cdd-4e3f-93a3-d333c0951454>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:24c845f6-ad68-4472-8d01-6491769a2f31>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bfe2d3b9-21c4-44fd-b86f-a0bb381afafb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:46f50bf7-4f81-efb5-1b8e-667cad94dfd4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetPpcc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetPpcc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetPpcc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetPpcc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#CsConverter.pPccControl>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CsConverter.pPccControl-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fb5e8f5e-52b0-e2e8-92cb-e556cbffea03>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#RegulatingControl.enabled>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#RegulatingControl.enabled-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:18993b11-2966-4bce-bab9-d86103f83b53>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#Equipment.inService>;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#Equipment.inService-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:18993b11-2966-4bce-bab9-d86103f83b53>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#GeneratingUnit.normalPF>;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#GeneratingUnit.normalPF-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ec2a2385-872d-4cf7-b50b-f9e8a7210dbb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ActivePowerLimit.value>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ActivePowerLimit.value-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a331310f-a6b9-4e30-be2e-a6f62b0b5430>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ActivePowerLimit.value>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ActivePowerLimit.value-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ffc5fd1d-282e-4908-b853-738789df9015>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ControlArea.netInterchange>;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ControlArea.netInterchange-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:18993b11-2966-4bce-bab9-d86103f83b53>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.mRID>;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/IdentifiedObject/constraints/3.0#IdentifiedObject.mRID-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:18993b11-2966-4bce-bab9-d86103f83b53>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#Equipment.inService>;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#Equipment.inService-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9c3b8f97-7972-477d-9dc8-87365cc0ad0e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#SynchronousMachine.referencePriority>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#SynchronousMachine.referencePriority-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:305637bc-66b8-482c-858a-04f4b6ebc662>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#VsConverter.qPccControl>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#VsConverter.qPccControl-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:305637bc-66b8-482c-858a-04f4b6ebc662>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:43e7ef11-9353-4ea0-9511-7c9baec7c99e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:65d2962d-d32d-49a8-a879-a93240bdb147>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a01d72f5-9f13-43bd-a4b5-8d9acdf5b0d7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.p>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.p-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:20bf21f9-b198-49b2-8505-fc4651431667>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:305637bc-66b8-482c-858a-04f4b6ebc662>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:43e7ef11-9353-4ea0-9511-7c9baec7c99e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:65d2962d-d32d-49a8-a879-a93240bdb147>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a01d72f5-9f13-43bd-a4b5-8d9acdf5b0d7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute).";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:20bf21f9-b198-49b2-8505-fc4651431667>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:43e7ef11-9353-4ea0-9511-7c9baec7c99e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:65d2962d-d32d-49a8-a879-a93240bdb147>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3e4ed89b-19de-4590-bd16-39eb93f652b5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a01d72f5-9f13-43bd-a4b5-8d9acdf5b0d7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Cardinality violation. Upper bound shall be 1";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.p-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "EquivalentInjection.p-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 3;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#EquivalentInjection.p>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#EquivalentInjection.q-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "EquivalentInjection.q-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 2;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#EquivalentInjection.q>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetPpcc-cardinality>
+  a sh:PropertyShape;
+  sh:message "Cardinality violation. Upper bound shall be 1";
+  sh:severity sh:Violation;
+  sh:name "ACDCConverter.targetPpcc-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 5;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#ACDCConverter.targetPpcc>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.targetUdc-cardinality>
+  a sh:PropertyShape;
+  sh:message "Cardinality violation. Upper bound shall be 1";
+  sh:severity sh:Violation;
+  sh:name "ACDCConverter.targetUdc-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 6;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#ACDCConverter.targetUdc>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CsConverter.pPccControl-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "CsConverter.pPccControl-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 1;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#CsConverter.pPccControl>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.p-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "ACDCConverter.p-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 7;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#ACDCConverter.p>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ACDCConverter.q-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "ACDCConverter.q-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 8;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#ACDCConverter.q>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#RegulatingControl.enabled-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "RegulatingControl.enabled-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 3;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#RegulatingControl.enabled>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#Equipment.inService-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "Equipment.inService-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 2;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#Equipment.inService>;
+  sh:minCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#GeneratingUnit.normalPF-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "GeneratingUnit.normalPF-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 0;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#GeneratingUnit.normalPF>;
+  sh:minCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ActivePowerLimit.value-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "ActivePowerLimit.value-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 0;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#ActivePowerLimit.value>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#ControlArea.netInterchange-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "ControlArea.netInterchange-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 0;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#ControlArea.netInterchange>;
+  sh:minCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/IdentifiedObject/constraints/3.0#IdentifiedObject.mRID-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "IdentifiedObject.mRID-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 0.1;
+  sh:group <http://iec.ch/TC57/ns/CIM/IdentifiedObject/constraints/3.0#CardinalityIO>;
+  sh:path <https://cim.ucaiug.io/ns#IdentifiedObject.mRID>;
+  sh:minCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#SynchronousMachine.referencePriority-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "SynchronousMachine.referencePriority-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 0;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#SynchronousMachine.referencePriority>;
+  sh:maxCount 1 .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#VsConverter.qPccControl-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute).";
+  sh:severity sh:Violation;
+  sh:name "VsConverter.qPccControl-cardinality";
+  sh:description "This constraint validates the cardinality of the property (attribute).";
+  sh:order 9;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/Constraints#CardinalityGroup>;
+  sh:path <https://cim.ucaiug.io/ns#VsConverter.qPccControl>;
+  sh:maxCount 1 .

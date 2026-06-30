@@ -1,0 +1,5 @@
+file: 61970-452_Equipment-AP-Con-Complex-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 3.856
+finished_at: 2026-06-30T14:40:57+03:00

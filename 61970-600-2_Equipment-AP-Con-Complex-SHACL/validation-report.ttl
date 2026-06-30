@@ -1,0 +1,34 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <https://cim.ucaiug.io/ns#GeographicalRegion>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath _:2120eca33e241ff3;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Muliple GeographicalRegion-s are present.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-600-2/3.0#GeographicalRegion-EQ__4>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-600-2/3.0#GeographicalRegion-EQ__4>
+  a sh:PropertyShape;
+  sh:message "Muliple GeographicalRegion-s are present.";
+  sh:severity sh:Violation;
+  sh:name "C:600:EQ:GeographicalRegion:EQ__4";
+  sh:description "Only one GeographicalRegion shall be exchanged per MAS. In case multiple Model Authority have a need to have the same GeographicalRegion (i.e. multiple TSOs in a country) the class GeographicalRegion shall be present in all Model Authority models and shall have different rdf:ID, but can have same name/description. There is no specific naming convention defined. Note that this is mainly applicable for exchanging transmission data. Additional clarifications when dealing with distribution data are not defined currently.";
+  sh:order 4;
+  sh:group <http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-600-2/3.0#6002EQGroup>;
+  sh:path _:2120eca33e241ff3;
+  sh:maxCount 1 .
+
+_:2120eca33e241ff3 sh:inversePath rdf:type .

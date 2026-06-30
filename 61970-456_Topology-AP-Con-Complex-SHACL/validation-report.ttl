@@ -1,0 +1,1400 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9e0225f7-cbd1-130b-9d92-ab805bf15bf3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ee7873a3-23c6-d5cb-df42-0473140b7aba>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a5e17432-f165-eba3-c9c1-b838819311f9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:353bafc9-0738-b9ee-03ce-96345c77c73f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:2b6287eb-699e-62e4-ef6f-111f76b31c6d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:99f8d492-798e-bede-43cb-44971cecd382>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:af175be1-2fb8-ec49-c96e-2d080244a4b0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8cf61c4b-e6b7-5023-3437-527f4fbd92a7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c361d705-2cf1-9365-2362-b588473a00c2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ee1fc2d6-c588-66a0-82b3-0e29343a43d9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f9753232-5d20-092f-f95d-1720ce10173c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d49221b6-5032-d605-f332-d2a3746f70ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:83c1f9ae-0481-ee51-15bf-6e9f9875c726>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:34bb127c-ed73-bf7c-97d4-15a684f12c1a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a8e223cf-fe8b-624b-34d9-44b12ac4ee32>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4fd3c405-a40f-335e-7dd6-b089c6589aef>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ae8c6a08-24e1-c4d4-28b9-639ae36fe867>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e00a825a-9ccc-019e-1739-694ac50f30bd>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:33ce9676-a61f-bb48-134b-2c8783c721a1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:97bee6e2-0e48-630f-346c-4df130f6aa29>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:77844e8a-c4da-9ea1-eee9-6a36751014d1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:077adbe7-a282-2c2f-ff68-2a574f57cd3b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1cde89e1-2576-d93b-95f1-1249f25c9f9d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fbf99b3e-d874-a1fb-9f60-a153f79aa9df>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f718a804-0f44-d0d4-a843-96a3fa104148>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ce86952d-91a1-1094-4c66-d625064b55cf>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:532fe836-789f-c618-2e30-6f941e06f57f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4b6d51a1-755c-7c5f-e512-01935305993b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bbd89c15-ed1e-cc2d-74c9-8e033fb758b3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d46da85f-0dec-d116-8c03-4a832a5caf34>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c168ca5c-5fe0-4a2a-a449-537a362db01e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e5caa7b2-870a-8a2c-0bd6-1267bd1959e4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:80d36dba-7ee5-5e29-d693-40fb26b3b9e4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:dad4d094-3391-a069-8dee-6af1cf2f55af>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7db9357e-b675-b422-7e47-f8fd3314e91e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5529eacb-b131-c340-384a-13e1c4836a88>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5947342c-943b-b068-d2d7-4ff4516e42c0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:517e8b94-29e1-864a-d9d7-4ac1d7d26997>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:57ccef8d-5a5b-8a45-f8f8-b7900cd26cbc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3e5a964a-a320-f926-dd4c-07f9cda64c73>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ac5c5b5c-99ec-06d3-be90-469e2d593ec2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fb641a02-0e8e-aaaa-a0c3-a8ef5e450231>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:878454b6-0438-8cfd-304e-1ff1b0b32b0c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7a64846f-4a62-784a-d89f-7500b66bcfc7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cc65f800-665a-af11-0d16-25253a5f5b3d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:04bdda68-f0f3-c622-d36d-01b5c50e11b9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fb7276f6-c661-2527-0555-faeea7de087d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:af8e58c9-b736-01de-ad9a-6a75ec25ba65>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8f21f2cf-9cb2-1ba6-347e-b9e4f368369d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1c5efa3e-fbce-31a7-aef1-8fabff676146>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:eb9a4253-bf6f-87d0-3c7b-acadc4f0bab6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:2a52e763-a5a6-8991-0784-f45404ea7c65>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5e458210-58cd-329b-3819-0c888802dd07>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7323e078-d24c-ea7f-837c-0bc333c03029>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:103c0b87-4b30-59da-ab69-cd1d3b487553>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d85071bc-0cb0-9f4d-e97d-0483aef34745>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d270337b-8e2b-f626-48d3-3a40603ac949>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1b1547d4-455b-3815-6f3a-cdf47c2efcc3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0f60eeed-5905-5dcd-8747-a7aa5db0df51>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b66f6ef1-77f8-6d6c-192a-13784b77d5ed>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0c309ee9-5a7c-822e-f754-cefdacfae30c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e2471f70-85c5-57c6-8a80-8f59fe34ed2a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:97e0e93e-a166-489a-77ec-e4a7fcc5e2fb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:61f81e2d-5837-28e6-b150-1e898a76957f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6d12b7b0-7cb3-80fa-8e29-2794e62c01de>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:18096938-0e2c-dcbd-de87-2154c570df8d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4c272455-f966-9a2f-f62f-194ac6b2673e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fb1db3ed-d2d9-2903-5ceb-9fd1a42db645>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e48894d5-3327-5daf-9abe-6cc6af15a333>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:14263543-5417-4dab-bbfb-5c6d785099d0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:11fe43b4-548f-b66b-77b9-70d9ab097643>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7fe098d2-b3d1-d2aa-efaa-2e45f7369ba1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c443acc1-fa2f-08e6-eca8-ecabf69d5459>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5e2546e8-8994-2ad2-4963-bb0d6f40b740>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cacc578d-03e8-671c-9709-88c2ae524ba5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5c21da6d-0e21-d888-9721-ae74bdee5e3a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3994fcda-fd8a-ce8b-38c1-c4742616790e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a4a1e3fe-7e4f-5c8b-f940-2cb373161f2d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0470c882-08a6-91a4-c605-7a861f9e6e49>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:880e16ec-ee04-e1f3-9027-dcb5c897dbde>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:41dccb15-cfa2-deed-b4a6-3e0cadbd65b9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:17573115-4399-ec3f-c782-e4ffccfecdbe>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:02c66501-e71e-ce51-6c56-65338571b6a0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8f81f0f4-c5af-e1ba-e4b9-d890a1d58579>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b6b70d54-bace-e014-48e4-0b86ba639508>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b4b3748-5faa-4558-585d-4af40d05cb1f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bb028dff-21f0-d392-9eab-7e1518fcb00f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f1260c6c-be5c-cdab-437d-8babb56681b4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d3228495-199c-938d-f801-65a718b71541>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e7e9ff14-1654-1dcd-e76a-ed0de1272ef9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9e1e2b16-9086-92b7-1f34-74d1693f09f2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:900f12ae-9e10-e261-5f4c-60729c42a83e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7d9018a2-bc9e-def2-7f56-91fed41d959f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:22c7aee2-37b4-f6dd-812e-7ae831bb3109>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:01e32a95-b0a7-7c8a-f05b-cd566241a5b6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3ba420dc-ca2f-dc47-3b80-171510079a69>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8221574e-bac9-efac-bf39-559c292b00fa>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ceebaeee-f679-bd19-8439-65bed3c0d531>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:483d205c-30f0-46ef-24ff-34d8c4c1a3ea>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b7a55fe-7b8a-e87c-8dae-d0951dca5689>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:dc01f6f9-995a-2607-a7c2-9ed8632b661e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f6d791b0-051a-3d6b-8abd-3b9f5225d82c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e4f607b8-f623-3a3a-32ee-c3822a2f1b5f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:44cd12c6-c361-184a-b0c8-c6141b2ac8d5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:82149693-78b6-5177-657f-b9252bdeeb00>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:abd9b542-b39d-f7b0-164a-e5ae79f5f84d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bd398087-279e-0ab3-2ddb-a89513c08b48>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:98779f97-46e1-23e4-766f-47d313a45135>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bec51022-d79d-cde0-8bcd-9422116d0f25>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6e9b6e5a-f7f5-85a5-1209-0946b138199f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c0d1ac25-5282-d415-a817-2d5af1b0aaeb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7f61f6a1-6be7-869f-5236-b08f78e8b669>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f93b9c2d-7015-29c1-3390-6541665dcaa7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0c0d8c48-5d18-ddfe-500b-e03d6fca973e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:2dba0ab6-8c34-e03e-652c-63dc0fe0f9d7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1a25b2a1-33ae-1187-114c-5463f46dda1c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6648ae85-7c91-cfcb-a258-f9bcd4fd89b9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ac378764-abc0-d081-ffbb-fd79b916a108>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7b534651-a94a-e295-0788-82c6dfae9b9a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8c461955-24f5-9bae-2e0c-8e673ddb07dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:420e95f7-6d64-0c2c-7015-5e7756801367>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1ae190da-6b44-a41b-8030-3cec22ddfad9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:05694751-016b-6edf-3da9-2cf13d38a317>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:62541b9f-0069-580e-98cd-eb6f88864c0d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b2a8fbe7-6b13-085c-7520-c5de35d46622>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4fa4ed2f-d4b7-1e5b-7186-81d75cdefb0d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:80c27276-16a2-67f3-88c1-b03984cc6a17>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ecdd14ab-569b-a1c0-80b7-83d4f3f6a380>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a8b71ac8-e892-18d9-08a3-e78757278c0c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8224a560-a094-b6a5-ef09-88b0a2dc7631>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ce1f6322-0978-55b8-6ad2-65c8f289aad4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3dfbe75a-190b-7e45-cb27-9a22603f37d3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ad395ef6-6e72-375b-179c-0a457773b752>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e824bcad-5ed5-aa79-383a-a2f23f6fb12b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:64ce6880-4d8b-723f-6b66-ab9ecffadcf8>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3e5d7b45-f083-4d17-994d-7b2feeaef3b5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9833e74e-0d3f-32a7-07b5-8010596b6e3c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:08eadb59-54a9-8107-8dbb-6d39cb64ec10>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:53f1ce55-fcad-14ee-288f-467047e396b4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7d49a2cb-d0e7-f74c-03ff-a2d1885596e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:2d56a66a-b8f4-c33a-82e2-dcd4debb39b2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:de983e78-ce6e-eb0b-b06b-cf640203c685>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b56d1de5-51d7-3296-0edf-e498fab8f1ad>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f0a7280d-9ba0-652b-3407-a26567053cc8>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:abed9569-eba2-941d-8929-e429a727556e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d0acf05f-aba8-50f4-ad1a-f88eaa495368>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b911499-edd6-f538-1ba5-331c937e8a70>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d08391d0-8daf-043a-a4dc-226836b60b84>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5961198e-6f27-9a51-d3ea-cff2045bd878>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7eb9a812-b863-1a70-07ae-1fe4f7ee7a55>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7219939e-6ac4-d21c-fef0-86bc5a1b1a8b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6c771d0c-25bd-8be3-f6cb-f7f90bc3ed65>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a90f6d7c-ae9f-e806-6299-1dce468cd576>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:195b66fa-accb-58bd-25eb-b670ff81e8cf>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:11108d60-b837-2921-7f1f-6a0da3ddcf98>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0737732f-1700-b9f4-7c28-9c855c6d6c04>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:de93d5ec-ef29-1613-9f5b-af71e8fad149>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5dc7d2a6-ce27-5302-e214-566263811153>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:73aa92a0-3b9b-ba77-303e-3f36cd3dbcce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bf75ce1b-4308-56a8-bb90-5a1e0b5619b8>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:24a4439c-354c-a90e-7135-cd5179fe355c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:12bf7608-b8c3-6c3d-3ca4-554b1db88b7b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e22d2cca-9e97-7309-bf48-7f88a8cd4678>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0959ffd8-cea6-515b-f86d-e99777f548cc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5e507268-2331-9fe1-c63d-eb529480bc9a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:61a28fc4-92ad-8a97-75e0-afb03d1fd520>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b54c0eb9-8dab-3e26-fbdc-a63d2a5015f4>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:971c49db-94d7-768c-5fc2-b5b4d2994877>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cbfd045e-7b2a-ca70-f099-0ad6a80f0bea>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:74881782-5692-d1b0-42d1-0d1c7a1bab8c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:eb1bd744-1920-cf9b-9c34-f621efbda833>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:00f2e0f3-70d2-7897-b9bf-92f584735014>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+      sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Missing required property (attribute). ";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#IdentifiedObject.name-cardinality>
+  a sh:PropertyShape;
+  sh:message "Missing required property (attribute). ";
+  sh:severity sh:Violation;
+  sh:name "C:456:TP:IdentifiedObject.name:instance";
+  sh:description "Name is required for all classes in the profile except ACDCTerminal.";
+  sh:order 3;
+  sh:group <http://iec.ch/TC57/ns/CIM/Topology-EU/constraints/IEC61970-456/3.0#ValueConstraintsGroup>;
+  sh:path <https://cim.ucaiug.io/ns#IdentifiedObject.name>;
+  sh:maxCount 1 .
