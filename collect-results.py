@@ -42,6 +42,10 @@ EVAL_REPO_BLOB = "https://github.com/nikolatulechki/relicap-ap-shacl-eval/blob/m
 GRAPHDB_RESOURCE = "https://cim.ontotext.com/graphdb/resource"
 GRAPHDB_REPO = "relicapgrid"
 
+# Snapshot timestamp of the ReliCapGrid data that was validated (not the
+# latest upstream version).
+DATA_TIMESTAMP = "2025-06-15T22:30:00Z"
+
 # Cap the number of results kept per constraint, where a constraint is keyed by
 # (profile, sh:sourceShape, sh:sourceConstraintComponent) -- mirroring GraphDB's
 # per-constraint validation cap. Set to None for no limit.
@@ -204,7 +208,6 @@ COLUMNS = [
     "Profile",
     "Report",
     "sh:focusNode",
-    "rsx:shapesGraph",
     "sh:resultPath",
     "sh:sourceConstraint",
     "sh:sourceConstraintComponent",
@@ -239,7 +242,6 @@ def main() -> int:
                 "profile": profile,
                 "report_href": f"{EVAL_REPO_BLOB}/{profile}/validation-report.ttl",
                 "focus_disp": focus_disp, "focus_href": focus_href,
-                "shapes_graph": shorten(r.get("rsx:shapesGraph")),
                 "result_path": shorten(r.get("sh:resultPath")),
                 "sc_disp": sc_disp, "sc_href": sc_href,
                 "scc": shorten(r.get("sh:sourceConstraintComponent")),
@@ -264,27 +266,33 @@ def write_csv(rows: list[dict], path: Path) -> None:
         w.writerow(COLUMNS + ["focusNode URL", "sourceConstraint URL", "sourceShape URL"])
         for r in rows:
             w.writerow([
-                r["profile"], r["report_href"], r["focus_disp"], r["shapes_graph"],
-                r["result_path"], r["sc_disp"], r["scc"], r["severity"], r["message"],
-                r["ss_disp"], r["value"], r["focus_href"], r["sc_href"], r["ss_href"],
+                r["profile"], r["report_href"], r["focus_disp"], r["result_path"],
+                r["sc_disp"], r["scc"], r["severity"], r["message"], r["ss_disp"],
+                r["value"], r["focus_href"], r["sc_href"], r["ss_href"],
             ])
 
 
 def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
+    def brk(text: str) -> str:
+        # Escape, then add break opportunities after punctuation so long
+        # qnames/URIs wrap instead of stretching the column. Entities such as
+        # &amp; are left intact (their chars are not in the punctuation set).
+        return re.sub(r'(?<=[/:#._?=-])(?!$)', '<wbr>', html.escape(text))
+
     def cell(text: str) -> str:
         return html.escape(text)
 
     def link_cell(disp: str, href: str) -> str:
         if href:
-            return f'<a href="{html.escape(href)}" target="_blank" rel="noopener">{html.escape(disp)}</a>'
-        return html.escape(disp)
+            return f'<a href="{html.escape(href)}" target="_blank" rel="noopener">{brk(disp)}</a>'
+        return brk(disp)
 
     counts = {}
     for r in rows:
         counts[r["profile"]] = counts.get(r["profile"], 0) + 1
 
     summary_rows = "".join(
-        f"<tr><td>{cell(p)}</td><td class='num'>{counts.get(p, 0)}</td></tr>"
+        f"<tr><td>{brk(p)}</td><td class='num'>{counts.get(p, 0)}</td></tr>"
         for p in sorted(counts)
     )
 
@@ -292,17 +300,16 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
     for r in rows:
         body_rows.append(
             "<tr>"
-            f"<td>{cell(r['profile'])}</td>"
+            f"<td>{brk(r['profile'])}</td>"
             f"<td>{link_cell('report', r['report_href'])}</td>"
             f"<td>{link_cell(r['focus_disp'], r['focus_href'])}</td>"
-            f"<td>{cell(r['shapes_graph'])}</td>"
-            f"<td>{cell(r['result_path'])}</td>"
+            f"<td>{brk(r['result_path'])}</td>"
             f"<td>{link_cell(r['sc_disp'], r['sc_href'])}</td>"
             f"<td>{cell(r['scc'])}</td>"
             f"<td>{cell(r['severity'])}</td>"
             f"<td class='msg'>{cell(r['message'])}</td>"
             f"<td>{link_cell(r['ss_disp'], r['ss_href'])}</td>"
-            f"<td>{cell(r['value'])}</td>"
+            f"<td>{brk(r['value'])}</td>"
             "</tr>"
         )
 
@@ -343,7 +350,10 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
 <a href="{repo_url}" target="_blank" rel="noopener">repository on GitHub</a>.<br>
 Focus nodes link to the GraphDB <code>{GRAPHDB_REPO}</code> resource viewer;
 source shapes/constraints link to the exact line in the SHACL file on GitHub.<br>
-{cap_note}</div>
+{cap_note}<br>
+<strong>Note:</strong> the ReliCapGrid data is a snapshot
+(<time datetime="{DATA_TIMESTAMP}">{DATA_TIMESTAMP}</time>) and is not the
+latest upstream version.</div>
 
 <details>
   <summary>Per-profile result counts</summary>

@@ -39,9 +39,9 @@ Each profile folder is named after its source SHACL file
 
 `collect-results.py` parses all `*/validation-report.ttl` and writes one
 row per `sh:ValidationResult` to `validation-results.html` / `.csv`, with
-columns: `Profile`, `Report`, `sh:focusNode`, `rsx:shapesGraph`,
-`sh:resultPath`, `sh:sourceConstraint`, `sh:sourceConstraintComponent`,
-`sh:resultSeverity`, `sh:resultMessage`, `sh:sourceShape`, `sh:value`.
+columns: `Profile`, `Report`, `sh:focusNode`, `sh:resultPath`,
+`sh:sourceConstraint`, `sh:sourceConstraintComponent`, `sh:resultSeverity`,
+`sh:resultMessage`, `sh:sourceShape`, `sh:value`.
 
 Links in the table:
 
