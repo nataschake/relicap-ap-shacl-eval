@@ -307,6 +307,12 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
         )
 
     header_cells = "".join(f"<th>{cell(c)}</th>" for c in COLUMNS)
+    repo_url = EVAL_REPO_BLOB.rsplit("/blob/", 1)[0]
+    cap_note = (
+        f"Capped at {MAX_PER_CONSTRAINT} results per constraint "
+        "(per <code>sh:sourceShape</code> + <code>sh:sourceConstraintComponent</code>)."
+        if MAX_PER_CONSTRAINT is not None else "No per-constraint cap applied."
+    )
 
     doc = f"""<!DOCTYPE html>
 <html lang="en">
@@ -333,9 +339,11 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
 </head>
 <body>
 <h1>RELICAP SHACL validation results</h1>
-<div class="meta">{len(rows)} validation results from {len(report_dirs)} profiles.
+<div class="meta">{len(rows)} validation results from {len(report_dirs)} profiles &middot;
+<a href="{repo_url}" target="_blank" rel="noopener">repository on GitHub</a>.<br>
 Focus nodes link to the GraphDB <code>{GRAPHDB_REPO}</code> resource viewer;
-source shapes/constraints link to the exact line in the SHACL file on GitHub.</div>
+source shapes/constraints link to the exact line in the SHACL file on GitHub.<br>
+{cap_note}</div>
 
 <details>
   <summary>Per-profile result counts</summary>
