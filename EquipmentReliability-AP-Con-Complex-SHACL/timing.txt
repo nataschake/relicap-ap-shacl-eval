@@ -1,0 +1,5 @@
+file: EquipmentReliability-AP-Con-Complex-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 0.041
+finished_at: 2026-07-02T10:47:23+03:00

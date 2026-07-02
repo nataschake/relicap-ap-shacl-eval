@@ -1,0 +1,5 @@
+file: SensitivityMatrix-AP-Con-Simple-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 9.066
+finished_at: 2026-07-02T10:51:30+03:00

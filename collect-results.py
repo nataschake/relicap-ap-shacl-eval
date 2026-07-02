@@ -30,11 +30,17 @@ from urllib.parse import quote
 # Configuration
 # ---------------------------------------------------------------------------
 EVAL_DIR = Path(__file__).resolve().parent
-SHACL_DIR = (EVAL_DIR / ".." / "application-profiles-library" / "CGMES"
-             / "CurrentRelease" / "SHACL").resolve()
+APL_DIR = (EVAL_DIR / ".." / "application-profiles-library").resolve()
 
-GITHUB_BLOB = ("https://github.com/nikolatulechki/application-profiles-library"
-               "/blob/main/CGMES/CurrentRelease/SHACL")
+GITHUB_REPO_BLOB = ("https://github.com/nikolatulechki/application-profiles-library"
+                    "/blob/main")
+
+# SHACL source folders (repo-relative), each tagged with a profile family for
+# the "Family" column. The order also sets link-resolution preference.
+SHACL_SOURCES = [
+    ("CGMES", "CGMES/CurrentRelease/SHACL"),
+    ("NCP", "NCP/CurrentRelease/SHACL"),
+]
 
 # This repository on GitHub, used to link each row to its source report.
 EVAL_REPO_BLOB = "https://github.com/nikolatulechki/relicap-ap-shacl-eval/blob/main"
@@ -67,36 +73,38 @@ DISPLAY_PREFIXES = {
 # the line number where it is declared. Turtle subjects in these files always
 # start at column 0, which makes this reliable.
 # ---------------------------------------------------------------------------
-def build_shacl_index() -> dict[str, dict[str, int]]:
-    """Return {shacl_filename: {full_uri: line_number}}."""
-    index: dict[str, dict[str, int]] = {}
-    for ttl in sorted(SHACL_DIR.glob("*.ttl")):
-        if ttl.name in {"validation-report.ttl", "relicap-val-report.ttl"}:
-            continue
-        prefixes: dict[str, str] = {}
-        base: str | None = None
-        uri_to_line: dict[str, int] = {}
-        lines = ttl.read_text(encoding="utf-8").splitlines()
-
-        # First pass: collect @prefix / @base directives.
-        for line in lines:
-            m = re.match(r'\s*@prefix\s+([\w.-]*):\s+<([^>]*)>', line)
-            if m:
-                prefixes[m.group(1)] = m.group(2)
+def build_shacl_index() -> dict[str, dict]:
+    """Return {shacl_filename: {"family", "subpath", "lines": {uri: line}}}."""
+    index: dict[str, dict] = {}
+    for family, subpath in SHACL_SOURCES:
+        for ttl in sorted((APL_DIR / subpath).glob("*.ttl")):
+            if ttl.name in {"validation-report.ttl", "relicap-val-report.ttl"}:
                 continue
-            m = re.match(r'\s*@base\s+<([^>]*)>', line)
-            if m:
-                base = m.group(1)
+            prefixes: dict[str, str] = {}
+            base: str | None = None
+            uri_to_line: dict[str, int] = {}
+            lines = ttl.read_text(encoding="utf-8").splitlines()
 
-        # Second pass: find subject declarations (token at column 0).
-        for n, line in enumerate(lines, start=1):
-            if not line or line[0] in " \t#@":
-                continue
-            token = line.split(None, 1)[0]
-            full = resolve_term(token, prefixes, base)
-            if full and full not in uri_to_line:
-                uri_to_line[full] = n
-        index[ttl.name] = uri_to_line
+            # First pass: collect @prefix / @base directives.
+            for line in lines:
+                m = re.match(r'\s*@prefix\s+([\w.-]*):\s+<([^>]*)>', line)
+                if m:
+                    prefixes[m.group(1)] = m.group(2)
+                    continue
+                m = re.match(r'\s*@base\s+<([^>]*)>', line)
+                if m:
+                    base = m.group(1)
+
+            # Second pass: find subject declarations (token at column 0).
+            for n, line in enumerate(lines, start=1):
+                if not line or line[0] in " \t#@":
+                    continue
+                token = line.split(None, 1)[0]
+                full = resolve_term(token, prefixes, base)
+                if full and full not in uri_to_line:
+                    uri_to_line[full] = n
+            index[ttl.name] = {"family": family, "subpath": subpath,
+                               "lines": uri_to_line}
     return index
 
 
@@ -124,7 +132,7 @@ PRED_LINE = re.compile(r'\s*((?:sh|rsx):\w+)\s+(.*)$')
 
 
 def parse_report(path: Path) -> list[dict[str, str]]:
-    text = path.read_text(encoding="utf-8")
+    text = path.read_text(encoding="utf-8", errors="replace")
     chunks = RESULT_SPLIT.split(text)[1:]  # drop header before first result
     results: list[dict[str, str]] = []
     for chunk in chunks:
@@ -187,7 +195,7 @@ def graphdb_link(focus_term: str | None) -> tuple[str, str]:
 
 
 def github_link(term: str | None, shacl_file: str,
-                index: dict[str, dict[str, int]]) -> tuple[str, str]:
+                index: dict[str, dict]) -> tuple[str, str]:
     """Return (display, href) for a shape/constraint, linking to its GitHub line."""
     iri = strip_brackets(term)
     if iri is None:
@@ -195,9 +203,11 @@ def github_link(term: str | None, shacl_file: str,
     # Prefer the SHACL file matching this report; fall back to any file.
     candidates = [shacl_file] + [f for f in index if f != shacl_file]
     for fname in candidates:
-        line = index.get(fname, {}).get(iri)
-        if line is not None:
-            return (shorten(term), f"{GITHUB_BLOB}/{fname}#L{line}")
+        entry = index.get(fname)
+        if entry and iri in entry["lines"]:
+            line = entry["lines"][iri]
+            return (shorten(term),
+                    f"{GITHUB_REPO_BLOB}/{entry['subpath']}/{fname}#L{line}")
     return (shorten(term), "")
 
 
@@ -205,6 +215,7 @@ def github_link(term: str | None, shacl_file: str,
 # Output
 # ---------------------------------------------------------------------------
 COLUMNS = [
+    "Family",
     "Profile",
     "Report",
     "sh:focusNode",
@@ -228,6 +239,7 @@ def main() -> int:
     for d in report_dirs:
         profile = d.name
         shacl_file = f"{profile}.ttl"
+        family = index.get(shacl_file, {}).get("family", "")
         per_constraint: dict[tuple[str, str], int] = {}
         for r in parse_report(d / "validation-report.ttl"):
             if MAX_PER_CONSTRAINT is not None:
@@ -239,6 +251,7 @@ def main() -> int:
             sc_disp, sc_href = github_link(r.get("sh:sourceConstraint"), shacl_file, index)
             ss_disp, ss_href = github_link(r.get("sh:sourceShape"), shacl_file, index)
             rows.append({
+                "family": family,
                 "profile": profile,
                 "report_href": f"{EVAL_REPO_BLOB}/{profile}/validation-report.ttl",
                 "focus_disp": focus_disp, "focus_href": focus_href,
@@ -266,9 +279,9 @@ def write_csv(rows: list[dict], path: Path) -> None:
         w.writerow(COLUMNS + ["focusNode URL", "sourceConstraint URL", "sourceShape URL"])
         for r in rows:
             w.writerow([
-                r["profile"], r["report_href"], r["focus_disp"], r["result_path"],
-                r["sc_disp"], r["scc"], r["severity"], r["message"], r["ss_disp"],
-                r["value"], r["focus_href"], r["sc_href"], r["ss_href"],
+                r["family"], r["profile"], r["report_href"], r["focus_disp"],
+                r["result_path"], r["sc_disp"], r["scc"], r["severity"], r["message"],
+                r["ss_disp"], r["value"], r["focus_href"], r["sc_href"], r["ss_href"],
             ])
 
 
@@ -300,6 +313,7 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
     for r in rows:
         body_rows.append(
             "<tr>"
+            f"<td>{cell(r['family'])}</td>"
             f"<td>{brk(r['profile'])}</td>"
             f"<td>{link_cell('report', r['report_href'])}</td>"
             f"<td>{link_cell(r['focus_disp'], r['focus_href'])}</td>"

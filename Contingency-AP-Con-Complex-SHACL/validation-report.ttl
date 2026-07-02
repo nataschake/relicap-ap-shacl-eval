@@ -1,0 +1,1582 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1bd15dd2-f0d5-4e77-8d41-e3611cc57b4a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b488dee-c497-42cc-9cd2-1bf77036e5e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:aee3453a-ec82-4392-98a2-52d6cc5f5029>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:78c34698-16b2-4863-affe-1b9c599de0d5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b012f709-5306-4315-a32e-a39d2c2ce632>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService>;
+      sh:resultPath <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:667313c5-0567-45c5-b985-b859c774f7e3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:667313c5-0567-45c5-b985-b859c774f7e3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:667313c5-0567-45c5-b985-b859c774f7e3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:667313c5-0567-45c5-b985-b859c774f7e3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:667313c5-0567-45c5-b985-b859c774f7e3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RotatingMachine>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RegulatingCondEq>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7ec56068-a714-4445-ae19-dd34429ec722>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7ec56068-a714-4445-ae19-dd34429ec722>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7ec56068-a714-4445-ae19-dd34429ec722>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7ec56068-a714-4445-ae19-dd34429ec722>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7ec56068-a714-4445-ae19-dd34429ec722>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:96c83c1b-df9e-44d2-adfb-a759975ada49>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:96c83c1b-df9e-44d2-adfb-a759975ada49>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:96c83c1b-df9e-44d2-adfb-a759975ada49>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:96c83c1b-df9e-44d2-adfb-a759975ada49>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:96c83c1b-df9e-44d2-adfb-a759975ada49>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConsumer>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:96c83c1b-df9e-44d2-adfb-a759975ada49>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b994b74c-7539-4e1e-9985-7d7a20d55ba9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b994b74c-7539-4e1e-9985-7d7a20d55ba9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b994b74c-7539-4e1e-9985-7d7a20d55ba9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ACDCConverter>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b994b74c-7539-4e1e-9985-7d7a20d55ba9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b994b74c-7539-4e1e-9985-7d7a20d55ba9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:833ea3ad-2c2d-4e73-9165-c3acbe04bbe1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:833ea3ad-2c2d-4e73-9165-c3acbe04bbe1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:833ea3ad-2c2d-4e73-9165-c3acbe04bbe1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:833ea3ad-2c2d-4e73-9165-c3acbe04bbe1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:833ea3ad-2c2d-4e73-9165-c3acbe04bbe1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4ec61835-cdf9-4fd5-93ee-37aa4caee337>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4ec61835-cdf9-4fd5-93ee-37aa4caee337>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4ec61835-cdf9-4fd5-93ee-37aa4caee337>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4ec61835-cdf9-4fd5-93ee-37aa4caee337>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#DCConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:afe6c465-89d4-458a-a27c-3974d1102cad>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:afe6c465-89d4-458a-a27c-3974d1102cad>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:afe6c465-89d4-458a-a27c-3974d1102cad>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:afe6c465-89d4-458a-a27c-3974d1102cad>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:afe6c465-89d4-458a-a27c-3974d1102cad>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e574dccc-d9bd-43aa-bcda-2b54eb2eb03d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e574dccc-d9bd-43aa-bcda-2b54eb2eb03d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e574dccc-d9bd-43aa-bcda-2b54eb2eb03d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e574dccc-d9bd-43aa-bcda-2b54eb2eb03d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e574dccc-d9bd-43aa-bcda-2b54eb2eb03d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d72d8f22-79f2-446e-b26b-0635a268bb5d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d72d8f22-79f2-446e-b26b-0635a268bb5d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d72d8f22-79f2-446e-b26b-0635a268bb5d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d72d8f22-79f2-446e-b26b-0635a268bb5d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d72d8f22-79f2-446e-b26b-0635a268bb5d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d72d8f22-79f2-446e-b26b-0635a268bb5d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RegulatingCondEq>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d72d8f22-79f2-446e-b26b-0635a268bb5d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ShuntCompensator>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5461e1a3-e345-43a3-a863-9648b652d6c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5461e1a3-e345-43a3-a863-9648b652d6c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5461e1a3-e345-43a3-a863-9648b652d6c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5461e1a3-e345-43a3-a863-9648b652d6c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5461e1a3-e345-43a3-a863-9648b652d6c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:266acca2-64fa-4a19-af39-d95d44c7c891>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:266acca2-64fa-4a19-af39-d95d44c7c891>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:266acca2-64fa-4a19-af39-d95d44c7c891>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:266acca2-64fa-4a19-af39-d95d44c7c891>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RotatingMachine>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:266acca2-64fa-4a19-af39-d95d44c7c891>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:266acca2-64fa-4a19-af39-d95d44c7c891>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:266acca2-64fa-4a19-af39-d95d44c7c891>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RegulatingCondEq>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ae28c84c-33b6-4b78-88b9-fe5c41049d40>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ae28c84c-33b6-4b78-88b9-fe5c41049d40>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ae28c84c-33b6-4b78-88b9-fe5c41049d40>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ae28c84c-33b6-4b78-88b9-fe5c41049d40>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ae28c84c-33b6-4b78-88b9-fe5c41049d40>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:816b2763-cefe-41b9-a599-de0d5972cd4c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:816b2763-cefe-41b9-a599-de0d5972cd4c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:816b2763-cefe-41b9-a599-de0d5972cd4c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:816b2763-cefe-41b9-a599-de0d5972cd4c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:816b2763-cefe-41b9-a599-de0d5972cd4c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e7ad6c6d-3b36-45a5-a7ac-be48abe54cd7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e7ad6c6d-3b36-45a5-a7ac-be48abe54cd7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e7ad6c6d-3b36-45a5-a7ac-be48abe54cd7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e7ad6c6d-3b36-45a5-a7ac-be48abe54cd7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e7ad6c6d-3b36-45a5-a7ac-be48abe54cd7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5680e782-49c9-4312-83d0-27ff412f7099>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5680e782-49c9-4312-83d0-27ff412f7099>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5680e782-49c9-4312-83d0-27ff412f7099>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5680e782-49c9-4312-83d0-27ff412f7099>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RotatingMachine>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5680e782-49c9-4312-83d0-27ff412f7099>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5680e782-49c9-4312-83d0-27ff412f7099>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5680e782-49c9-4312-83d0-27ff412f7099>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RegulatingCondEq>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:891caa7d-9879-40b8-a8f8-729e0ca41307>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:891caa7d-9879-40b8-a8f8-729e0ca41307>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:891caa7d-9879-40b8-a8f8-729e0ca41307>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ACDCConverter>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:891caa7d-9879-40b8-a8f8-729e0ca41307>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:891caa7d-9879-40b8-a8f8-729e0ca41307>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1bd15dd2-f0d5-4e77-8d41-e3611cc57b4a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1bd15dd2-f0d5-4e77-8d41-e3611cc57b4a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1bd15dd2-f0d5-4e77-8d41-e3611cc57b4a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1bd15dd2-f0d5-4e77-8d41-e3611cc57b4a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1bd15dd2-f0d5-4e77-8d41-e3611cc57b4a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d2388514-b207-4741-9ba5-bc8d043feed2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d2388514-b207-4741-9ba5-bc8d043feed2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d2388514-b207-4741-9ba5-bc8d043feed2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d2388514-b207-4741-9ba5-bc8d043feed2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d2388514-b207-4741-9ba5-bc8d043feed2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConsumer>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d2388514-b207-4741-9ba5-bc8d043feed2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b488dee-c497-42cc-9cd2-1bf77036e5e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b488dee-c497-42cc-9cd2-1bf77036e5e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b488dee-c497-42cc-9cd2-1bf77036e5e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9b488dee-c497-42cc-9cd2-1bf77036e5e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Connector>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RotatingMachine>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c41cbda-7686-4473-8c4c-19802e714976>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RegulatingCondEq>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Connector>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RegulatingCondEq>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdbe7044-c15f-4373-91e7-ce10acc17495>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ShuntCompensator>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6b11c563-1cd1-455f-beb7-c9821159848c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6b11c563-1cd1-455f-beb7-c9821159848c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6b11c563-1cd1-455f-beb7-c9821159848c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6b11c563-1cd1-455f-beb7-c9821159848c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:6b11c563-1cd1-455f-beb7-c9821159848c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5030a960-be37-4ad7-aa11-1082f41102dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5030a960-be37-4ad7-aa11-1082f41102dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5030a960-be37-4ad7-aa11-1082f41102dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5030a960-be37-4ad7-aa11-1082f41102dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RotatingMachine>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5030a960-be37-4ad7-aa11-1082f41102dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#EnergyConnection>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5030a960-be37-4ad7-aa11-1082f41102dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5030a960-be37-4ad7-aa11-1082f41102dc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#RegulatingCondEq>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:aee3453a-ec82-4392-98a2-52d6cc5f5029>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:aee3453a-ec82-4392-98a2-52d6cc5f5029>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:aee3453a-ec82-4392-98a2-52d6cc5f5029>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:aee3453a-ec82-4392-98a2-52d6cc5f5029>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:aee3453a-ec82-4392-98a2-52d6cc5f5029>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:78c34698-16b2-4863-affe-1b9c599de0d5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:78c34698-16b2-4863-affe-1b9c599de0d5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:78c34698-16b2-4863-affe-1b9c599de0d5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:78c34698-16b2-4863-affe-1b9c599de0d5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b012f709-5306-4315-a32e-a39d2c2ce632>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Equipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b012f709-5306-4315-a32e-a39d2c2ce632>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#IdentifiedObject>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b012f709-5306-4315-a32e-a39d2c2ce632>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#ConductingEquipment>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b012f709-5306-4315-a32e-a39d2c2ce632>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#PowerSystemResource>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b012f709-5306-4315-a32e-a39d2c2ce632>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://cim.ucaiug.io/ns#Conductor>;
+      sh:resultPath _:24ac15fd6fbfc0ec;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Warning;
+      sh:resultMessage "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+      sh:sourceShape <https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+    ] .
+
+<https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyEquipment.contingentStatus-allowedValues>
+  a sh:PropertyShape;
+  sh:message "ContingencyEquipment.contingentStatus is not ContingencyEquipmentStatusKind.outOfService.";
+  sh:severity sh:Violation;
+  sh:name "C:NC:CO:ContingencyEquipment.contingentStatus:allowedValues";
+  sh:description "The allowed value for the ContingencyEquipment.contingentStatus is ContingencyEquipmentStatusKind.outOfService.";
+  sh:order 2;
+  sh:group <https://ap-con.cim4.eu/Contingency-Complex/2.3#COgroup>;
+  sh:path <https://cim.ucaiug.io/ns#ContingencyEquipment.contingentStatus>;
+  sh:in (<https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.outOfService>) .
+
+<https://ap-con.cim4.eu/Contingency-Complex/2.3#ContingencyElement.Equipment-allowedClasses>
+  a sh:PropertyShape;
+  sh:message "ContingencyEquipment.Equipment does not reference supported class type for contingency.";
+  sh:severity sh:Warning;
+  sh:name "C:NC:CO:ContingencyElement.Equipment:allowedClasses";
+  sh:description "The following classes shall be supported and referenced by the association end ContingencyElement.Equipment to fulfil the requirements by the CSAm: RotatingMachine, PowerElectronicConnection, PowerTransformer, ACLineSegment, FACTSEquipment, ShuntCompensator, SeriesCompensator, ACDCconverter, DCConductingEquipment, DCLineSegment, cim:DCBusbar (optional), DCChopper (optional), NonConformLoad, ConformLoad, Breaker. A warning is triggered if any other classes are used.";
+  sh:order 3;
+  sh:group <https://ap-con.cim4.eu/Contingency-Complex/2.3#COgroup>;
+  sh:path _:24ac15fd6fbfc0ec;
+  sh:in (<https://cim.ucaiug.io/ns#SynchronousMachine> <http://iec.ch/TC57/CIM100#SynchronousMachine>
+      <http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachine> <https://cim.ucaiug.io/ns#AsynchronousMachine>
+      <http://iec.ch/TC57/CIM100#AsynchronousMachine> <http://iec.ch/TC57/2013/CIM-schema-cim16#AsynchronousMachine>
+      <https://cim.ucaiug.io/ns#PowerElectronicConnection> <http://iec.ch/TC57/CIM100#PowerElectronicConnection>
+      <https://cim.ucaiug.io/ns#PowerTransformer> <http://iec.ch/TC57/CIM100#PowerTransformer>
+      <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer> <https://cim.ucaiug.io/ns#ACLineSegment>
+      <http://iec.ch/TC57/CIM100#ACLineSegment> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment>
+      <https://cim4.eu/ns/nc#ThyristorControlledSeriesCompensator> <https://cim4.eu/ns/nc#ModularStaticSynchronousSeriesCompensator>
+      <https://cim4.eu/ns/nc#StaticSynchronousSeriesCompensator> <https://cim4.eu/ns/nc#StaticSynchronousCompensator>
+      <https://cim4.eu/ns/nc#StaticVarCompensator> <https://cim.ucaiug.io/ns#LinearShuntCompensator>
+      <http://iec.ch/TC57/CIM100#LinearShuntCompensator> <http://iec.ch/TC57/2013/CIM-schema-cim16#LinearShuntCompensator>
+      <https://cim.ucaiug.io/ns#NonlinearShuntCompensator> <http://iec.ch/TC57/CIM100#NonlinearShuntCompensator>
+      <http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator> <https://cim.ucaiug.io/ns#SeriesCompensator>
+      <http://iec.ch/TC57/CIM100#SeriesCompensator> <http://iec.ch/TC57/2013/CIM-schema-cim16#SeriesCompensator>
+      <https://cim.ucaiug.io/ns#CsConverter> <http://iec.ch/TC57/CIM100#CsConverter> <http://iec.ch/TC57/2013/CIM-schema-cim16#CsConverter>
+      <https://cim.ucaiug.io/ns#VsConverter> <http://iec.ch/TC57/CIM100#VsConverter> <http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter>
+      <https://cim.ucaiug.io/ns#DCLineSegment> <http://iec.ch/TC57/CIM100#DCLineSegment>
+      <http://iec.ch/TC57/2013/CIM-schema-cim16#DCLineSegment> <https://cim.ucaiug.io/ns#DCBusbar>
+      <http://iec.ch/TC57/CIM100#DCBusbar> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCBusbar>
+      <https://cim.ucaiug.io/ns#DCChopper> <http://iec.ch/TC57/CIM100#DCChopper> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCChopper>
+      <https://cim.ucaiug.io/ns#NonConformLoad> <http://iec.ch/TC57/CIM100#NonConformLoad>
+      <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoad> <https://cim.ucaiug.io/ns#ConformLoad>
+      <http://iec.ch/TC57/CIM100#ConformLoad> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoad>
+      <https://cim.ucaiug.io/ns#Breaker> <http://iec.ch/TC57/CIM100#Breaker> <http://iec.ch/TC57/2013/CIM-schema-cim16#Breaker>) .
+
+[] rdf:first <https://cim.ucaiug.io/ns#ContingencyEquipment.Equipment>;
+  rdf:rest (rdf:type) .

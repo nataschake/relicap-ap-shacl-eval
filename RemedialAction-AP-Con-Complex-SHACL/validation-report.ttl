@@ -1,0 +1,871 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+
+[] a sh:ValidationReport;
+  sh:conforms false;
+  rdf4j:truncated false;
+  sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:12b3c4e6-2104-4499-b003-1248ef533e13>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b591f3b9-e7e6-4625-b1d2-f53dec63ced1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:af64e952-7fc1-4cb7-8881-a0c2b3256982>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bf7f0ef4-dad3-4322-b2be-5ace59837e60>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdb13ef7-1338-4f34-b42b-5e8ad34989b1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3326ee03-5968-45bb-a88c-6a2185d89da7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:a38d4a85-e221-43ec-b7bb-122f7c95f06e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ecd76354-2372-4eca-af47-530abc00549c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8b56b2cd-99ac-4fc3-ad3d-eb14153426f3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7be59519-0083-4845-a587-cb391ed16a1d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ddb3c55f-b2ec-414e-baa3-592829e2edb2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/ShuntCompensator.sections>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:99e03961-06a8-485e-8c6e-fd833835c00a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4d3757fd-b40a-4d7b-be47-6553935234ff>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9a7f821b-8eb8-4c0a-a67e-25e4d5aeaa8d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b66ddbf5-1314-444e-91bc-26c09bc9c656>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:12b9a70c-9e72-4ec5-af01-d32d440c2aa3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:dbad8bad-94a9-428a-a8d6-ef6f48490e6d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:dc8f7d4a-9b37-4143-ab12-cc4e554460ce>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7bbb3343-e48b-42dd-9ca5-6ff8945ca5b0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/EnergyConsumer.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bd7aaf12-e6b9-44ef-9e04-3d2992581718>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:55a11475-e39f-4541-accc-d979376bcda3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:457f111e-43ce-4368-923e-11457cb694f9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/StaticVarCompensator.q>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:beee0b9b-588d-4efc-9972-cd4cd25b0b70>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:889535e6-2789-46e7-8ba7-da7be9951914>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4ab66db6-53a4-4ebf-af6e-1ea32b6e77bb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1dd4c309-ed8b-4bb6-a26d-4888b8e1f009>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4b1410d4-3958-4a8c-8289-b3d6b57cfc65>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8e60eea4-9c86-4e9d-8012-6645d5efb96d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:26e73fc0-82d0-4b6a-929d-1bb2c49a24d5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0725050a-0ece-49d0-8822-f5e0c8fb99c9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:eb60d1c0-8bcc-463b-8b91-8dc1833b2a92>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:e2a19b7e-6d21-4987-b138-f746bba325e6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:55961174-efb4-44be-8832-b0fb107de235>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fe13b0ad-0f87-45d8-a96f-93fdfc33c50b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1d19ef52-6ed4-4167-aa00-c3deb0ea0005>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:615cdd6e-88f3-4e32-a396-766e171170eb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0bec00cd-cf46-40d8-931a-efb35bc417af>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:884fd5ca-afa6-4b5b-a0f7-2daee3f1959f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d101c17c-c67a-4a33-b8ad-aaee4ca6563e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c33f19fd-ed90-4440-a5f8-5b62d1cc559e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d316a138-5b75-4a80-bd95-151adfbfe13d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b61d5cd5-0373-4e58-82c3-b5e4d86147a5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:516cbe68-560d-48ce-8745-f84b90aef2c5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:54174158-33fb-43ad-9c2d-e733165c3acb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:49c6b720-0d02-403f-9954-001725a16235>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bcc5cc7d-1c60-4014-9c5f-fb16af94bba8>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:496aa829-9d7e-4f19-9c71-447a8534e0a9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:de394860-8c5f-48b4-869c-c09f5247a6ec>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:20849f96-ed7f-43b4-bbef-2be02b03b262>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:07054360-8a32-49cc-9730-4e7a1f52e85e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3faa1af4-01de-4872-8447-285458456ed6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f93388e1-20ec-4643-8952-adfb1c93c6f8>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:34676da6-a62d-4f41-b9bc-0a7e3d95efe7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5d65b3b1-1c66-4045-8d6b-0accc85043ed>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bc460391-dcc1-4ad1-a54c-c6a55f947582>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:68316fda-bac0-4c4c-8f91-d7a43153454f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3997ac30-8d9f-432c-9a38-db6a465be999>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7e29e44b-85b3-4e93-9e35-00b76f98e9fc>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:77dae0e6-4c18-4318-83c5-292b60179af1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:02517b73-ef6d-4cbf-be94-8fc847ccbff1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:fe2f9b5c-7a78-4f3d-983a-d9602f9e5fe7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:f4d38a37-bb34-477b-aba3-b68c934077b5>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:445032fc-0efa-4f5c-b36f-333bc2132e68>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:caaa9307-efa6-4172-a2c9-7a938b4b94a0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d84509e2-2d21-4c03-9d3e-941e3777d4d6>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:00c3d990-7241-4275-8013-7482db3ab05b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ] .
+
+<https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+  a sh:PropertyShape;
+  sh:message "The value of the PropertyReference is not part of the reference data.";
+  sh:severity sh:Violation;
+  sh:name "C:NC:RA:GridStateAlteration.PropertyReference:value";
+  sh:description "The value of the association end GridStateAlteration.PropertyReference shall be one of the values published in the skos:ConceptScheme  https://energy.referencedata.eu/PropertyReference/.";
+  sh:order 3;
+  sh:group <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#RACustomGroup>;
+  sh:path <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+  sh:in (<https://energy.referencedata.eu/PropertyReference#DCPole.minEconomicP> <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.totalTransferCapacity>
+      <https://energy.referencedata.eu/PropertyReference#Contingency.mustStudy> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.startupCost>
+      <https://energy.referencedata.eu/PropertyReference#ThyristorControlledSeriesCompensator.currentSection>
+      <https://energy.referencedata.eu/PropertyReference#DCSwitch.open> <https://energy.referencedata.eu/PropertyReference#EnergyGroup.p>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.warmStartupCost>
+      <https://energy.referencedata.eu/PropertyReference#ACEmulationControlFunction.timeConstant>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.criticalElementJustification>
+      <https://energy.referencedata.eu/PropertyReference#ACEmulationControlFunction.referenceP>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopControlFunction.targetValueCapacitive>
+      <https://energy.referencedata.eu/PropertyReference#EnergyConsumer.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#PowerTransferCorridor.enabled>
+      <https://energy.referencedata.eu/PropertyReference#EnergyBlockOrder.sequence> <https://energy.referencedata.eu/PropertyReference#PowerRemedialAction.maxRegulatingUp>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.coordinatedValidationAdjustmentJustification>
+      <https://energy.referencedata.eu/PropertyReference#DCPole.participationFactor> <https://energy.referencedata.eu/PropertyReference#AssessedElement.targetRemainingAvailableMarginJustification>
+      <https://energy.referencedata.eu/PropertyReference#SubstationController.mode> <https://energy.referencedata.eu/PropertyReference#EnergyBlockOrder.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#AreaDispatchableUnit.enabled> <https://energy.referencedata.eu/PropertyReference#AssessedElement.scannedThresholdMargin>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElementWithContingency.enabled>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingCondEq.controlEnabled>
+      <https://energy.referencedata.eu/PropertyReference#FACTSEquipment.q> <https://energy.referencedata.eu/PropertyReference#PowerRemedialAction.maxRegulatingDown>
+      <https://energy.referencedata.eu/PropertyReference#PowerElectronicsUnit.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.netACInterchange>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.maxFlow> <https://energy.referencedata.eu/PropertyReference#StageTrigger.armed>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.minInterchange> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#EnergyGroup.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#CurrentControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.maxInterchange> <https://energy.referencedata.eu/PropertyReference#RotatingMachineController.mode>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.individualValidationAdjustmentShare>
+      <https://energy.referencedata.eu/PropertyReference#DCVoltageControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#DCPole.p> <https://energy.referencedata.eu/PropertyReference#ImpedanceControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopOverride.targetValueCapacitiveI>
+      <https://energy.referencedata.eu/PropertyReference#RemedialActionScheme.inService>
+      <https://energy.referencedata.eu/PropertyReference#RangeConstraint.value> <https://energy.referencedata.eu/PropertyReference#AssessedElement.coordinatedValidationAdjustment>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.netACInterchangeTolerance>
+      <https://energy.referencedata.eu/PropertyReference#DCPole.maxEconomicP> <https://energy.referencedata.eu/PropertyReference#AreaDispatchableUnit.p>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.shutdownCost> <https://energy.referencedata.eu/PropertyReference#ScheduleResource.p>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.netDCInterchange>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.positiveVirtualMargin>
+      <https://energy.referencedata.eu/PropertyReference#DCTieCorridor.q> <https://energy.referencedata.eu/PropertyReference#DCTieCorridor.p>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.maxMarginAdjustment>
+      <https://energy.referencedata.eu/PropertyReference#ContingencyWithRemedialAction.enabled>
+      <https://energy.referencedata.eu/PropertyReference#PTCActivePowerSupport.value> <https://energy.referencedata.eu/PropertyReference#GridStateAlteration.enabled>
+      <https://energy.referencedata.eu/PropertyReference#InfeedLimit.valueA> <https://energy.referencedata.eu/PropertyReference#PowerShiftKeyStrategy.enabled>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.netTransferCapacity>
+      <https://energy.referencedata.eu/PropertyReference#Equipment.networkAnalysisEnabled>
+      <https://energy.referencedata.eu/PropertyReference#ScheduleResource.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#CircuitShare.contributionFactor>
+      <https://energy.referencedata.eu/PropertyReference#StageTrigger.inService> <https://energy.referencedata.eu/PropertyReference#InfeedLimit.valueW>
+      <https://energy.referencedata.eu/PropertyReference#FrequencyControlFunction.frequencyBias>
+      <https://energy.referencedata.eu/PropertyReference#GridStateAlteration.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#HydroPump.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#ReactivePowerControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#BaseCaseCurrentLimit.value> <https://energy.referencedata.eu/PropertyReference#InjectionController.mode>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.mustRun> <https://energy.referencedata.eu/PropertyReference#RemedialActionGroup.maxRegulatingDown>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZone.netPosition> <https://energy.referencedata.eu/PropertyReference#AssessedElement.individualValidationAdjustment>
+      <https://energy.referencedata.eu/PropertyReference#SchedulingArea.p> <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.alreadyAllocatedCapacity>
+      <https://energy.referencedata.eu/PropertyReference#RemedialActionGroup.maxRegulatingUp>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.costCurrency> <https://energy.referencedata.eu/PropertyReference#Contingency.probability>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElementWithRemedialAction.enabled>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.enabled> <https://energy.referencedata.eu/PropertyReference#PhaseControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#PowerElectronicsUnit.p> <https://energy.referencedata.eu/PropertyReference#PowerShiftKeyStrategy.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.regulatingUpAllocation>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.availableTransferCapacity>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopOverride.enabled> <https://energy.referencedata.eu/PropertyReference#RemedialActionDependency.enabled>
+      <https://energy.referencedata.eu/PropertyReference#SSSCController.mode> <https://energy.referencedata.eu/PropertyReference#CurrentDroopControlFunction.targetValueInductive>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.individualValidationAdjustmentJustification>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.regulatingDownAllocation>
+      <https://energy.referencedata.eu/PropertyReference#CompensatorController.mode> <https://energy.referencedata.eu/PropertyReference#CrossBorderRelevance.enabled>
+      <https://energy.referencedata.eu/PropertyReference#DCCurrentControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopOverride.targetValueInductiveI>
+      <https://energy.referencedata.eu/PropertyReference#DirectCurrentEquipmentController.mode>
+      <https://energy.referencedata.eu/PropertyReference#AutomationFunction.enabled> <https://energy.referencedata.eu/PropertyReference#VoltageAngleLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#VoltageControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.minImportP> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.mustRunQ>
+      <https://energy.referencedata.eu/PropertyReference#Reservoir.energyStorage> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.mustRunP>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.isRamping> <https://energy.referencedata.eu/PropertyReference#PowerFactorControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#TCSCController.mode> <https://energy.referencedata.eu/PropertyReference#FrequencyControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#Equipment.inService> <https://energy.referencedata.eu/PropertyReference#EnergyBlockOrder.p>
+      <https://energy.referencedata.eu/PropertyReference#FuelStorage.energyStorage> <https://energy.referencedata.eu/PropertyReference#AssessedElement.appointedMargin>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.transmissionReliabilityMargin>
+      <https://energy.referencedata.eu/PropertyReference#ThyristorControlledSeriesCompensator.compensationZ>
+      <https://energy.referencedata.eu/PropertyReference#SchedulingArea.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#RemedialAction.available> <https://energy.referencedata.eu/PropertyReference#ActivePowerControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#FunctionBlock.enabled> <https://energy.referencedata.eu/PropertyReference#VoltageInjectionControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.alreadyAllocatedFlow>
+      <https://energy.referencedata.eu/PropertyReference#ACEmulationControlFunction.gain>
+      <https://energy.referencedata.eu/PropertyReference#RemedialActionScheme.armed> <https://energy.referencedata.eu/PropertyReference#DCSwitch.locked>
+      <https://energy.referencedata.eu/PropertyReference#ACDCConverter.targetPpcc> <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.regulationTarget>
+      <https://energy.referencedata.eu/PropertyReference#TapChanger.step> <https://energy.referencedata.eu/PropertyReference#ACDCConverter.p>
+      <https://energy.referencedata.eu/PropertyReference#ACDCConverter.q> <https://energy.referencedata.eu/PropertyReference#BatteryUnit.storedE>
+      <https://energy.referencedata.eu/PropertyReference#CsConverter.operatingMode> <https://energy.referencedata.eu/PropertyReference#EnergySource.voltageMagnitude>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.targetPowerFactorPcc>
+      <https://energy.referencedata.eu/PropertyReference#RotatingMachine.q> <https://energy.referencedata.eu/PropertyReference#RotatingMachine.p>
+      <https://energy.referencedata.eu/PropertyReference#AsynchronousMachine.asynchronousMachineType>
+      <https://energy.referencedata.eu/PropertyReference#EnergyConsumer.q> <https://energy.referencedata.eu/PropertyReference#EnergyConsumer.p>
+      <https://energy.referencedata.eu/PropertyReference#Switch.open> <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.p>
+      <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.q> <https://energy.referencedata.eu/PropertyReference#SynchronousMachine.operatingMode>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.targetQpcc> <https://energy.referencedata.eu/PropertyReference#CsConverter.targetIdc>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.qShare> <https://energy.referencedata.eu/PropertyReference#EnergySource.reactivePower>
+      <https://energy.referencedata.eu/PropertyReference#ACDCConverter.targetUdc> <https://energy.referencedata.eu/PropertyReference#ActivePowerLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#EnergySource.voltageAngle> <https://energy.referencedata.eu/PropertyReference#ExternalNetworkInjection.referencePriority>
+      <https://energy.referencedata.eu/PropertyReference#IdentifiedObject.mRID> <https://energy.referencedata.eu/PropertyReference#CsConverter.pPccControl>
+      <https://energy.referencedata.eu/PropertyReference#CsConverter.targetAlpha> <https://energy.referencedata.eu/PropertyReference#VsConverter.targetPhasePcc>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.pPccControl> <https://energy.referencedata.eu/PropertyReference#StaticVarCompensator.q>
+      <https://energy.referencedata.eu/PropertyReference#ACDCTerminal.connected> <https://energy.referencedata.eu/PropertyReference#ControlArea.pTolerance>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.droop> <https://energy.referencedata.eu/PropertyReference#PowerElectronicsConnection.p>
+      <https://energy.referencedata.eu/PropertyReference#PowerElectronicsConnection.q> <https://energy.referencedata.eu/PropertyReference#EnergySource.activePower>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.discrete> <https://energy.referencedata.eu/PropertyReference#VsConverter.targetPWMfactor>
+      <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.regulationStatus>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.normalPF> <https://energy.referencedata.eu/PropertyReference#ApparentPowerLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.maxAllowedTargetValue>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.qPccControl> <https://energy.referencedata.eu/PropertyReference#VoltageLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#CurrentLimit.value> <https://energy.referencedata.eu/PropertyReference#ExternalNetworkInjection.p>
+      <https://energy.referencedata.eu/PropertyReference#ExternalNetworkInjection.q> <https://energy.referencedata.eu/PropertyReference#ControlArea.netInterchange>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.enabled> <https://energy.referencedata.eu/PropertyReference#RegulatingControl.minAllowedTargetValue>
+      <https://energy.referencedata.eu/PropertyReference#TapChanger.controlEnabled> <https://energy.referencedata.eu/PropertyReference#CsConverter.targetGamma>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.droopCompensation>
+      <https://energy.referencedata.eu/PropertyReference#Switch.locked> <https://energy.referencedata.eu/PropertyReference#BatteryUnit.batteryState>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.targetUpcc> <https://energy.referencedata.eu/PropertyReference#ShuntCompensator.sections>
+      <https://energy.referencedata.eu/PropertyReference#SynchronousMachine.referencePriority>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.targetDeadband>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.targetValueUnitMultiplier>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.targetValue>) .
+
+<https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+  a sh:PropertyShape;
+  sh:message "The value of the PropertyReference is not part of the reference data.";
+  sh:severity sh:Violation;
+  sh:name "C:NC:RA:StaticPropertyRange.PropertyReference:value";
+  sh:description "The value of the association end StaticPropertyRange.PropertyReference shall be one of the values published in the skos:ConceptScheme  https://energy.referencedata.eu/PropertyReference/.";
+  sh:order 2;
+  sh:group <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#RACustomGroup>;
+  sh:path <https://cim4.eu/ns/nc#StaticPropertyRange.PropertyReference>;
+  sh:in (<https://energy.referencedata.eu/PropertyReference#DCPole.minEconomicP> <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.totalTransferCapacity>
+      <https://energy.referencedata.eu/PropertyReference#Contingency.mustStudy> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.startupCost>
+      <https://energy.referencedata.eu/PropertyReference#ThyristorControlledSeriesCompensator.currentSection>
+      <https://energy.referencedata.eu/PropertyReference#DCSwitch.open> <https://energy.referencedata.eu/PropertyReference#EnergyGroup.p>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.warmStartupCost>
+      <https://energy.referencedata.eu/PropertyReference#ACEmulationControlFunction.timeConstant>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.criticalElementJustification>
+      <https://energy.referencedata.eu/PropertyReference#ACEmulationControlFunction.referenceP>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopControlFunction.targetValueCapacitive>
+      <https://energy.referencedata.eu/PropertyReference#EnergyConsumer.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#PowerTransferCorridor.enabled>
+      <https://energy.referencedata.eu/PropertyReference#EnergyBlockOrder.sequence> <https://energy.referencedata.eu/PropertyReference#PowerRemedialAction.maxRegulatingUp>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.coordinatedValidationAdjustmentJustification>
+      <https://energy.referencedata.eu/PropertyReference#DCPole.participationFactor> <https://energy.referencedata.eu/PropertyReference#AssessedElement.targetRemainingAvailableMarginJustification>
+      <https://energy.referencedata.eu/PropertyReference#SubstationController.mode> <https://energy.referencedata.eu/PropertyReference#EnergyBlockOrder.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#AreaDispatchableUnit.enabled> <https://energy.referencedata.eu/PropertyReference#AssessedElement.scannedThresholdMargin>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElementWithContingency.enabled>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingCondEq.controlEnabled>
+      <https://energy.referencedata.eu/PropertyReference#FACTSEquipment.q> <https://energy.referencedata.eu/PropertyReference#PowerRemedialAction.maxRegulatingDown>
+      <https://energy.referencedata.eu/PropertyReference#PowerElectronicsUnit.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.netACInterchange>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.maxFlow> <https://energy.referencedata.eu/PropertyReference#StageTrigger.armed>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.minInterchange> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#EnergyGroup.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#CurrentControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.maxInterchange> <https://energy.referencedata.eu/PropertyReference#RotatingMachineController.mode>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.individualValidationAdjustmentShare>
+      <https://energy.referencedata.eu/PropertyReference#DCVoltageControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#DCPole.p> <https://energy.referencedata.eu/PropertyReference#ImpedanceControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopOverride.targetValueCapacitiveI>
+      <https://energy.referencedata.eu/PropertyReference#RemedialActionScheme.inService>
+      <https://energy.referencedata.eu/PropertyReference#RangeConstraint.value> <https://energy.referencedata.eu/PropertyReference#AssessedElement.coordinatedValidationAdjustment>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.netACInterchangeTolerance>
+      <https://energy.referencedata.eu/PropertyReference#DCPole.maxEconomicP> <https://energy.referencedata.eu/PropertyReference#AreaDispatchableUnit.p>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.shutdownCost> <https://energy.referencedata.eu/PropertyReference#ScheduleResource.p>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.netDCInterchange>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.positiveVirtualMargin>
+      <https://energy.referencedata.eu/PropertyReference#DCTieCorridor.q> <https://energy.referencedata.eu/PropertyReference#DCTieCorridor.p>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.maxMarginAdjustment>
+      <https://energy.referencedata.eu/PropertyReference#ContingencyWithRemedialAction.enabled>
+      <https://energy.referencedata.eu/PropertyReference#PTCActivePowerSupport.value> <https://energy.referencedata.eu/PropertyReference#GridStateAlteration.enabled>
+      <https://energy.referencedata.eu/PropertyReference#InfeedLimit.valueA> <https://energy.referencedata.eu/PropertyReference#PowerShiftKeyStrategy.enabled>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.netTransferCapacity>
+      <https://energy.referencedata.eu/PropertyReference#Equipment.networkAnalysisEnabled>
+      <https://energy.referencedata.eu/PropertyReference#ScheduleResource.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#CircuitShare.contributionFactor>
+      <https://energy.referencedata.eu/PropertyReference#StageTrigger.inService> <https://energy.referencedata.eu/PropertyReference#InfeedLimit.valueW>
+      <https://energy.referencedata.eu/PropertyReference#FrequencyControlFunction.frequencyBias>
+      <https://energy.referencedata.eu/PropertyReference#GridStateAlteration.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#HydroPump.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#ReactivePowerControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#BaseCaseCurrentLimit.value> <https://energy.referencedata.eu/PropertyReference#InjectionController.mode>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.mustRun> <https://energy.referencedata.eu/PropertyReference#RemedialActionGroup.maxRegulatingDown>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZone.netPosition> <https://energy.referencedata.eu/PropertyReference#AssessedElement.individualValidationAdjustment>
+      <https://energy.referencedata.eu/PropertyReference#SchedulingArea.p> <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.alreadyAllocatedCapacity>
+      <https://energy.referencedata.eu/PropertyReference#RemedialActionGroup.maxRegulatingUp>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.costCurrency> <https://energy.referencedata.eu/PropertyReference#Contingency.probability>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElementWithRemedialAction.enabled>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.enabled> <https://energy.referencedata.eu/PropertyReference#PhaseControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#PowerElectronicsUnit.p> <https://energy.referencedata.eu/PropertyReference#PowerShiftKeyStrategy.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.regulatingUpAllocation>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.availableTransferCapacity>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopOverride.enabled> <https://energy.referencedata.eu/PropertyReference#RemedialActionDependency.enabled>
+      <https://energy.referencedata.eu/PropertyReference#SSSCController.mode> <https://energy.referencedata.eu/PropertyReference#CurrentDroopControlFunction.targetValueInductive>
+      <https://energy.referencedata.eu/PropertyReference#AssessedElement.individualValidationAdjustmentJustification>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.regulatingDownAllocation>
+      <https://energy.referencedata.eu/PropertyReference#CompensatorController.mode> <https://energy.referencedata.eu/PropertyReference#CrossBorderRelevance.enabled>
+      <https://energy.referencedata.eu/PropertyReference#DCCurrentControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#CurrentDroopOverride.targetValueInductiveI>
+      <https://energy.referencedata.eu/PropertyReference#DirectCurrentEquipmentController.mode>
+      <https://energy.referencedata.eu/PropertyReference#AutomationFunction.enabled> <https://energy.referencedata.eu/PropertyReference#VoltageAngleLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#VoltageControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#PowerCapacity.minImportP> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.mustRunQ>
+      <https://energy.referencedata.eu/PropertyReference#Reservoir.energyStorage> <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.mustRunP>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.isRamping> <https://energy.referencedata.eu/PropertyReference#PowerFactorControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#TCSCController.mode> <https://energy.referencedata.eu/PropertyReference#FrequencyControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#Equipment.inService> <https://energy.referencedata.eu/PropertyReference#EnergyBlockOrder.p>
+      <https://energy.referencedata.eu/PropertyReference#FuelStorage.energyStorage> <https://energy.referencedata.eu/PropertyReference#AssessedElement.appointedMargin>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.transmissionReliabilityMargin>
+      <https://energy.referencedata.eu/PropertyReference#ThyristorControlledSeriesCompensator.compensationZ>
+      <https://energy.referencedata.eu/PropertyReference#SchedulingArea.participationFactor>
+      <https://energy.referencedata.eu/PropertyReference#RemedialAction.available> <https://energy.referencedata.eu/PropertyReference#ActivePowerControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#FunctionBlock.enabled> <https://energy.referencedata.eu/PropertyReference#VoltageInjectionControlFunction.targetValue>
+      <https://energy.referencedata.eu/PropertyReference#BiddingZoneBorder.alreadyAllocatedFlow>
+      <https://energy.referencedata.eu/PropertyReference#ACEmulationControlFunction.gain>
+      <https://energy.referencedata.eu/PropertyReference#RemedialActionScheme.armed> <https://energy.referencedata.eu/PropertyReference#DCSwitch.locked>
+      <https://energy.referencedata.eu/PropertyReference#ACDCConverter.targetPpcc> <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.regulationTarget>
+      <https://energy.referencedata.eu/PropertyReference#TapChanger.step> <https://energy.referencedata.eu/PropertyReference#ACDCConverter.p>
+      <https://energy.referencedata.eu/PropertyReference#ACDCConverter.q> <https://energy.referencedata.eu/PropertyReference#BatteryUnit.storedE>
+      <https://energy.referencedata.eu/PropertyReference#CsConverter.operatingMode> <https://energy.referencedata.eu/PropertyReference#EnergySource.voltageMagnitude>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.targetPowerFactorPcc>
+      <https://energy.referencedata.eu/PropertyReference#RotatingMachine.q> <https://energy.referencedata.eu/PropertyReference#RotatingMachine.p>
+      <https://energy.referencedata.eu/PropertyReference#AsynchronousMachine.asynchronousMachineType>
+      <https://energy.referencedata.eu/PropertyReference#EnergyConsumer.q> <https://energy.referencedata.eu/PropertyReference#EnergyConsumer.p>
+      <https://energy.referencedata.eu/PropertyReference#Switch.open> <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.p>
+      <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.q> <https://energy.referencedata.eu/PropertyReference#SynchronousMachine.operatingMode>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.targetQpcc> <https://energy.referencedata.eu/PropertyReference#CsConverter.targetIdc>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.qShare> <https://energy.referencedata.eu/PropertyReference#EnergySource.reactivePower>
+      <https://energy.referencedata.eu/PropertyReference#ACDCConverter.targetUdc> <https://energy.referencedata.eu/PropertyReference#ActivePowerLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#EnergySource.voltageAngle> <https://energy.referencedata.eu/PropertyReference#ExternalNetworkInjection.referencePriority>
+      <https://energy.referencedata.eu/PropertyReference#IdentifiedObject.mRID> <https://energy.referencedata.eu/PropertyReference#CsConverter.pPccControl>
+      <https://energy.referencedata.eu/PropertyReference#CsConverter.targetAlpha> <https://energy.referencedata.eu/PropertyReference#VsConverter.targetPhasePcc>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.pPccControl> <https://energy.referencedata.eu/PropertyReference#StaticVarCompensator.q>
+      <https://energy.referencedata.eu/PropertyReference#ACDCTerminal.connected> <https://energy.referencedata.eu/PropertyReference#ControlArea.pTolerance>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.droop> <https://energy.referencedata.eu/PropertyReference#PowerElectronicsConnection.p>
+      <https://energy.referencedata.eu/PropertyReference#PowerElectronicsConnection.q> <https://energy.referencedata.eu/PropertyReference#EnergySource.activePower>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.discrete> <https://energy.referencedata.eu/PropertyReference#VsConverter.targetPWMfactor>
+      <https://energy.referencedata.eu/PropertyReference#EquivalentInjection.regulationStatus>
+      <https://energy.referencedata.eu/PropertyReference#GeneratingUnit.normalPF> <https://energy.referencedata.eu/PropertyReference#ApparentPowerLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.maxAllowedTargetValue>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.qPccControl> <https://energy.referencedata.eu/PropertyReference#VoltageLimit.value>
+      <https://energy.referencedata.eu/PropertyReference#CurrentLimit.value> <https://energy.referencedata.eu/PropertyReference#ExternalNetworkInjection.p>
+      <https://energy.referencedata.eu/PropertyReference#ExternalNetworkInjection.q> <https://energy.referencedata.eu/PropertyReference#ControlArea.netInterchange>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.enabled> <https://energy.referencedata.eu/PropertyReference#RegulatingControl.minAllowedTargetValue>
+      <https://energy.referencedata.eu/PropertyReference#TapChanger.controlEnabled> <https://energy.referencedata.eu/PropertyReference#CsConverter.targetGamma>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.droopCompensation>
+      <https://energy.referencedata.eu/PropertyReference#Switch.locked> <https://energy.referencedata.eu/PropertyReference#BatteryUnit.batteryState>
+      <https://energy.referencedata.eu/PropertyReference#VsConverter.targetUpcc> <https://energy.referencedata.eu/PropertyReference#ShuntCompensator.sections>
+      <https://energy.referencedata.eu/PropertyReference#SynchronousMachine.referencePriority>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.targetDeadband>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.targetValueUnitMultiplier>
+      <https://energy.referencedata.eu/PropertyReference#RegulatingControl.targetValue>) .

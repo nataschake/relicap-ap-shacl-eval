@@ -1,0 +1,5 @@
+file: DatasetMetadata-AP-Con-SHACL.ttl
+repository: relicapgrid
+http_status: 500
+duration_seconds: 0.120
+finished_at: 2026-07-02T10:47:23+03:00

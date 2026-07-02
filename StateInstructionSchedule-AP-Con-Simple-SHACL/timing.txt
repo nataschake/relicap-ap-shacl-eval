@@ -1,0 +1,5 @@
+file: StateInstructionSchedule-AP-Con-Simple-SHACL.ttl
+repository: relicapgrid
+http_status: 200
+duration_seconds: 9.158
+finished_at: 2026-07-02T10:51:39+03:00

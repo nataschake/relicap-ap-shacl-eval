@@ -1,9 +1,9 @@
 # ReliCapGrid ENTSO-E × Application-Profiles SHACL evaluation
 
 SHACL validation of the **ReliCapGrid ENTSO-E** test data against the CGMES
-Application-Profiles shapes, with a script that gathers every
-`sh:ValidationResult` from all the per-profile reports into one browsable
-table.
+and NCP (Network Code Profiles) Application-Profiles shapes, with a script
+that gathers every `sh:ValidationResult` from all the per-profile reports
+into one browsable table.
 
 **[View the results table →](https://nikolatulechki.github.io/relicap-ap-shacl-eval/)**
 
@@ -12,7 +12,8 @@ table.
 - **Shapes** — [`nikolatulechki/application-profiles-library`](https://github.com/nikolatulechki/application-profiles-library/tree/main)
   (working copy of ENTSO-E's
   [`entsoe/application-profiles-library`](https://github.com/entsoe/application-profiles-library)),
-  specifically [`CGMES/CurrentRelease/SHACL/`](https://github.com/nikolatulechki/application-profiles-library/tree/main/CGMES/CurrentRelease/SHACL).
+  specifically [`CGMES/CurrentRelease/SHACL/`](https://github.com/nikolatulechki/application-profiles-library/tree/main/CGMES/CurrentRelease/SHACL)
+  and [`NCP/CurrentRelease/SHACL/`](https://github.com/nikolatulechki/application-profiles-library/tree/main/NCP/CurrentRelease/SHACL).
 - **Data** — [`entsoe/relicapgrid`](https://github.com/entsoe/relicapgrid),
   loaded into the GraphDB repository
   [`relicapgrid` on cim.ontotext.com](https://cim.ontotext.com/graphdb/).
@@ -39,9 +40,9 @@ Each profile folder is named after its source SHACL file
 
 `collect-results.py` parses all `*/validation-report.ttl` and writes one
 row per `sh:ValidationResult` to `validation-results.html` / `.csv`, with
-columns: `Profile`, `Report`, `sh:focusNode`, `sh:resultPath`,
-`sh:sourceConstraint`, `sh:sourceConstraintComponent`, `sh:resultSeverity`,
-`sh:resultMessage`, `sh:sourceShape`, `sh:value`.
+columns: `Family` (CGMES or NCP), `Profile`, `Report`, `sh:focusNode`,
+`sh:resultPath`, `sh:sourceConstraint`, `sh:sourceConstraintComponent`,
+`sh:resultSeverity`, `sh:resultMessage`, `sh:sourceShape`, `sh:value`.
 
 Links in the table:
 
@@ -84,4 +85,11 @@ curl -X POST --header 'Accept: text/turtle' \
 
 `continue-validate.sh` resumes a partial batch, skipping profiles that
 already have a report and a configurable skip-list of shapes whose
-validation hangs.
+validation hangs. Both scripts iterate over the CGMES and NCP SHACL
+folders.
+
+A few shapes fail to validate because of syntax errors in the shape file
+itself (GraphDB returns HTTP 500); their folders hold the parser error
+instead of a report and contribute no rows. Currently:
+`DatasetMetadata-AP-Con-SHACL`, `NC-AP-Con-Complex-Common-SHACL`, and
+`SecurityAnalysisResult-AP-Con-Complex-SHACL` (NCP).

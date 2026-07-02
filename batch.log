@@ -157,3 +157,64 @@
 [2026-06-30T15:34:22+03:00] FAIL 61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL (HTTP , 890.791s)
 [2026-06-30T15:34:23+03:00] START 61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL
 [2026-06-30T16:34:23+03:00] FAIL 61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL (HTTP 000, 3600.063s)
+[2026-07-02T10:46:54+03:00] START AssessedElement-AP-Con-Complex-SHACL
+[2026-07-02T10:46:55+03:00] DONE AssessedElement-AP-Con-Complex-SHACL (0.213s)
+[2026-07-02T10:46:55+03:00] START AssessedElement-AP-Con-Simple-SHACL
+[2026-07-02T10:47:05+03:00] DONE AssessedElement-AP-Con-Simple-SHACL (9.833s)
+[2026-07-02T10:47:05+03:00] START AvailabilitySchedule-AP-Con-Complex-SHACL
+[2026-07-02T10:47:05+03:00] DONE AvailabilitySchedule-AP-Con-Complex-SHACL (0.035s)
+[2026-07-02T10:47:05+03:00] START AvailabilitySchedule-AP-Con-Simple-SHACL
+[2026-07-02T10:47:14+03:00] DONE AvailabilitySchedule-AP-Con-Simple-SHACL (9.146s)
+[2026-07-02T10:47:14+03:00] START Contingency-AP-Con-Complex-SHACL
+[2026-07-02T10:47:14+03:00] DONE Contingency-AP-Con-Complex-SHACL (0.047s)
+[2026-07-02T10:47:14+03:00] START Contingency-AP-Con-Simple-SHACL
+[2026-07-02T10:47:23+03:00] DONE Contingency-AP-Con-Simple-SHACL (9.141s)
+[2026-07-02T10:47:23+03:00] START DatasetMetadata-AP-Con-SHACL
+[2026-07-02T10:47:23+03:00] FAIL DatasetMetadata-AP-Con-SHACL (HTTP 500, 0.120s)
+[2026-07-02T10:47:23+03:00] START EquipmentReliability-AP-Con-Complex-SHACL
+[2026-07-02T10:47:23+03:00] DONE EquipmentReliability-AP-Con-Complex-SHACL (0.041s)
+[2026-07-02T10:47:23+03:00] START EquipmentReliability-AP-Con-Simple-SHACL
+[2026-07-02T10:47:34+03:00] DONE EquipmentReliability-AP-Con-Simple-SHACL (10.218s)
+[2026-07-02T10:47:34+03:00] START GridDisturbance-AP-Con-Simple-SHACL
+[2026-07-02T10:47:43+03:00] DONE GridDisturbance-AP-Con-Simple-SHACL (9.219s)
+[2026-07-02T10:47:43+03:00] START ImpactAssessmentMatrix-AP-Con-Complex-SHACL
+[2026-07-02T10:47:43+03:00] DONE ImpactAssessmentMatrix-AP-Con-Complex-SHACL (0.034s)
+[2026-07-02T10:47:43+03:00] START ImpactAssessmentMatrix-AP-Con-Simple-SHACL
+[2026-07-02T10:47:52+03:00] DONE ImpactAssessmentMatrix-AP-Con-Simple-SHACL (9.006s)
+[2026-07-02T10:47:52+03:00] START MonitoringArea-AP-Con-Simple-SHACL
+[2026-07-02T10:48:01+03:00] DONE MonitoringArea-AP-Con-Simple-SHACL (9.008s)
+[2026-07-02T10:48:01+03:00] START NC-AP-Con-Complex-Common-SHACL
+[2026-07-02T10:48:01+03:00] FAIL NC-AP-Con-Complex-Common-SHACL (HTTP 500, 0.036s)
+[2026-07-02T10:48:01+03:00] START NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL
+[2026-07-02T10:50:25+03:00] DONE NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL (143.500s)
+[2026-07-02T10:50:25+03:00] START ObjectRegistry-AP-Con-Simple-SHACL
+[2026-07-02T10:50:34+03:00] DONE ObjectRegistry-AP-Con-Simple-SHACL (9.584s)
+[2026-07-02T10:50:34+03:00] START PowerSchedule-AP-Con-Complex-SHACL
+[2026-07-02T10:50:34+03:00] DONE PowerSchedule-AP-Con-Complex-SHACL (0.033s)
+[2026-07-02T10:50:34+03:00] START PowerSchedule-AP-Con-Simple-SHACL
+[2026-07-02T10:50:43+03:00] DONE PowerSchedule-AP-Con-Simple-SHACL (9.000s)
+[2026-07-02T10:50:43+03:00] START PowerSystemProject-AP-Con-Simple-SHACL
+[2026-07-02T10:50:53+03:00] DONE PowerSystemProject-AP-Con-Simple-SHACL (9.041s)
+[2026-07-02T10:50:53+03:00] START RemedialAction-AP-Con-Complex-SHACL
+[2026-07-02T10:50:53+03:00] DONE RemedialAction-AP-Con-Complex-SHACL (0.115s)
+[2026-07-02T10:50:53+03:00] START RemedialAction-AP-Con-Simple-SHACL
+[2026-07-02T10:51:02+03:00] DONE RemedialAction-AP-Con-Simple-SHACL (9.271s)
+[2026-07-02T10:51:02+03:00] START RemedialActionSchedule-AP-Con-Complex-SHACL
+[2026-07-02T10:51:02+03:00] DONE RemedialActionSchedule-AP-Con-Complex-SHACL (0.035s)
+[2026-07-02T10:51:02+03:00] START RemedialActionSchedule-AP-Con-Simple-SHACL
+[2026-07-02T10:51:11+03:00] DONE RemedialActionSchedule-AP-Con-Simple-SHACL (9.271s)
+[2026-07-02T10:51:11+03:00] START SecurityAnalysisResult-AP-Con-Complex-SHACL
+[2026-07-02T10:51:11+03:00] FAIL SecurityAnalysisResult-AP-Con-Complex-SHACL (HTTP 500, 0.041s)
+[2026-07-02T10:51:12+03:00] START SecurityAnalysisResult-AP-Con-Simple-SHACL
+[2026-07-02T10:51:20+03:00] DONE SecurityAnalysisResult-AP-Con-Simple-SHACL (8.915s)
+[2026-07-02T10:51:20+03:00] START SensitivityMatrix-AP-Con-Simple-SHACL
+[2026-07-02T10:51:30+03:00] DONE SensitivityMatrix-AP-Con-Simple-SHACL (9.066s)
+[2026-07-02T10:51:30+03:00] START StateInstructionSchedule-AP-Con-Complex-SHACL
+[2026-07-02T10:51:30+03:00] DONE StateInstructionSchedule-AP-Con-Complex-SHACL (0.043s)
+[2026-07-02T10:51:30+03:00] START StateInstructionSchedule-AP-Con-Simple-SHACL
+[2026-07-02T10:51:39+03:00] DONE StateInstructionSchedule-AP-Con-Simple-SHACL (9.158s)
+[2026-07-02T10:51:39+03:00] START SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL
+[2026-07-02T10:51:48+03:00] DONE SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL (8.984s)
+[2026-07-02T10:51:48+03:00] START SteadyStateInstruction-AP-Con-Simple-SHACL
+[2026-07-02T10:51:57+03:00] DONE SteadyStateInstruction-AP-Con-Simple-SHACL (9.292s)
+[2026-07-02T10:51:57+03:00] BATCH COMPLETE: 27 succeeded, 3 failed, 0 newly skipped
