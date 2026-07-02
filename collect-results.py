@@ -42,8 +42,8 @@ EVAL_REPO_BLOB = "https://github.com/nikolatulechki/relicap-ap-shacl-eval/blob/m
 GRAPHDB_RESOURCE = "https://cim.ontotext.com/graphdb/resource"
 GRAPHDB_REPO = "relicapgrid"
 
-# Snapshot timestamp of the ReliCapGrid data that was validated (not the
-# latest upstream version).
+# Snapshot timestamp of the ReliCapGrid ENTSO-E data that was validated (not
+# the latest upstream version).
 DATA_TIMESTAMP = "2025-06-15T22:30:00Z"
 
 # Cap the number of results kept per constraint, where a constraint is keyed by
@@ -325,7 +325,7 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>RELICAP SHACL validation results</title>
+<title>ReliCapGrid ENTSO-E SHACL validation results</title>
 <style>
   body {{ font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 1.5rem; color: #1b1b1b; }}
   h1 {{ font-size: 1.4rem; }}
@@ -345,13 +345,13 @@ def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
 </style>
 </head>
 <body>
-<h1>RELICAP SHACL validation results</h1>
+<h1>ReliCapGrid ENTSO-E SHACL validation results</h1>
 <div class="meta">{len(rows)} validation results from {len(report_dirs)} profiles &middot;
 <a href="{repo_url}" target="_blank" rel="noopener">repository on GitHub</a>.<br>
 Focus nodes link to the GraphDB <code>{GRAPHDB_REPO}</code> resource viewer;
 source shapes/constraints link to the exact line in the SHACL file on GitHub.<br>
 {cap_note}<br>
-<strong>Note:</strong> the ReliCapGrid data is a snapshot
+<strong>Note:</strong> the ReliCapGrid ENTSO-E data is a snapshot
 (<time datetime="{DATA_TIMESTAMP}">{DATA_TIMESTAMP}</time>) and is not the
 latest upstream version.</div>
 

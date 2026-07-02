@@ -1,6 +1,6 @@
-# ReliCapGrid × Application-Profiles SHACL evaluation
+# ReliCapGrid ENTSO-E × Application-Profiles SHACL evaluation
 
-SHACL validation of the **ReliCapGrid** test data against the CGMES
+SHACL validation of the **ReliCapGrid ENTSO-E** test data against the CGMES
 Application-Profiles shapes, with a script that gathers every
 `sh:ValidationResult` from all the per-profile reports into one browsable
 table.
