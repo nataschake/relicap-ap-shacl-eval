@@ -1,5 +1,5 @@
 file: NC-AP-Con-Complex-Common-SHACL.ttl
 repository: relicapgrid
-http_status: 500
-duration_seconds: 0.036
-finished_at: 2026-07-02T10:48:01+03:00
+http_status: 200
+duration_seconds: 0.467
+finished_at: 2026-07-02T11:20:33+03:00
