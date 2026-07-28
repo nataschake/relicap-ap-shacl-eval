@@ -218,3 +218,13 @@
 [2026-07-02T10:51:48+03:00] START SteadyStateInstruction-AP-Con-Simple-SHACL
 [2026-07-02T10:51:57+03:00] DONE SteadyStateInstruction-AP-Con-Simple-SHACL (9.292s)
 [2026-07-02T10:51:57+03:00] BATCH COMPLETE: 27 succeeded, 3 failed, 0 newly skipped
+[2026-07-02T11:20:32+03:00] START DatasetMetadata-AP-Con-SHACL
+[2026-07-02T11:20:32+03:00] FAIL DatasetMetadata-AP-Con-SHACL (HTTP 500, 0.181s)
+[2026-07-02T11:20:32+03:00] START NC-AP-Con-Complex-Common-SHACL
+[2026-07-02T11:20:33+03:00] DONE NC-AP-Con-Complex-Common-SHACL (0.467s)
+[2026-07-02T11:20:33+03:00] START SecurityAnalysisResult-AP-Con-Complex-SHACL
+[2026-07-02T11:20:33+03:00] DONE SecurityAnalysisResult-AP-Con-Complex-SHACL (0.036s)
+[2026-07-02T11:20:33+03:00] BATCH COMPLETE: 2 succeeded, 1 failed, 0 newly skipped
+[2026-07-02T11:21:28+03:00] START DatasetMetadata-AP-Con-SHACL
+[2026-07-02T11:21:28+03:00] DONE DatasetMetadata-AP-Con-SHACL (0.508s)
+[2026-07-02T11:21:28+03:00] BATCH COMPLETE: 1 succeeded, 0 failed, 0 newly skipped
