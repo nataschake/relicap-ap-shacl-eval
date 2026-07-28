@@ -1,0 +1,20 @@
+name: Upload timing results
+
+on:
+  push:
+    branches:
+      - DATA-566-view-timing-updates
+  workflow_dispatch: {}
+
+jobs:
+  upload-timing-results:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload timing-results.html artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: timing-results
+          path: timing-results.html
