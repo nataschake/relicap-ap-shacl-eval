@@ -1,16 +1,26 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
   sh:conforms false;
   rdf4j:truncated false;
   sh:result [ a sh:ValidationResult;
+      sh:focusNode <https://cim.ucaiug.io/ns#AllGeneratingUnit>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "";
+      sh:resultPath rdf:type;
+      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#GeneratingUnit-singleActivePowerSlackSparql>;
+      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Either there is no highest value among GeneratingUnit.normalPF or there are multiple maximum values which are the same.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#GeneratingUnit-singleActivePowerSlack>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:e349f93c-3685-4ea9-a791-a8c1ed359737>;
       rsx:shapesGraph rdf4j:nil;
       sh:value "1"^^xsd:float;
@@ -21,13 +31,56 @@
       sh:resultMessage "Active power is outside defined active power limits.";
       sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#ExternalNetworkInjection.p-limits>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:18993b11-2966-4bce-bab9-d86103f83b53>;
+      sh:focusNode <urn:uuid:00c7faff-a1ed-4b64-bbf8-527d4efefb76>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath <https://cim.ucaiug.io/ns#Equipment.inService>;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "Missing required property (attribute). The equipment is instantiated in EQ instance but Equipment.inService is not instantiated in SSH.";
       sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#Equipment.inService-eqshhCardinality>
+    ] .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#GeneratingUnit-singleActivePowerSlack>
+  a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:name "C:456:SSH:NA:singleActivePowerSlack";
+  sh:description "Active power slack by a single generator per ControlArea: one generator has GeneratingUnit.normalPF set to a highest value (non-zero) and all other generating units have a zero GeneratingUnit.normalPF.";
+  sh:order 14;
+  sh:group <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#NotSolved456>;
+  sh:path rdf:type;
+  sh:sparql <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#GeneratingUnit-singleActivePowerSlackSparql> .
+
+<http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#GeneratingUnit-singleActivePowerSlackSparql>
+  a sh:SPARQLConstraint;
+  sh:select """
+			SELECT  $this ?value ?countm ?countd (COUNT(?npf1) as ?counte) ?countall
+        WHERE {
+          ?gu cim:GeneratingUnit.normalPF ?npf1 .
+          BIND (\"\" AS ?value).
+          FILTER (?npf1=?countm)
+          {
+            SELECT $this (COUNT(DISTINCT ?npf) as ?countd) (MAX(?npf) as ?countm) (COUNT(?npf) as ?countall)
+            WHERE {
+              ?gu cim:GeneratingUnit.normalPF ?npf .
+            }
+            GROUP BY $this datatype(?npf)
+          }
+        }
+        GROUP BY $this ?value ?countm ?countd datatype(?npf1) ?countall
+        HAVING((?countd<2 && ?countall!=1) || ?countm=0 || ?counte!=1)
+      """;
+  sh:message "Either there is no highest value among GeneratingUnit.normalPF or there are multiple maximum values which are the same.";
+  sh:prefixes <https://cim.ucaiug.io/ns#> .
+
+<https://cim.ucaiug.io/ns#> sh:declare [
+      sh:prefix "cim";
+      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "rdf";
+      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "eu";
+      sh:namespace "https://cim.ucaiug.io/ns/eu#"^^xsd:anyURI
     ] .
 
 <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#ExternalNetworkInjection.p-limits>
@@ -52,17 +105,6 @@
 			}""";
   sh:message "Active power is outside defined active power limits.";
   sh:prefixes <https://cim.ucaiug.io/ns#> .
-
-<https://cim.ucaiug.io/ns#> sh:declare [
-      sh:prefix "cim";
-      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "rdf";
-      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "eu";
-      sh:namespace "https://cim.ucaiug.io/ns/eu#"^^xsd:anyURI
-    ] .
 
 <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-456/notSolved/3.0#Equipment.inService-eqshhCardinality>
   a sh:PropertyShape;

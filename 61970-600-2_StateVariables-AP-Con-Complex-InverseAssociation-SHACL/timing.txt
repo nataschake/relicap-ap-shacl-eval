@@ -1,5 +1,5 @@
 file: 61970-600-2_StateVariables-AP-Con-Complex-InverseAssociation-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.094
-finished_at: 2026-06-30T14:45:08+03:00
+duration_seconds: 0.152
+finished_at: 2026-07-28T17:16:47+03:00

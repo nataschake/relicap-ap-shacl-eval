@@ -1,5 +1,5 @@
 file: 61970-600-2_Topology-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.221
-finished_at: 2026-06-30T14:45:09+03:00
+duration_seconds: 0.225
+finished_at: 2026-07-28T17:16:48+03:00

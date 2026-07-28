@@ -1,5 +1,5 @@
 file: 61970-301_StateVariables-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.036
-finished_at: 2026-06-30T14:40:52+03:00
+duration_seconds: 0.065
+finished_at: 2026-07-28T17:16:32+03:00

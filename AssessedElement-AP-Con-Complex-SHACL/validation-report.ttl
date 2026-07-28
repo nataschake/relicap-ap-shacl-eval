@@ -1,64 +1,12 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
-  sh:conforms false;
-  rdf4j:truncated false;
-  sh:result [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:dd12129d-1807-408b-84c7-d670958e8e64>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraint <https://ap-con.cim4.eu/AssessedElement-Complex/2.4#AssessedElement-associationsSparql>;
-      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "AssessedElement does not have at least one of the following association ends instantiated: AssessedElement.ConductingEquipment, AssessedElement.OperationalLimit, AssessedElement.DCTieCorridor, AssessedElement.AssessedPowerTransferCorridor, AssessedElement.Line.";
-      sh:sourceShape <https://ap-con.cim4.eu/AssessedElement-Complex/2.4#AssessedElement-associations>
-    ] .
-
-<https://ap-con.cim4.eu/AssessedElement-Complex/2.4#AssessedElement-associations>
-  a sh:PropertyShape;
-  sh:severity sh:Violation;
-  sh:name "C:NC:AE:AssessedElement:associations";
-  sh:description "An AssessedElement shall have at least one of the following association ends instantiated: AssessedElement.ConductingEquipment, AssessedElement.OperationalLimit, AssessedElement.DCTieCorridor, AssessedElement.AssessedPowerTransferCorridor, AssessedElement.Line.";
-  sh:order 1;
-  sh:group <https://ap-con.cim4.eu/AssessedElement-Complex/2.4#AEgroup>;
-  sh:path rdf:type;
-  sh:sparql <https://ap-con.cim4.eu/AssessedElement-Complex/2.4#AssessedElement-associationsSparql> .
-
-<https://ap-con.cim4.eu/AssessedElement-Complex/2.4#AssessedElement-associationsSparql>
-  a sh:SPARQLConstraint;
-  sh:select """
-			SELECT  $this  
-			WHERE {      
-        BIND(EXISTS{$this nc:AssessedElement.ConductingEquipment ?o1} AS ?aeo1).
-		BIND(EXISTS{$this nc:AssessedElement.OperationalLimit ?o2} AS ?aeo2).
-		BIND(EXISTS{$this nc:AssessedElement.DCTieCorridor ?o3} AS ?aeo3).
-		BIND(EXISTS{$this nc:AssessedElement.AssessedPowerTransferCorridor ?o4} AS ?aeo4).
-		BIND(EXISTS{$this nc:AssessedElement.Line ?o5} AS ?aeo5).
-        FILTER (?aeo1=false && ?aeo2=false && ?aeo3=false && ?aeo4=false && ?aeo5=false).
-			}""";
-  sh:message "AssessedElement does not have at least one of the following association ends instantiated: AssessedElement.ConductingEquipment, AssessedElement.OperationalLimit, AssessedElement.DCTieCorridor, AssessedElement.AssessedPowerTransferCorridor, AssessedElement.Line.";
-  sh:prefixes <https://cim.ucaiug.io/ns#> .
-
-<https://cim.ucaiug.io/ns#> sh:declare [
-      sh:prefix "cim";
-      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "cim16";
-      sh:namespace "http://iec.ch/TC57/2013/CIM-schema-cim16#"^^xsd:anyURI
-    ], [
-      sh:prefix "nc";
-      sh:namespace "https://cim4.eu/ns/nc#"^^xsd:anyURI
-    ], [
-      sh:prefix "rdf";
-      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "cim17";
-      sh:namespace "http://iec.ch/TC57/CIM100#"^^xsd:anyURI
-    ] .
+  sh:conforms true;
+  rdf4j:truncated false .

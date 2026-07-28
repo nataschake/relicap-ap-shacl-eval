@@ -1,5 +1,5 @@
 file: SecurityAnalysisResult-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 8.915
-finished_at: 2026-07-02T10:51:20+03:00
+duration_seconds: 1.377
+finished_at: 2026-07-28T17:22:04+03:00

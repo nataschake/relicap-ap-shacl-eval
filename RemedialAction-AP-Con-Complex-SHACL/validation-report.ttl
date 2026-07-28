@@ -1,16 +1,25 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
   sh:conforms false;
   rdf4j:truncated false;
   sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:55a11475-e39f-4541-accc-d979376bcda3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraint <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration-associationsSparql>;
+      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "GridStateAlteration is not associated with either GridStateAlterationRemedialAction or GridStateAlterationCollection or it is associated with both.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration-associations>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:12b3c4e6-2104-4499-b003-1248ef533e13>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p>;
@@ -29,27 +38,36 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:af64e952-7fc1-4cb7-8881-a0c2b3256982>;
+      sh:focusNode <urn:uuid:7bbb3343-e48b-42dd-9ca5-6ff8945ca5b0>;
       rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:value <https://energy.referencedata.eu/PropertyReference/EnergyConsumer.p>;
       sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:bf7f0ef4-dad3-4322-b2be-5ace59837e60>;
+      sh:focusNode <urn:uuid:12b9a70c-9e72-4ec5-af01-d32d440c2aa3>;
       rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
       sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:bdb13ef7-1338-4f34-b42b-5e8ad34989b1>;
+      sh:focusNode <urn:uuid:4ab66db6-53a4-4ebf-af6e-1ea32b6e77bb>;
       rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:54174158-33fb-43ad-9c2d-e733165c3acb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
       sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
@@ -74,6 +92,105 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7be59519-0083-4845-a587-cb391ed16a1d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:8e60eea4-9c86-4e9d-8012-6645d5efb96d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:884fd5ca-afa6-4b5b-a0f7-2daee3f1959f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:ddb3c55f-b2ec-414e-baa3-592829e2edb2>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/ShuntCompensator.sections>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:457f111e-43ce-4368-923e-11457cb694f9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/StaticVarCompensator.q>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bf7f0ef4-dad3-4322-b2be-5ace59837e60>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:14d59f97-7c9b-4921-a3b1-5883def956fb>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9a7f821b-8eb8-4c0a-a67e-25e4d5aeaa8d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:dbad8bad-94a9-428a-a8d6-ef6f48490e6d>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:af64e952-7fc1-4cb7-8881-a0c2b3256982>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:bdb13ef7-1338-4f34-b42b-5e8ad34989b1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
+      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
+      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:ecd76354-2372-4eca-af47-530abc00549c>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
@@ -92,45 +209,9 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:7be59519-0083-4845-a587-cb391ed16a1d>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:ddb3c55f-b2ec-414e-baa3-592829e2edb2>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/ShuntCompensator.sections>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:99e03961-06a8-485e-8c6e-fd833835c00a>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:4d3757fd-b40a-4d7b-be47-6553935234ff>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:9a7f821b-8eb8-4c0a-a67e-25e4d5aeaa8d>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
       sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
@@ -146,24 +227,6 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:12b9a70c-9e72-4ec5-af01-d32d440c2aa3>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:dbad8bad-94a9-428a-a8d6-ef6f48490e6d>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/TapChanger.step>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:dc8f7d4a-9b37-4143-ab12-cc4e554460ce>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
@@ -173,9 +236,9 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:7bbb3343-e48b-42dd-9ca5-6ff8945ca5b0>;
+      sh:focusNode <urn:uuid:99e03961-06a8-485e-8c6e-fd833835c00a>;
       rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/EnergyConsumer.p>;
+      sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
       sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
@@ -200,15 +263,6 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:457f111e-43ce-4368-923e-11457cb694f9>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/StaticVarCompensator.q>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:beee0b9b-588d-4efc-9972-cd4cd25b0b70>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
@@ -227,15 +281,6 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:4ab66db6-53a4-4ebf-af6e-1ea32b6e77bb>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:1dd4c309-ed8b-4bb6-a26d-4888b8e1f009>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
@@ -248,15 +293,6 @@
       sh:focusNode <urn:uuid:4b1410d4-3958-4a8c-8289-b3d6b57cfc65>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:8e60eea4-9c86-4e9d-8012-6645d5efb96d>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
       sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
@@ -344,15 +380,6 @@
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:884fd5ca-afa6-4b5b-a0f7-2daee3f1959f>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:d101c17c-c67a-4a33-b8ad-aaee4ca6563e>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
@@ -392,15 +419,6 @@
       sh:focusNode <urn:uuid:516cbe68-560d-48ce-8745-f84b90aef2c5>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://energy.referencedata.eu/PropertyReference/Switch.open>;
-      sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
-      sh:sourceConstraintComponent sh:InConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
-      sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:54174158-33fb-43ad-9c2d-e733165c3acb>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <https://energy.referencedata.eu/PropertyReference/RegulatingControl.targetValue>;
       sh:resultPath <https://cim4.eu/ns/nc#GridStateAlteration.PropertyReference>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
@@ -604,6 +622,49 @@
       sh:resultSeverity sh:Violation;
       sh:resultMessage "The value of the PropertyReference is not part of the reference data.";
       sh:sourceShape <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#StaticPropertyRange.PropertyReference-value>
+    ] .
+
+<https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration-associations>
+  a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:name "C:NC:RA:GridStateAlteration:associations";
+  sh:description "A GridStateAlteration shall have either association to GridStateAlterationRemedialAction or GridStateAlterationCollection.";
+  sh:order 1;
+  sh:group <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#RACustomGroup>;
+  sh:path rdf:type;
+  sh:sparql <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration-associationsSparql> .
+
+<https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration-associationsSparql>
+  a sh:SPARQLConstraint;
+  sh:select """
+			SELECT  $this  
+			WHERE {  
+		BIND(EXISTS{$this nc:GridStateAlteration.GridStateAlterationRemedialAction ?gsara} AS ?vGSARA).	
+		BIND(EXISTS{$this nc:GridStateAlteration.GridStateAlterationCollection ?gsac} AS ?vGSAC).
+
+        FILTER (
+			(?vGSARA=true && ?vGSAC=true) || 
+			(?vGSARA=false && ?vGSAC=false) 
+		).
+			}""";
+  sh:message "GridStateAlteration is not associated with either GridStateAlterationRemedialAction or GridStateAlterationCollection or it is associated with both.";
+  sh:prefixes <https://cim.ucaiug.io/ns#> .
+
+<https://cim.ucaiug.io/ns#> sh:declare [
+      sh:prefix "cim";
+      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "cim16";
+      sh:namespace "http://iec.ch/TC57/2013/CIM-schema-cim16#"^^xsd:anyURI
+    ], [
+      sh:prefix "nc";
+      sh:namespace "https://cim4.eu/ns/nc#"^^xsd:anyURI
+    ], [
+      sh:prefix "rdf";
+      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
+    ], [
+      sh:prefix "cim17";
+      sh:namespace "http://iec.ch/TC57/CIM100#"^^xsd:anyURI
     ] .
 
 <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration.PropertyReference-value>

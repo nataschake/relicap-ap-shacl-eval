@@ -1,16 +1,25 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
   sh:conforms false;
   rdf4j:truncated false;
   sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.isExcludedFromAreaInterchange>;
+      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#BoundaryPoint.isExcludedFromAreaInterchange-requiredTieFlowSparql>;
+      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "There is either TieFlow modelled in case the value is true or there are no TieFlow modelled in case the value is false. Id of the Terminal: urn:uuid:147eb269-c3af-51ee-4aa2-771733789022. ID of the TieFlow: {?tieflow}.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/notSolved/3.0#BoundaryPoint.isExcludedFromAreaInterchange-requiredTieFlow>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:a7745865-bc9e-4352-98fc-98c7f44669a4>;
       rsx:shapesGraph rdf4j:nil;
       sh:value false;

@@ -1,11 +1,11 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
   sh:conforms false;
@@ -13,7 +13,7 @@
   sh:result [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
       rsx:shapesGraph rdf4j:nil;
-      sh:value "89.9999"^^xsd:float;
+      sh:value "38.0065"^^xsd:float;
       sh:resultPath <https://cim.ucaiug.io/ns#CsConverter.gamma>;
       sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#CsConverter.gamma-valueRangeTypicalSparql>;
       sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
@@ -23,31 +23,13 @@
     ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
       rsx:shapesGraph rdf4j:nil;
-      sh:value "90"^^xsd:float;
+      sh:value "18.5127"^^xsd:float;
       sh:resultPath <https://cim.ucaiug.io/ns#CsConverter.alpha>;
       sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#CsConverter.alpha-valueRangeTypicalSparql>;
       sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
       sh:resultSeverity sh:Warning;
       sh:resultMessage "The value is outside the range: 10-18 degrees.";
       sh:sourceShape <http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#CsConverter.alpha-valueRangeTypical>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value "0"^^xsd:float;
-      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.udc>;
-      sh:sourceConstraintComponent sh:MinExclusiveConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value is negative or zero.";
-      sh:sourceShape <http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#ACDCConverter.udc-valueRange>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value "0"^^xsd:float;
-      sh:resultPath <https://cim.ucaiug.io/ns#ACDCConverter.udc>;
-      sh:sourceConstraintComponent sh:MinExclusiveConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "The value is negative or zero.";
-      sh:sourceShape <http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#ACDCConverter.udc-valueRange>
     ] .
 
 <http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#CsConverter.gamma-valueRangeTypical>
@@ -104,14 +86,3 @@
 			}""";
   sh:message "The value is outside the range: 10-18 degrees.";
   sh:prefixes <https://cim.ucaiug.io/ns#> .
-
-<http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#ACDCConverter.udc-valueRange>
-  a sh:PropertyShape;
-  sh:message "The value is negative or zero.";
-  sh:severity sh:Violation;
-  sh:name "C:301:SV:ACDCConverter.udc:valueRange";
-  sh:description "The attribute shall be a positive value.";
-  sh:order 3;
-  sh:group <http://iec.ch/TC57/ns/CIM/StateVariables-EU/constraints/IEC61970-301/3.0#ValueConstraintsGroup>;
-  sh:path <https://cim.ucaiug.io/ns#ACDCConverter.udc>;
-  sh:minExclusive "0.0"^^xsd:float .

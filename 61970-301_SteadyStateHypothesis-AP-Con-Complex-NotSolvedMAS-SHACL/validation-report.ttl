@@ -1,11 +1,11 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
   sh:conforms false;
@@ -20,26 +20,6 @@
       sh:resultSeverity sh:Warning;
       sh:resultMessage "CsConverter.targetGamma is provided for a rectifier or discrete tap changer control is used.";
       sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/notSolved/3.0#CsConverter.targetGamma-applicability>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value "17"^^xsd:float;
-      sh:resultPath <https://cim.ucaiug.io/ns#CsConverter.targetGamma>;
-      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/notSolved/3.0#CsConverter.targetGamma-applicabilitySparql>;
-      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
-      sh:resultSeverity sh:Warning;
-      sh:resultMessage "CsConverter.targetGamma is provided for a rectifier or discrete tap changer control is used.";
-      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/notSolved/3.0#CsConverter.targetGamma-applicability>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value "10"^^xsd:float;
-      sh:resultPath <https://cim.ucaiug.io/ns#CsConverter.targetAlpha>;
-      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/notSolved/3.0#CsConverter.targetAlpha-applicabilitySparql>;
-      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
-      sh:resultSeverity sh:Warning;
-      sh:resultMessage "CsConverter.targetAlpha is provided for an inverter or discrete tap changer control is used or RegulatingControl is not provided.";
-      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/constraints/IEC61970-301/notSolved/3.0#CsConverter.targetAlpha-applicability>
     ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:e468e6ca-8776-4c22-8f9b-390df610c2fd>;
       rsx:shapesGraph rdf4j:nil;

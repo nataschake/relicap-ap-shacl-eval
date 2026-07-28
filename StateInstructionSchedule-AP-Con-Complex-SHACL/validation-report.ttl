@@ -1,65 +1,12 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
-  sh:conforms false;
-  rdf4j:truncated false;
-  sh:result [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:7ab20445-576c-4162-aad5-d097d894a8e0>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraint <https://ap-con.cim4.eu/StateInstructionSchedule-Complex/2.4#PowerShiftKeyDistribution-associationsSparql>;
-      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "PowerShiftKeyDistribution is not associated with either PowerBidSchedule or PowerShiftKeyStrategy or it is associated with both.";
-      sh:sourceShape <https://ap-con.cim4.eu/StateInstructionSchedule-Complex/2.4#PowerShiftKeyDistribution-associations>
-    ] .
-
-<https://ap-con.cim4.eu/StateInstructionSchedule-Complex/2.4#PowerShiftKeyDistribution-associations>
-  a sh:PropertyShape;
-  sh:severity sh:Violation;
-  sh:name "C:NC:SIS:PowerShiftKeyDistribution:associations";
-  sh:description "PowerShiftKeyDistribution shall include one and only one association to either PowerBidSchedule or PowerShiftKeyStrategy.";
-  sh:order 3;
-  sh:group <https://ap-con.cim4.eu/StateInstructionSchedule-Complex/2.4#SISCustomGroup>;
-  sh:path rdf:type;
-  sh:sparql <https://ap-con.cim4.eu/StateInstructionSchedule-Complex/2.4#PowerShiftKeyDistribution-associationsSparql> .
-
-<https://ap-con.cim4.eu/StateInstructionSchedule-Complex/2.4#PowerShiftKeyDistribution-associationsSparql>
-  a sh:SPARQLConstraint;
-  sh:select """
-			SELECT  $this  
-			WHERE {  
-		BIND(EXISTS{$this nc:PowerShiftKeyDistribution.PowerBidSchedule ?pbs} AS ?vPBS).	
-		BIND(EXISTS{$this nc:PowerShiftKeyDistribution.PowerShiftKeyStrategy ?psks} AS ?vPSKS).
-
-        FILTER (
-			(?vPBS=true && ?vPSKS=true) || 
-			(?vPBS=false && ?vPSKS=false) 
-		).
-			}""";
-  sh:message "PowerShiftKeyDistribution is not associated with either PowerBidSchedule or PowerShiftKeyStrategy or it is associated with both.";
-  sh:prefixes <https://cim.ucaiug.io/ns#> .
-
-<https://cim.ucaiug.io/ns#> sh:declare [
-      sh:prefix "cim";
-      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "cim16";
-      sh:namespace "http://iec.ch/TC57/2013/CIM-schema-cim16#"^^xsd:anyURI
-    ], [
-      sh:prefix "nc";
-      sh:namespace "https://cim4.eu/ns/nc#"^^xsd:anyURI
-    ], [
-      sh:prefix "rdf";
-      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "cim17";
-      sh:namespace "http://iec.ch/TC57/CIM100#"^^xsd:anyURI
-    ] .
+  sh:conforms true;
+  rdf4j:truncated false .

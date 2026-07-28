@@ -1,19 +1,55 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
   sh:conforms false;
   rdf4j:truncated false;
   sh:result [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:MinLengthConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "String length is not 2 characters.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-stringLength>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:MinLengthConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "String length is not 2 characters.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-stringLength>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:MinLengthConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:ffec3556-5e03-35a3-80a7-4f22b598a2f5>;
       rsx:shapesGraph rdf4j:nil;
       sh:value "EH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "";
       sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
@@ -182,9 +218,27 @@
       sh:resultMessage "Not valid two-character ISO code for Europe.";
       sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
     ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:MinLengthConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:ffec3556-5e03-35a3-80a7-4f22b598a2f5>;
       rsx:shapesGraph rdf4j:nil;
       sh:value "PH";
+      sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+      sh:sourceConstraintComponent sh:InConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Not valid two-character ISO code for Europe.";
+      sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:value "";
       sh:resultPath <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
@@ -354,6 +408,28 @@
       sh:sourceShape <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-valueValidity>
     ] .
 
+<http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-stringLength>
+  a sh:PropertyShape;
+  sh:message "String length is not 2 characters.";
+  sh:severity sh:Violation;
+  sh:name "C:301:EQBD:BoundaryPoint.fromEndIsoCode:stringLength";
+  sh:description "The length of the string is 2 characters maximum.";
+  sh:order 2;
+  sh:group <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#EQBD301>;
+  sh:path <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+  sh:minLength 2 .
+
+<http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.toEndIsoCode-stringLength>
+  a sh:PropertyShape;
+  sh:message "String length is not 2 characters.";
+  sh:severity sh:Violation;
+  sh:name "C:301:EQBD:BoundaryPoint.toEndIsoCode:stringLength";
+  sh:description "The length of the string is 2 characters maximum.";
+  sh:order 5;
+  sh:group <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#EQBD301>;
+  sh:path <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+  sh:minLength 2 .
+
 <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#BoundaryPoint.fromEndIsoCode-valueValidity>
   a sh:PropertyShape;
   sh:message "Not valid two-character ISO code for Europe.";
@@ -363,6 +439,7 @@
   sh:order 10;
   sh:group <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#EQBD301>;
   sh:path <https://cim.ucaiug.io/ns/eu#BoundaryPoint.fromEndIsoCode>;
+  sh:minLength 2;
   sh:in ("AL" "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IS"
       "IE" "IT" "LV" "LI" "LT" "LU" "MT" "MD" "ME" "NL" "NO" "PL" "PT" "RO" "RS" "SK" "SI"
       "ES" "SE" "CH" "TR" "UA" "MK" "GB") .
@@ -376,6 +453,7 @@
   sh:order 11;
   sh:group <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/constraints/IEC61970-301/3.0#EQBD301>;
   sh:path <https://cim.ucaiug.io/ns/eu#BoundaryPoint.toEndIsoCode>;
+  sh:minLength 2;
   sh:in ("AL" "AT" "BE" "BG" "HR" "CY" "CZ" "DK" "EE" "FI" "FR" "DE" "GR" "HU" "IS"
       "IE" "IT" "LV" "LI" "LT" "LU" "MT" "MD" "ME" "NL" "NO" "PL" "PT" "RO" "RS" "SK" "SI"
       "ES" "SE" "CH" "TR" "UA" "MK" "GB") .
