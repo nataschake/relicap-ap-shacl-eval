@@ -88,6 +88,8 @@ already have a report and a configurable skip-list of shapes whose
 validation hangs. Both scripts iterate over the CGMES and NCP SHACL
 folders.
 
-If a shape file has a syntax error GraphDB returns HTTP 500; that
-folder then holds the parser error instead of a report and contributes
-no rows (check `timing.txt` / `batch.log` for the HTTP status).
+A few shapes fail to validate because of syntax errors in the shape file
+itself (GraphDB returns HTTP 500); their folders hold the parser error
+instead of a report and contribute no rows. Currently:
+`DatasetMetadata-AP-Con-SHACL`, `NC-AP-Con-Complex-Common-SHACL`, and
+`SecurityAnalysisResult-AP-Con-Complex-SHACL` (NCP).
