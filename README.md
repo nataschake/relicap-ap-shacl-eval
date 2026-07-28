@@ -25,11 +25,13 @@ into one browsable table.
 ap-relicap-eval/
 ├── <PROFILE-SHACL>/            # one folder per validated SHACL file
 │   └── validation-report.ttl   # GraphDB SHACL report (+ timing.txt, etc.)
-├── collect-results.py          # builds the combined table (HTML + CSV)
-├── validation-results.html     # combined table, clickable links + filter box
-├── validation-results.csv      # same data + raw resolved URLs
-├── index.html                  # redirect to the table (for GitHub Pages)
-├── validate-all.sh             # validate every SHACL file against GraphDB
+├── collect-results.py          # builds the combined validation table (HTML + CSV)
+├── collect-timings.py          # builds timing-results.html with current/previous timings
+├── validation-results.html     # combined validation table, clickable links + filter box
+├── validation-results.csv      # same validation data + raw resolved URLs
+├── timing-results.html         # per-profile timing table with previous/current durations
+├── index.html                  # redirect to the validation table (for GitHub Pages)
+├── validate-all.sh             # validate every SHACL file against GraphDB and generate both HTML reports
 └── continue-validate.sh        # resume a batch, skipping done/slow files
 ```
 
@@ -43,6 +45,10 @@ row per `sh:ValidationResult` to `validation-results.html` / `.csv`, with
 columns: `Family` (CGMES or NCP), `Profile`, `Report`, `sh:focusNode`,
 `sh:resultPath`, `sh:sourceConstraint`, `sh:sourceConstraintComponent`,
 `sh:resultSeverity`, `sh:resultMessage`, `sh:sourceShape`, `sh:value`.
+
+`collect-timings.py` reads the current per-profile `timing.txt` files and
+writes `timing-results.html` with two timing columns: `Previous` and
+`Current`.
 
 Links in the table:
 
@@ -74,8 +80,10 @@ Re-run with higher `validationResultsLimitPerConstraint` /
 
 ## How the reports were produced
 
-`validate-all.sh` POSTs each SHACL file to the GraphDB validation endpoint
-and saves the Turtle report per profile:
+`validate-all.sh` POSTs each SHACL file to the GraphDB validation endpoint,
+saves the Turtle report per profile, and then runs `collect-timings.py` so
+both `validation-results.html` and `timing-results.html` are produced in the
+same run:
 
 ```bash
 curl -X POST --header 'Accept: text/turtle' \

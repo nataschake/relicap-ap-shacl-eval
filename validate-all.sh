@@ -54,3 +54,5 @@ EOF
 done
 
 echo "[$(date -Iseconds)] BATCH COMPLETE: $done_count succeeded, $fail_count failed" | tee -a "$LOG"
+echo "[$(date -Iseconds)] GENERATING TIMING SUMMARY" | tee -a "$LOG"
+python3 "$OUT_DIR/collect-timings.py" | tee -a "$LOG"
