@@ -9,11 +9,7 @@ into one browsable table.
 
 ## Links
 
-- **Shapes** — [`nikolatulechki/application-profiles-library`](https://github.com/nikolatulechki/application-profiles-library/tree/main)
-  (working copy of ENTSO-E's
-  [`entsoe/application-profiles-library`](https://github.com/entsoe/application-profiles-library)),
-  specifically [`CGMES/CurrentRelease/SHACL/`](https://github.com/nikolatulechki/application-profiles-library/tree/main/CGMES/CurrentRelease/SHACL)
-  and [`NCP/CurrentRelease/SHACL/`](https://github.com/nikolatulechki/application-profiles-library/tree/main/NCP/CurrentRelease/SHACL).
+- **Shapes** — [`entsoe/application-profiles-library`](https://github.com/entsoe/application-profiles-library/tree/main), specifically [`CGMES/CurrentRelease/SHACL/`](https://github.com/entsoe/application-profiles-library/tree/main/CGMES/CurrentRelease/SHACL) and [`NCP/CurrentRelease/SHACL/`](https://github.com/entsoe/application-profiles-library/tree/main/NCP/CurrentRelease/SHACL).
 - **Data** — [`entsoe/relicapgrid`](https://github.com/entsoe/relicapgrid),
   loaded into the GraphDB repository
   [`relicapgrid` on cim.ontotext.com](https://cim.ontotext.com/graphdb/).
