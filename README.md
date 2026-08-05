@@ -17,7 +17,7 @@ into one browsable table.
 - **Data** — [`entsoe/relicapgrid`](https://github.com/entsoe/relicapgrid),
   loaded into the GraphDB repository
   [`relicapgrid` on cim.ontotext.com](https://cim.ontotext.com/graphdb/).
-- **Results** — [results table on GitHub Pages](https://nikolatulechki.github.io/relicap-ap-shacl-eval/).
+- **Results** — [project home page on GitHub Pages](https://nataschake.github.io/relicap-ap-shacl-eval/), with links to the validation and timing tables.
 
 ## Layout
 
@@ -30,7 +30,7 @@ ap-relicap-eval/
 ├── validation-results.html     # combined validation table, clickable links + filter box
 ├── validation-results.csv      # same validation data + raw resolved URLs
 ├── timing-results.html         # per-profile timing table with previous/current durations
-├── index.html                  # redirect to the validation table (for GitHub Pages)
+├── index.html                  # landing page for GitHub Pages with clickable links to both tables
 ├── validate-all.sh             # validate every SHACL file against GraphDB and generate both HTML reports
 └── continue-validate.sh        # resume a batch, skipping done/slow files
 ```

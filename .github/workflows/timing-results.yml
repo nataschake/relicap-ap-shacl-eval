@@ -3,7 +3,6 @@ name: Upload timing and validation results
 on:
   push:
     branches:
-      - DATA-566-view-timing-updates
       - main
   workflow_dispatch: {}
 
@@ -12,22 +11,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Upload timing-results.html artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: timing-results
           path: timing-results.html
 
       - name: Upload validation-results.html artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: validation-results
           path: validation-results.html
 
       - name: Upload index.html artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: index
           path: index.html
