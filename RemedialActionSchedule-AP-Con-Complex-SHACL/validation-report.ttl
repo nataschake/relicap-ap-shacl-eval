@@ -106,12 +106,12 @@
 <https://ap-con.cim4.eu/RemedialActionSchedule-Complex/2.4#RemedialActionSchedule-proposingEntitySparql>
   a sh:SPARQLConstraint;
   sh:select """
-			SELECT  $this  
-			WHERE {  
-		BIND(EXISTS{$this nc:RemedialActionSchedule.ProposingEntity ?o1} AS ?pesc).
-		BIND(EXISTS{$this ^nc:ProposingRemedialActionScheduleShare.RemedialActionSchedule ?o2} AS ?peso).
+      SELECT  $this  
+      WHERE {  
+    BIND(EXISTS{$this nc:RemedialActionSchedule.ProposingEntity ?o1} AS ?pesc).
+    BIND(EXISTS{$this ^nc:ProposingRemedialActionScheduleShare.RemedialActionSchedule ?o2} AS ?peso).
         FILTER (?pesc=false && ?peso=false ).
-			}""";
+      }""";
   sh:message "The RemedialActionSchedule does not have a proposing entity either the Security Coordinator (RemedialActionSchedule.ProposingEntity) or at least one ProposingRemedialActionScheduleShare.";
   sh:prefixes <https://cim.ucaiug.io/ns#> .
 
@@ -145,13 +145,13 @@
 <https://ap-con.cim4.eu/RemedialActionSchedule-Complex/2.4#RemedialActionScheduleDependency.kind-applicabilitySparql>
   a sh:SPARQLConstraint;
   sh:select """
-			SELECT  $this  
-			WHERE {  
-		
-		BIND(EXISTS{$this nc:RemedialActionScheduleDependency.kind ?o1} AS ?a1).
-		BIND(EXISTS{$this nc:RemedialActionScheduleDependency.RemedialActionScheduleGroup ?o2} AS ?a2).
+      SELECT  $this  
+      WHERE {  
+    
+    BIND(EXISTS{$this nc:RemedialActionScheduleDependency.kind ?o1} AS ?a1).
+    BIND(EXISTS{$this nc:RemedialActionScheduleDependency.RemedialActionScheduleGroup ?o2} AS ?a2).
         FILTER (?a1=true && ?a2=false ).
-			}""";
+      }""";
   sh:message "RemedialActionScheduleDependency.kind is provided for RemedialActionScheduleDependency objects not part of a RemedialActionScheduleGroup.";
   sh:prefixes <https://cim.ucaiug.io/ns#> .
 
@@ -168,12 +168,12 @@
 <https://ap-con.cim4.eu/RemedialActionSchedule-Complex/2.4#RemedialActionScheduleResponse.rejectionReasonKind-requiredSparql>
   a sh:SPARQLConstraint;
   sh:select """
-			SELECT  $this  
-			WHERE {  
-		
-		BIND(EXISTS{$this nc:RemedialActionScheduleResponse.rejectionReasonKind ?o1} AS ?hasRK).
-		BIND(EXISTS{$this nc:RemedialActionScheduleResponse.kind nc:RemedialActionScheduleResponseKind.refused} AS ?hasR).
+      SELECT  $this  
+      WHERE {  
+    
+    BIND(EXISTS{$this nc:RemedialActionScheduleResponse.rejectionReasonKind ?o1} AS ?hasRK).
+    BIND(EXISTS{$this nc:RemedialActionScheduleResponse.kind nc:RemedialActionScheduleResponseKind.refused} AS ?hasR).
         FILTER (?hasRK=false && ?hasR=true ).
-			}""";
+      }""";
   sh:message "RemedialActionScheduleResponse.rejectionReasonKind is missing when RemedialActionScheduleResponse.kind equals RemedialActionScheduleResponseKind.refused.";
   sh:prefixes <https://cim.ucaiug.io/ns#> .

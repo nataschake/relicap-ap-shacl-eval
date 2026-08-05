@@ -1,5 +1,5 @@
 file: 61970-301_Operation-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.059
-finished_at: 2026-07-28T17:16:32+03:00
+duration_seconds: 0.071
+finished_at: 2026-08-05T18:02:30+03:00

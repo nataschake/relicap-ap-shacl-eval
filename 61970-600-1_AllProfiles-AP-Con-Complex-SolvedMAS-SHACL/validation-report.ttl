@@ -11,26 +11,6 @@
   sh:conforms false;
   rdf4j:truncated false;
   sh:result [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:1710a533-a014-4797-a837-2043544889de>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <urn:uuid:00c7faff-a1ed-4b64-bbf8-527d4efefb76>;
-      sh:resultPath rdf:type;
-      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#SvStatus-SV__4Sparql>;
-      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "SvStatus is not instantiated for a ConductingEquipment connected to a TopologicalNode which is referenced by a TopologicalIsland.";
-      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#SvStatus-SV__4>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:eb1bdeaf-d32e-4b1c-a06e-d768bf3d3227>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:value <urn:uuid:00c7faff-a1ed-4b64-bbf8-527d4efefb76>;
-      sh:resultPath rdf:type;
-      sh:sourceConstraint <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#SvStatus-SV__4Sparql>;
-      sh:sourceConstraintComponent sh:SPARQLConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "SvStatus is not instantiated for a ConductingEquipment connected to a TopologicalNode which is referenced by a TopologicalIsland.";
-      sh:sourceShape <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#SvStatus-SV__4>
-    ], [ a sh:ValidationResult;
       sh:focusNode <https://cim.ucaiug.io/ns#>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
@@ -630,47 +610,6 @@
       sh:resultSeverity sh:Violation;
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#All-DanglingReferences>
-    ] .
-
-<http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#SvStatus-SV__4>
-  a sh:PropertyShape;
-  sh:severity sh:Violation;
-  sh:name "C:600:SV:SvStatus:SV__4";
-  sh:description "All state variables shall be instantiated in the SV instance file (distribution) for all energized elements part of a TopologicalIsland independently of the regulating status of the elements (e.g. for a shunt compensator that is not regulating the SvShuntCompensatorSections.sections shall be the same as ShuntCompensator.sections). All instances shall be representing computed values obtained from a power flow calculation. For SvPowerFlow instances refer to profile constraint on the SvPowerFlow class.";
-  sh:order 4;
-  sh:group <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#solvedMAS600Group>;
-  sh:path rdf:type;
-  sh:sparql <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#SvStatus-SV__4Sparql> .
-
-<http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#SvStatus-SV__4Sparql>
-  a sh:SPARQLConstraint;
-  sh:select """
-			SELECT  DISTINCT $this ?value 
-			WHERE {
-        $this cim:TopologicalIsland.TopologicalNodes ?tn.
-        ?tn ^cim:ConnectivityNode.TopologicalNode/^cim:Terminal.ConnectivityNode/cim:Terminal.ConductingEquipment ?value.
-        OPTIONAL {?value  ^cim:SvStatus.ConductingEquipment  ?svstatus} .
-        #$this rdf:type ?value .
-        #OPTIONAL {$this ^cim:Terminal.ConductingEquipment/cim:Terminal.ConnectivityNode/cim:ConnectivityNode.TopologicalNode/^cim:TopologicalIsland.TopologicalNodes ?topologicalisland }.
-        #OPTIONAL {$this  ^cim:SvStatus.ConductingEquipment  ?svstatus} .
-        #FILTER (bound(?topologicalisland) && !bound(?svstatus) && ?value!=cim:Equipment ).
-        FILTER (!bound(?svstatus) && ?value!=cim:Equipment ).
-			}""";
-  sh:message "SvStatus is not instantiated for a ConductingEquipment connected to a TopologicalNode which is referenced by a TopologicalIsland.";
-  sh:prefixes <https://cim.ucaiug.io/ns#> .
-
-<https://cim.ucaiug.io/ns#> sh:declare [
-      sh:prefix "cim";
-      sh:namespace "https://cim.ucaiug.io/ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "rdf";
-      sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
-    ], [
-      sh:prefix "md";
-      sh:namespace "http://iec.ch/TC57/61970-552/ModelDescription/1#"^^xsd:anyURI
-    ], [
-      sh:prefix "eu";
-      sh:namespace "https://cim.ucaiug.io/ns/eu#"^^xsd:anyURI
     ] .
 
 <http://iec.ch/TC57/ns/CIM/SolvedMAS/constraints/IEC61970-600/3.0#All-DanglingReferences>

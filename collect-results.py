@@ -32,7 +32,7 @@ from urllib.parse import quote
 EVAL_DIR = Path(__file__).resolve().parent
 APL_DIR = (EVAL_DIR / ".." / "application-profiles-library").resolve()
 
-GITHUB_REPO_BLOB = ("https://github.com/nikolatulechki/application-profiles-library"
+GITHUB_REPO_BLOB = ("https://github.com/nataschake/application-profiles-library"
                     "/blob/main")
 
 # SHACL source folders (repo-relative), each tagged with a profile family for
@@ -43,7 +43,7 @@ SHACL_SOURCES = [
 ]
 
 # This repository on GitHub, used to link each row to its source report.
-EVAL_REPO_BLOB = "https://github.com/nikolatulechki/relicap-ap-shacl-eval/blob/main"
+EVAL_REPO_BLOB = "https://github.com/nataschake/relicap-ap-shacl-eval/blob/main"
 
 GRAPHDB_RESOURCE = "https://cim.ontotext.com/graphdb/resource"
 GRAPHDB_REPO = "relicapgrid"

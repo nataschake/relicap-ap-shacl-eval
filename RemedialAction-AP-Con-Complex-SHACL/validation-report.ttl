@@ -637,16 +637,16 @@
 <https://ap-con.cim4.eu/RemedialAction-Complex/2.4#GridStateAlteration-associationsSparql>
   a sh:SPARQLConstraint;
   sh:select """
-			SELECT  $this  
-			WHERE {  
-		BIND(EXISTS{$this nc:GridStateAlteration.GridStateAlterationRemedialAction ?gsara} AS ?vGSARA).	
-		BIND(EXISTS{$this nc:GridStateAlteration.GridStateAlterationCollection ?gsac} AS ?vGSAC).
+      SELECT  $this  
+      WHERE {  
+    BIND(EXISTS{$this nc:GridStateAlteration.GridStateAlterationRemedialAction ?gsara} AS ?vGSARA).  
+    BIND(EXISTS{$this nc:GridStateAlteration.GridStateAlterationCollection ?gsac} AS ?vGSAC).
 
         FILTER (
-			(?vGSARA=true && ?vGSAC=true) || 
-			(?vGSARA=false && ?vGSAC=false) 
-		).
-			}""";
+      (?vGSARA=true && ?vGSAC=true) || 
+      (?vGSARA=false && ?vGSAC=false) 
+    ).
+      }""";
   sh:message "GridStateAlteration is not associated with either GridStateAlterationRemedialAction or GridStateAlterationCollection or it is associated with both.";
   sh:prefixes <https://cim.ucaiug.io/ns#> .
 

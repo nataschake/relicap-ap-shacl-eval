@@ -13,7 +13,8 @@ import sys
 from pathlib import Path
 
 EVAL_DIR = Path(__file__).resolve().parent
-EVAL_REPO_BLOB = "https://github.com/nikolatulechki/relicap-ap-shacl-eval/blob/main"
+EVAL_REPO_BLOB = "https://github.com/nataschake/relicap-ap-shacl-eval/blob/main"
+SHAPES_REPO_BLOB = "https://github.com/entsoe/application-profiles-library/blob/main"
 TIMING_HISTORY_PATH = EVAL_DIR / ".timing-history.json"
 
 
@@ -31,6 +32,11 @@ def infer_family(profile: str) -> str:
     if profile.startswith(("61970-", "61968-")):
         return "CGMES"
     return "NCP"
+
+
+def shape_href(profile: str, family: str) -> str:
+    shape_dir = "CGMES/SHACL" if family == "CGMES" else "NCP/SHACL"
+    return f"{SHAPES_REPO_BLOB}/{shape_dir}/{profile}.ttl"
 
 
 def format_duration(seconds: float | None) -> str:
@@ -74,10 +80,11 @@ def collect_rows() -> list[dict[str, object]]:
         previous_duration_raw = previous.get("duration")
         previous_duration = float(previous_duration_raw) if previous_duration_raw not in (None, "") else None
 
+        family = infer_family(profile)
         rows.append(
             {
                 "profile": profile,
-                "family": infer_family(profile),
+                "family": family,
                 "duration": duration,
                 "duration_disp": format_duration(duration),
                 "previous_duration": previous_duration,
@@ -91,6 +98,7 @@ def collect_rows() -> list[dict[str, object]]:
                     if (timing_path.parent / "validation-report.ttl").exists()
                     else ""
                 ),
+                "shape_href": shape_href(profile, family),
             }
         )
 
@@ -117,6 +125,12 @@ def write_html(rows: list[dict[str, object]], path: Path) -> None:
                     f'rel="noopener">{html.escape(label)}</a>')
         return cell(label)
 
+    def profile_cell(profile: str, href: str) -> str:
+        if href:
+            return (f'<a href="{html.escape(href)}" target="_blank" '
+                    f'rel="noopener">{brk(profile)}</a>')
+        return brk(profile)
+
     body_rows: list[str] = []
     for rank, row in enumerate(rows, start=1):
         duration = row["duration"]
@@ -137,7 +151,7 @@ def write_html(rows: list[dict[str, object]], path: Path) -> None:
             "<tr>"
             f"<td class='num'>{rank}</td>"
             f"<td>{cell(str(row['family']))}</td>"
-            f"<td>{brk(str(row['profile']))}</td>"
+            f"<td>{profile_cell(str(row['profile']), str(row['shape_href']))}</td>"
             f"<td class='num dur'>{cell(str(row['previous_duration_disp']))}</td>"
             f"<td class=\"{' '.join(current_classes)}\">{cell(str(row['duration_disp']))}</td>"
             f"<td class=\"{' '.join(http_classes)}\">{cell(str(row['http_status']))}</td>"

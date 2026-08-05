@@ -1,5 +1,5 @@
 file: 61970-452_Operation-AP-Con-Complex-NotSolvedMAS-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.062
-finished_at: 2026-07-28T17:16:35+03:00
+duration_seconds: 0.064
+finished_at: 2026-08-05T18:02:32+03:00

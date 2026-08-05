@@ -2,10 +2,12 @@
 set -euo pipefail
 
 APL="$(cd "$(dirname "$0")/../application-profiles-library" && pwd)"
+echo "Application Profiles Library: $APL"
 SHACL_DIRS=(
-  "$APL/CGMES/CurrentRelease/SHACL"
-  "$APL/NCP/CurrentRelease/SHACL"
+  "$APL/CGMES/SHACL"
+  "$APL/NCP/SHACL"
 )
+echo "SHACL Directories: ${SHACL_DIRS[*]}"
 OUT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_URL="http://localhost:7200/rest/repositories/relicapgrid/validate/file"
 LOG="$OUT_DIR/batch.log"
