@@ -18,3 +18,10 @@ jobs:
         with:
           name: timing-results
           path: timing-results.html
+
+      - name: Upload validation-results.html artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: validation-results.html
+

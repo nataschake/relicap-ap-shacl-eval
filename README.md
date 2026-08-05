@@ -5,7 +5,7 @@ and NCP (Network Code Profiles) Application-Profiles shapes, with a script
 that gathers every `sh:ValidationResult` from all the per-profile reports
 into one browsable table.
 
-**[View the results table →](https://nikolatulechki.github.io/relicap-ap-shacl-eval/)**
+**[View the results table →](https://nataschake.github.io/relicap-ap-shacl-eval/)**
 
 ## Links
 
