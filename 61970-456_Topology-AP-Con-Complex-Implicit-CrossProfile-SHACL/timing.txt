@@ -1,5 +1,5 @@
 file: 61970-456_Topology-AP-Con-Complex-Implicit-CrossProfile-SHACL.ttl
 repository: relicapgrid
-http_status: 500
-duration_seconds: 0.076
-finished_at: 2026-08-06T13:29:49+03:00
+http_status: 200
+duration_seconds: 0.097
+finished_at: 2026-08-06T20:21:41+03:00

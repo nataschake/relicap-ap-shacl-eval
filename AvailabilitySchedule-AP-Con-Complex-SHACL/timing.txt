@@ -1,5 +1,5 @@
 file: AvailabilitySchedule-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
-http_status: 500
-duration_seconds: 0.049
-finished_at: 2026-08-06T13:29:56+03:00
+http_status: 200
+duration_seconds: 0.088
+finished_at: 2026-08-06T20:22:04+03:00

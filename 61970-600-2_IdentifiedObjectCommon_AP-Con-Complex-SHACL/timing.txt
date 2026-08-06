@@ -1,5 +1,5 @@
 file: 61970-600-2_IdentifiedObjectCommon_AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
-http_status: 500
-duration_seconds: 0.097
-finished_at: 2026-08-06T13:29:54+03:00
+http_status: 200
+duration_seconds: 0.116
+finished_at: 2026-08-06T20:21:57+03:00

@@ -1,5 +1,5 @@
 file: AssessedElement-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
-http_status: 500
-duration_seconds: 0.068
-finished_at: 2026-08-06T13:29:56+03:00
+http_status: 200
+duration_seconds: 4.569
+finished_at: 2026-08-06T20:22:04+03:00

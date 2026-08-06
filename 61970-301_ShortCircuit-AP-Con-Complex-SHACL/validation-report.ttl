@@ -1,1 +1,1 @@
-IllegalStateException: Repository relicapgrid doesn't exist!
+VisitorException: QName 'cim:SeriesCompensator.varistorPresent' uses an undefined prefix

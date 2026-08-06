@@ -1,1 +1,5 @@
-IllegalStateException: Repository relicapgrid doesn't exist!
+ParseException: Encountered " "}" "} "" at line 21, column 5.
+Was expecting one of:
+    "(" ...
+    <NIL> ...
+    

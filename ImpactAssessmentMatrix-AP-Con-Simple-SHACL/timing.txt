@@ -1,5 +1,5 @@
 file: ImpactAssessmentMatrix-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
-http_status: 500
-duration_seconds: 0.094
-finished_at: 2026-08-06T13:29:58+03:00
+http_status: 200
+duration_seconds: 2.606
+finished_at: 2026-08-06T20:22:35+03:00
