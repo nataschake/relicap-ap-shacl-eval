@@ -1,5 +1,5 @@
 file: 61970-452_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL.ttl
 repository: relicapgrid
-http_status: 200
-duration_seconds: 0.078
-finished_at: 2026-08-05T18:02:31+03:00
+http_status: 500
+duration_seconds: 0.067
+finished_at: 2026-08-06T13:29:46+03:00
