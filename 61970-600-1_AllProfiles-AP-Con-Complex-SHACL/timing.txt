@@ -1,5 +1,5 @@
 file: 61970-600-1_AllProfiles-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 2.355
-finished_at: 2026-08-06T20:21:44+03:00
+duration_seconds: 2.431
+finished_at: 2026-08-10T18:28:00+03:00
