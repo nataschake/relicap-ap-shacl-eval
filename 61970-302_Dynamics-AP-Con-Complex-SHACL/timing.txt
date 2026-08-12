@@ -1,5 +1,5 @@
 file: 61970-302_Dynamics-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 1.812
-finished_at: 2026-08-10T18:27:51+03:00
+duration_seconds: 1.217
+finished_at: 2026-08-12T14:59:17+03:00

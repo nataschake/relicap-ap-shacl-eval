@@ -2,4 +2,4 @@ file: 61970-600-2_DiagramLayout-AP-Con-Complex-InverseAssociation-SHACL.ttl
 repository: relicapgrid
 http_status: 200
 duration_seconds: 0.110
-finished_at: 2026-08-10T18:28:02+03:00
+finished_at: 2026-08-12T14:59:26+03:00

@@ -1,5 +1,5 @@
 file: ObjectRegistry-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 3.324
-finished_at: 2026-08-10T18:28:52+03:00
+duration_seconds: 0.226
+finished_at: 2026-08-12T14:59:56+03:00
