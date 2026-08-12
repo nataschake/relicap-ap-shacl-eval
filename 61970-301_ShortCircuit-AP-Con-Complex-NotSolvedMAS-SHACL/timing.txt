@@ -1,5 +1,5 @@
 file: 61970-301_ShortCircuit-AP-Con-Complex-NotSolvedMAS-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.081
-finished_at: 2026-08-12T14:59:15+03:00
+duration_seconds: 0.112
+finished_at: 2026-08-12T15:55:03+03:00

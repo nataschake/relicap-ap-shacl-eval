@@ -334,7 +334,7 @@
       sh:focusNode <urn:uuid:3b5748de-39f2-45d7-9a66-65819c667e91>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#GeneratingUnit>;
-      sh:resultPath _:2b34f359fa6eef55;
+      sh:resultPath _:2d35406b2051b16;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -9429,7 +9429,7 @@
   sh:description "This constraint validates the value of the association at the used direction.";
   sh:order 18;
   sh:group <https://ap-con.cim4.eu/StateInstructionSchedule-Simple/2.5#AssociationsGroup>;
-  sh:path _:2b34f359fa6eef55;
+  sh:path _:2d35406b2051b16;
   sh:in (<http://iec.ch/TC57/CIM100#ThermalGeneratingUnit> <https://cim.ucaiug.io/ns#ThermalGeneratingUnit>
       <https://cim4.eu/ns/nc#GeothermalGeneratingUnit> <http://iec.ch/TC57/CIM100#NuclearGeneratingUnit>
       <http://iec.ch/TC57/CIM100#HydroGeneratingUnit> <https://cim.ucaiug.io/ns#NuclearGeneratingUnit>

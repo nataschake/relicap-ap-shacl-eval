@@ -102,7 +102,7 @@
       sh:focusNode <urn:uuid:639648b6-622a-4c19-b916-965398eaded2>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <http://www.w3.org/ns/dcat#Dataset>;
-      sh:resultPath _:54f87ce89ddde823;
+      sh:resultPath _:5d34859d2d4a01b3;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -9443,7 +9443,7 @@
   sh:description "This constraint validates the value of the association at the used direction.";
   sh:order 7;
   sh:group <https://ap-con.cim4.eu/RemedialActionSchedule-Simple/2.4#AssociationsGroup>;
-  sh:path _:54f87ce89ddde823;
+  sh:path _:5d34859d2d4a01b3;
   sh:in (<https://cim4.eu/ns/nc#SchemeRemedialAction> <https://cim4.eu/ns/nc#AvailabilityRemedialAction>
       <https://cim4.eu/ns/nc#GridStateAlterationRemedialAction> <https://cim4.eu/ns/nc#CountertradeRemedialAction>
       <https://cim4.eu/ns/nc#RedispatchRemedialAction>) .

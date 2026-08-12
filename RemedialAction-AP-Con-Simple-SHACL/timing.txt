@@ -1,5 +1,5 @@
 file: RemedialAction-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.739
-finished_at: 2026-08-12T14:59:59+03:00
+duration_seconds: 0.717
+finished_at: 2026-08-12T15:55:38+03:00

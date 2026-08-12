@@ -1,5 +1,5 @@
 file: 61970-600-2_Dynamics-AP-Con-Complex-InverseAssociation-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.187
-finished_at: 2026-08-12T14:59:26+03:00
+duration_seconds: 0.102
+finished_at: 2026-08-12T15:55:12+03:00

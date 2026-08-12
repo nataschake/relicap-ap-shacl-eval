@@ -1,5 +1,5 @@
 file: 61970-600-2_GeographicalLocation-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.198
-finished_at: 2026-08-12T14:59:36+03:00
+duration_seconds: 0.182
+finished_at: 2026-08-12T15:55:18+03:00

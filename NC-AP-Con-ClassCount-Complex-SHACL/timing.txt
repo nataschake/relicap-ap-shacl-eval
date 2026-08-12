@@ -1,5 +1,5 @@
 file: NC-AP-Con-ClassCount-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 2.472
-finished_at: 2026-08-12T14:59:55+03:00
+duration_seconds: 2.742
+finished_at: 2026-08-12T15:55:35+03:00

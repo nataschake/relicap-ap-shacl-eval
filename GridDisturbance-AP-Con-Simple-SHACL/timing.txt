@@ -1,5 +1,5 @@
 file: GridDisturbance-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.809
-finished_at: 2026-08-12T14:59:52+03:00
+duration_seconds: 0.681
+finished_at: 2026-08-12T15:55:32+03:00
