@@ -231,8 +231,8 @@ def write_html(rows: list[dict[str, object]], path: Path) -> None:
       <th>#</th>
       <th>Family</th>
       <th>Profile</th>
-      <th>Previous</th>
       <th>Current</th>
+      <th>Previous</th>
       <th>HTTP</th>
       <th>Finished</th>
       <th>Timing</th>
