@@ -7574,7 +7574,7 @@
       sh:focusNode <urn:uuid:1eb2eb03-dda6-4e59-b7c8-a2edb117d676>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7583,7 +7583,7 @@
       sh:focusNode <urn:uuid:1eb2eb03-dda6-4e59-b7c8-a2edb117d676>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#PowerTransformer>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7592,7 +7592,7 @@
       sh:focusNode <urn:uuid:d17943b5-9d10-4f8b-bb07-18c3a3822348>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7601,7 +7601,7 @@
       sh:focusNode <urn:uuid:d17943b5-9d10-4f8b-bb07-18c3a3822348>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7610,7 +7610,7 @@
       sh:focusNode <urn:uuid:13d17257-977e-43bc-971a-25022282688a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#SynchronousMachine>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7619,7 +7619,7 @@
       sh:focusNode <urn:uuid:992c2de6-e206-45b3-a76a-f4a691e8839a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7628,7 +7628,7 @@
       sh:focusNode <urn:uuid:992c2de6-e206-45b3-a76a-f4a691e8839a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7637,7 +7637,7 @@
       sh:focusNode <urn:uuid:3686af46-791f-4893-9ada-42324e138115>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#SynchronousMachine>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7646,7 +7646,7 @@
       sh:focusNode <urn:uuid:d463cbba-c89c-4199-bbb9-1a33d90cae2c>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7655,7 +7655,7 @@
       sh:focusNode <urn:uuid:d463cbba-c89c-4199-bbb9-1a33d90cae2c>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7664,7 +7664,7 @@
       sh:focusNode <urn:uuid:663c6c3c-1777-4eb7-98b0-c23233ce0f71>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7673,7 +7673,7 @@
       sh:focusNode <urn:uuid:663c6c3c-1777-4eb7-98b0-c23233ce0f71>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7682,7 +7682,7 @@
       sh:focusNode <urn:uuid:3bc10ae6-6e25-4e4d-9a3a-ec2c4e2436b0>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7691,7 +7691,7 @@
       sh:focusNode <urn:uuid:3bc10ae6-6e25-4e4d-9a3a-ec2c4e2436b0>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7700,7 +7700,7 @@
       sh:focusNode <urn:uuid:97cb3913-256b-4225-a6f4-a0641adddea8>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Disconnector>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7709,7 +7709,7 @@
       sh:focusNode <urn:uuid:2cc84c47-b6b7-481c-aa0e-6c46589d458a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7718,7 +7718,7 @@
       sh:focusNode <urn:uuid:2cc84c47-b6b7-481c-aa0e-6c46589d458a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7727,7 +7727,7 @@
       sh:focusNode <urn:uuid:3a364a5b-7aca-4e48-abd5-4cd79e2e8676>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7736,7 +7736,7 @@
       sh:focusNode <urn:uuid:3a364a5b-7aca-4e48-abd5-4cd79e2e8676>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7745,7 +7745,7 @@
       sh:focusNode <urn:uuid:2bd363ca-bab7-4571-a59a-b9193dc9fc9d>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7754,7 +7754,7 @@
       sh:focusNode <urn:uuid:2bd363ca-bab7-4571-a59a-b9193dc9fc9d>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7763,7 +7763,7 @@
       sh:focusNode <urn:uuid:ea577780-24d2-4167-a5d2-fa56c56a9481>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7772,7 +7772,7 @@
       sh:focusNode <urn:uuid:ea577780-24d2-4167-a5d2-fa56c56a9481>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7781,7 +7781,7 @@
       sh:focusNode <urn:uuid:989535e7-3789-47e7-8ba7-da7be9962a15>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7790,7 +7790,7 @@
       sh:focusNode <urn:uuid:989535e7-3789-47e7-8ba7-da7be9962a15>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7799,7 +7799,7 @@
       sh:focusNode <urn:uuid:e43a18a9-cd28-49ce-b6b1-7db8255462e2>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#SynchronousMachine>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7808,7 +7808,7 @@
       sh:focusNode <urn:uuid:e43a18a9-cd28-49ce-b6b1-7db8255462e3>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#SynchronousMachine>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7817,7 +7817,7 @@
       sh:focusNode <urn:uuid:808b9ea1-bf10-448d-b03a-822ce473dbbb>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7826,7 +7826,7 @@
       sh:focusNode <urn:uuid:808b9ea1-bf10-448d-b03a-822ce473dbbb>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7835,7 +7835,7 @@
       sh:focusNode <urn:uuid:65174269-44fb-44ae-9d3e-f743176c4bcb>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7844,7 +7844,7 @@
       sh:focusNode <urn:uuid:65174269-44fb-44ae-9d3e-f743176c4bcb>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7853,7 +7853,7 @@
       sh:focusNode <urn:uuid:614648d2-457e-4d67-838b-821102ce16ee>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7862,7 +7862,7 @@
       sh:focusNode <urn:uuid:614648d2-457e-4d67-838b-821102ce16ee>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#BusbarSection>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7871,7 +7871,7 @@
       sh:focusNode <urn:uuid:05675c5e-985b-4859-a774-f7e371623b87>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7880,7 +7880,7 @@
       sh:focusNode <urn:uuid:05675c5e-985b-4859-a774-f7e371623b87>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7889,7 +7889,7 @@
       sh:focusNode <urn:uuid:662cc3bd-25bf-4b7f-96e9-eab3bec328f7>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7898,7 +7898,7 @@
       sh:focusNode <urn:uuid:662cc3bd-25bf-4b7f-96e9-eab3bec328f7>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7907,7 +7907,7 @@
       sh:focusNode <urn:uuid:2cb8db8c-faa6-42a2-9949-56ea98dc4a24>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7916,7 +7916,7 @@
       sh:focusNode <urn:uuid:2cb8db8c-faa6-42a2-9949-56ea98dc4a24>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7925,7 +7925,7 @@
       sh:focusNode <urn:uuid:53aec823-9237-4625-bd68-c5a5b2925384>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7934,7 +7934,7 @@
       sh:focusNode <urn:uuid:53aec823-9237-4625-bd68-c5a5b2925384>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7943,7 +7943,7 @@
       sh:focusNode <urn:uuid:07c95f06-f154-4e3a-a359-2829e6e21618>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7952,7 +7952,7 @@
       sh:focusNode <urn:uuid:07c95f06-f154-4e3a-a359-2829e6e21618>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7961,7 +7961,7 @@
       sh:focusNode <urn:uuid:bde1ef4b-58f2-4a6d-8102-f6e3898d0931>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7970,7 +7970,7 @@
       sh:focusNode <urn:uuid:bde1ef4b-58f2-4a6d-8102-f6e3898d0931>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#PowerTransformer>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7979,7 +7979,7 @@
       sh:focusNode <urn:uuid:57246b44-8564-4b4d-b74a-759c7733bd2a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7988,7 +7988,7 @@
       sh:focusNode <urn:uuid:57246b44-8564-4b4d-b74a-759c7733bd2a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:211d1648bfb1e516;
+      sh:resultPath _:75b3bdc700acd5bb;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -7997,7 +7997,7 @@
       sh:focusNode <urn:uuid:1eb2eb03-dda6-4e59-b7c8-a2edb117d676>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8006,7 +8006,7 @@
       sh:focusNode <urn:uuid:992c2de6-e206-45b3-a76a-f4a691e8839a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#VoltageLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8015,7 +8015,7 @@
       sh:focusNode <urn:uuid:d463cbba-c89c-4199-bbb9-1a33d90cae2c>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8024,7 +8024,7 @@
       sh:focusNode <urn:uuid:3bc10ae6-6e25-4e4d-9a3a-ec2c4e2436b0>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8033,7 +8033,7 @@
       sh:focusNode <urn:uuid:2cc84c47-b6b7-481c-aa0e-6c46589d458a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8042,7 +8042,7 @@
       sh:focusNode <urn:uuid:3a364a5b-7aca-4e48-abd5-4cd79e2e8676>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8051,7 +8051,7 @@
       sh:focusNode <urn:uuid:2bd363ca-bab7-4571-a59a-b9193dc9fc9d>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8060,7 +8060,7 @@
       sh:focusNode <urn:uuid:ea577780-24d2-4167-a5d2-fa56c56a9481>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8069,7 +8069,7 @@
       sh:focusNode <urn:uuid:989535e7-3789-47e7-8ba7-da7be9962a15>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8078,7 +8078,7 @@
       sh:focusNode <urn:uuid:808b9ea1-bf10-448d-b03a-822ce473dbbb>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#VoltageLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8087,7 +8087,7 @@
       sh:focusNode <urn:uuid:65174269-44fb-44ae-9d3e-f743176c4bcb>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#VoltageLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8096,7 +8096,7 @@
       sh:focusNode <urn:uuid:614648d2-457e-4d67-838b-821102ce16ee>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#VoltageLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8105,7 +8105,7 @@
       sh:focusNode <urn:uuid:05675c5e-985b-4859-a774-f7e371623b87>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8114,7 +8114,7 @@
       sh:focusNode <urn:uuid:662cc3bd-25bf-4b7f-96e9-eab3bec328f7>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8123,7 +8123,7 @@
       sh:focusNode <urn:uuid:53aec823-9237-4625-bd68-c5a5b2925384>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8132,7 +8132,7 @@
       sh:focusNode <urn:uuid:07c95f06-f154-4e3a-a359-2829e6e21618>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8141,7 +8141,7 @@
       sh:focusNode <urn:uuid:bde1ef4b-58f2-4a6d-8102-f6e3898d0931>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -8150,7 +8150,7 @@
       sh:focusNode <urn:uuid:57246b44-8564-4b4d-b74a-759c7733bd2a>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#CurrentLimit>;
-      sh:resultPath _:211d1648bfb1e523;
+      sh:resultPath _:75b3bdc700acd5c8;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -17180,7 +17180,7 @@
   sh:description "This constraint validates the value of the association at the used direction.";
   sh:order 8;
   sh:group <https://ap-con.cim4.eu/AssessedElement-Simple/2.4#AssociationsGroup>;
-  sh:path _:211d1648bfb1e516;
+  sh:path _:75b3bdc700acd5bb;
   sh:in (<http://iec.ch/TC57/2013/CIM-schema-cim16#SeriesCompensator> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment>
       <http://iec.ch/TC57/CIM100#ACLineSegment> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConsumer>
       <http://iec.ch/TC57/CIM100#StationSupply> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoad>
@@ -17227,7 +17227,7 @@
   sh:description "This constraint validates the value of the association at the used direction.";
   sh:order 6;
   sh:group <https://ap-con.cim4.eu/AssessedElement-Simple/2.4#AssociationsGroup>;
-  sh:path _:211d1648bfb1e523;
+  sh:path _:75b3bdc700acd5c8;
   sh:in (<https://cim4.eu/ns/nc#BaseCaseCurrentLimit> <http://iec.ch/TC57/2013/CIM-schema-cim16#ActivePowerLimit>
       <http://iec.ch/TC57/CIM100#ApparentPowerLimit> <http://iec.ch/TC57/CIM100#VoltageLimit>
       <https://cim4.eu/ns/nc#InfeedLimit> <https://cim4.eu/ns/nc#VoltageAngleLimit> <http://iec.ch/TC57/CIM100#CurrentLimit>

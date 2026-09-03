@@ -1,5 +1,5 @@
 file: 61970-456_Topology-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.163
-finished_at: 2026-09-03T10:45:57+03:00
+duration_seconds: 0.169
+finished_at: 2026-09-03T11:54:14+03:00

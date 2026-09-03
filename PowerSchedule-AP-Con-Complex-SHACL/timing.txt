@@ -1,5 +1,5 @@
 file: PowerSchedule-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 500
-duration_seconds: 0.205
-finished_at: 2026-09-03T10:46:26+03:00
+duration_seconds: 0.174
+finished_at: 2026-09-03T11:54:42+03:00

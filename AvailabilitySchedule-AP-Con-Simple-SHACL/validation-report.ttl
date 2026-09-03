@@ -14,7 +14,7 @@
       sh:focusNode <urn:uuid:cbe49fbe-64dd-48e0-8e9b-bbc468265abc>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#Equipment>;
-      sh:resultPath _:3a71f53a86ec188c;
+      sh:resultPath _:20508775db9995ba;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -23,7 +23,7 @@
       sh:focusNode <urn:uuid:cbe49fbe-64dd-48e0-8e9b-bbc468265abc>;
       rsx:shapesGraph rdf4j:nil;
       sh:value <https://cim.ucaiug.io/ns#ACLineSegment>;
-      sh:resultPath _:3a71f53a86ec188c;
+      sh:resultPath _:20508775db9995ba;
       sh:sourceConstraintComponent sh:InConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class.";
@@ -31,7 +31,7 @@
     ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:d394295f-9d18-4d9f-9808-bd23282bf60f>;
       rsx:shapesGraph rdf4j:nil;
-      sh:resultPath _:3a71f53a86ec1867;
+      sh:resultPath _:20508775db9995df;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "Cardinality violation. Lower bound shall be 1";
@@ -195,7 +195,7 @@
     ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:7acbe49b-be64-4dd8-a02e-87778468d55a>;
       rsx:shapesGraph rdf4j:nil;
-      sh:resultPath _:3a71f53a86ec1841;
+      sh:resultPath _:20508775db999605;
       sh:sourceConstraintComponent sh:MaxCountConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "Cardinality violation. Upper bound shall be 1";
@@ -9210,7 +9210,7 @@
   sh:description "This constraint validates the value of the association at the used direction.";
   sh:order 13;
   sh:group <https://ap-con.cim4.eu/AvailabilitySchedule-Simple/2.4#AssociationsGroup>;
-  sh:path _:3a71f53a86ec188c;
+  sh:path _:20508775db9995ba;
   sh:in (<http://iec.ch/TC57/CIM100#GeneratingUnit> <http://iec.ch/TC57/CIM100#ThermalGeneratingUnit>
       <https://cim.ucaiug.io/ns#ThermalGeneratingUnit> <https://cim4.eu/ns/nc#GeothermalGeneratingUnit>
       <http://iec.ch/TC57/CIM100#NuclearGeneratingUnit> <http://iec.ch/TC57/CIM100#HydroGeneratingUnit>
@@ -9295,10 +9295,10 @@
   sh:description "This constraint validates the cardinality of the association at the inverse direction.";
   sh:order 25;
   sh:group <https://ap-con.cim4.eu/AvailabilitySchedule-Simple/2.4#CardinalityGroup>;
-  sh:path _:3a71f53a86ec1867;
+  sh:path _:20508775db9995df;
   sh:minCount 1 .
 
-_:3a71f53a86ec1867 sh:inversePath <https://cim4.eu/ns/nc#AvailabilityPowerSystemFunction.AvailabilitySchedule> .
+_:20508775db9995df sh:inversePath <https://cim4.eu/ns/nc#AvailabilityPowerSystemFunction.AvailabilitySchedule> .
 
 <https://ap-con.cim4.eu/AvailabilitySchedule-Simple/2.4#EventSchedule-AllowedProperties>
   a sh:NodeShape;
@@ -9349,10 +9349,10 @@ _:3a71f53a86ec1867 sh:inversePath <https://cim4.eu/ns/nc#AvailabilityPowerSystem
   sh:description "This constraint validates the cardinality of the association at the inverse direction.";
   sh:order 1;
   sh:group <https://ap-con.cim4.eu/AvailabilitySchedule-Simple/2.4#CardinalityGroup>;
-  sh:path _:3a71f53a86ec1841;
+  sh:path _:20508775db999605;
   sh:maxCount 1 .
 
-_:3a71f53a86ec1841 sh:inversePath <https://cim4.eu/ns/nc#AvailabilitySchedule.PlannedSchedule> .
+_:20508775db999605 sh:inversePath <https://cim4.eu/ns/nc#AvailabilitySchedule.PlannedSchedule> .
 
 <https://ap-con.cim4.eu/AvailabilitySchedule-Simple/2.4#AllowedClasses-property> a
     sh:PropertyShape;

@@ -194,7 +194,7 @@ def graphdb_link(focus_term: str | None) -> tuple[str, str]:
     iri = strip_brackets(focus_term)
     if iri is None:
         return (shorten(focus_term), "")
-    href = (f"{GRAPHDB_RESOURCE}?uri={quote(iri, safe='')}"
+    href = (f"{GRAPHDB_RESOURCE}?uri={quote(iri, safe=':/')}"
             f"&repositoryId={GRAPHDB_REPO}&role=subject")
     return (iri, href)
 

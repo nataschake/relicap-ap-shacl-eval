@@ -13,7 +13,7 @@
   sh:result [ a sh:ValidationResult;
       sh:focusNode <http://iec.ch/TC57/CIM100#TopologicalIsland>;
       rsx:shapesGraph rdf4j:nil;
-      sh:resultPath _:cbea50ec493ed74;
+      sh:resultPath _:4ddf34a04a6d29d7;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;
       sh:resultSeverity sh:Violation;
       sh:resultMessage "No TopologicalIsland instantiated.";
@@ -28,7 +28,7 @@
   sh:description "At least one TopologicalIsland instance shall be present per SV instance. The TopologicalIsland-s for a merged model which are defined in the state variables instance file for the merged model are created with the solving on the power flow of the merged model, i.e. there are no TopologicalIsland-s defined per MAS in a merged model. In case a solved merged model is exchanged for a single MAS the state variables instance file shall include at least one instance of TopologicalIsland.";
   sh:order 2;
   sh:group <http://iec.ch/TC57/ns/CIM/StateVariable-EU/constraints/IEC61970-456/3.0#SV456>;
-  sh:path _:cbea50ec493ed74;
+  sh:path _:4ddf34a04a6d29d7;
   sh:minCount 1 .
 
-_:cbea50ec493ed74 sh:inversePath rdf:type .
+_:4ddf34a04a6d29d7 sh:inversePath rdf:type .

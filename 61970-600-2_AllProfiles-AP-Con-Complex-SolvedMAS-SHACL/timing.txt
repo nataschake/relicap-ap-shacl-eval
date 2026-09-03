@@ -1,5 +1,5 @@
 file: 61970-600-2_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.209
-finished_at: 2026-09-03T10:46:01+03:00
+duration_seconds: 0.218
+finished_at: 2026-09-03T11:54:18+03:00

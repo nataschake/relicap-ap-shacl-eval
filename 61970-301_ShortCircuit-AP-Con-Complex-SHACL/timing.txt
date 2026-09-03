@@ -1,5 +1,5 @@
 file: 61970-301_ShortCircuit-AP-Con-Complex-SHACL.ttl
 repository: relicapgrid
 http_status: 500
-duration_seconds: 0.225
-finished_at: 2026-09-03T10:45:50+03:00
+duration_seconds: 0.224
+finished_at: 2026-09-03T11:54:08+03:00

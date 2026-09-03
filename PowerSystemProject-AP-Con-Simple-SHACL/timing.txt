@@ -1,5 +1,5 @@
 file: PowerSystemProject-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.550
-finished_at: 2026-09-03T10:46:27+03:00
+duration_seconds: 0.563
+finished_at: 2026-09-03T11:54:44+03:00

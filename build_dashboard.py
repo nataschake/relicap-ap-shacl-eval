@@ -16,7 +16,6 @@ import sys
 import os
 from collections import defaultdict
 from pathlib import Path
-from urllib.parse import quote
 
 EVAL_DIR = Path(__file__).resolve().parent
 
@@ -36,11 +35,7 @@ ct = _load("collect_timings", "collect-timings.py")
 DASH_DIR = EVAL_DIR / "dashboard"
 DETAIL_PAGE_SIZE = 1500
 FAMILIES = ("CGMES", "NCP")
-RELICAP_SEARCH = "https://github.com/search?q=repo%3Aentsoe%2Frelicapgrid+{q}&type=code"
 APL_BLOB = cr.GITHUB_REPO_BLOB  # …/application-profiles-library/blob/main
-UUID_RE = re.compile(
-    r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
-)
 SHAPE_TYPE = re.compile(r"\b(?:a|rdf:type)\s+sh:(PropertyShape|NodeShape)\b")
 GROUP_TYPE = re.compile(r"\b(?:a|rdf:type)\s+sh:PropertyGroup\b")
 GROUP_PRED = re.compile(r"\bsh:group\s+(\S+)")
@@ -179,16 +174,6 @@ def parse_report_meta(path: Path) -> dict[str, object]:
         "truncated": "rdf4j:truncated true" in head,
         "is_turtle": head.lstrip().startswith("@prefix") or "sh:ValidationReport" in head,
     }
-
-
-def focus_instance_href(focus_term: str | None) -> str:
-    """Link a focus node to the ReliCapGrid file that mentions it (GitHub search)."""
-    iri = iri_of(focus_term) or (focus_term or "")
-    found = UUID_RE.search(iri)
-    q = found.group(0) if found else iri
-    if not q:
-        return ""
-    return RELICAP_SEARCH.format(q=quote(q))
 
 
 def group_slug(group_uri: str) -> str:
@@ -377,7 +362,7 @@ def collect_validation(index: dict[str, dict], timings: dict[str, dict]) -> dict
                 rec["failed_uris"].add(iri_of(result.get("sh:sourceShape")))
                 rec["failed_uris"].discard("")
             focus_term = result.get("sh:focusNode")
-            focus_disp, _graphdb = cr.graphdb_link(focus_term)
+            focus_disp, focus_href = cr.graphdb_link(focus_term)
             constraint_uri = iri_of(result.get("sh:sourceConstraint"))
             source_shape_uri = iri_of(result.get("sh:sourceShape"))
             group_uri = shape_group.get(constraint_uri) or shape_group.get(source_shape_uri) or ""
@@ -385,7 +370,7 @@ def collect_validation(index: dict[str, dict], timings: dict[str, dict]) -> dict
             shape_uri = constraint_uri or source_shape_uri
             rec["by_sev"].setdefault(severity, []).append({
                 "focus_disp": focus_disp,
-                "focus_href": focus_instance_href(focus_term),
+                "focus_href": focus_href,
                 "shacl_href": shacl_href(shape_uri, shacl_file, index),
                 "message": cr.strip_literal(result.get("sh:resultMessage")),
                 "severity": severity,
@@ -570,8 +555,9 @@ def write_focus_list(
     meta = (
         f"Check time <strong>{esc(profile_time)}</strong> · "
         f"{len(uniq)} distinct sh:focusNode values. "
-        f"Each focus node links to the ReliCapGrid instance file that contains it "
-        f"(GitHub search). <code>sh:sourceConstraint</code> opens the profile shape file."
+        f"Each focus node opens the resource in GraphDB repository "
+        f"<code>{esc(cr.GRAPHDB_REPO)}</code>. "
+        f"<code>sh:sourceConstraint</code> opens the profile shape file."
     )
     return write_paged_table(
         out_dir,
@@ -1140,7 +1126,8 @@ def build() -> Path:
 <p class="meta">
   <a href="{esc(repo_url)}" target="_blank" rel="noopener">repository on GitHub</a>
   <br>
-  Focus nodes open the ReliCapGrid instance file that contains them;
+  Focus nodes open the resource in GraphDB repository
+  <a href="https://cim.ontotext.com/graphdb/" target="_blank" rel="noopener"><code>{esc(cr.GRAPHDB_REPO)}</code></a>;
   shape names and <code>sh:sourceConstraint</code> open the profile shape file.
   Click a profile name for its <code>sh:PropertyGroup</code> table.<br>
   <strong>Note:</strong> the ReliCapGrid ENTSO-E data is a snapshot
