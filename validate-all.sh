@@ -9,13 +9,23 @@ SHACL_DIRS=(
 )
 echo "SHACL Directories: ${SHACL_DIRS[*]}"
 OUT_DIR="$(cd "$(dirname "$0")" && pwd)"
-#REPO_URL="https://cim.ontotext.com/graphdb/rest/repositories/relicapgrid/validate/file"
-REPO_URL="http://localhost:7200/rest/repositories/relicapgrid/validate/file"
+GDB_URL="https://cim.ontotext.com/graphdb/"
+REPO_URL="${GDB_URL}rest/repositories/relicapgrid/validate/file"
 
 LOG="$OUT_DIR/batch.log"
 
 mkdir -p "$OUT_DIR"
 : > "$LOG"
+
+# GDBUSER/GDBPASS must be exported in the environment before running this script.
+: "${GDBUSER:?GDBUSER env var must be set}"
+: "${GDBPASS:?GDBPASS env var must be set}"
+
+GDB_AUTH_URL="${GDB_URL}rest/login/${GDBUSER}"
+auth_header=$(curl -s "$GDB_AUTH_URL" -X POST -H "X-GraphDB-Password: $GDBPASS" -I | grep -i "authorization:")
+token=${auth_header#*: }
+token=${token%$'\r'}
+AUTH_HEADER="Authorization: Bearer $token"
 
 done_count=0
 fail_count=0
@@ -31,7 +41,7 @@ for dir in "${SHACL_DIRS[@]}"; do
 
     echo "[$(date -Iseconds)] START $name" | tee -a "$LOG"
     start=$(python3 -c 'import time; print(time.perf_counter())')
-    http_code=$(curl -s -X POST --header 'Accept: text/turtle' \
+    http_code=$(curl -s -X POST --header 'Accept: text/turtle' -H "$AUTH_HEADER" \
       "$REPO_URL" \
       -F "file=@$file;type=text/turtle" \
       -o "$out_subdir/validation-report.ttl" \

@@ -1,5 +1,5 @@
 file: 61970-552-Header-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.116
-finished_at: 2026-08-12T15:55:09+03:00
+duration_seconds: 0.231
+finished_at: 2026-09-03T10:45:58+03:00

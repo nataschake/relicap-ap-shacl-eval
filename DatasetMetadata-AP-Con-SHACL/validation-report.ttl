@@ -1,1 +1,5 @@
-VisitorException: QName 'dcatcim:forwardDifference' uses an undefined prefix
+ParseException: Encountered " "}" "} "" at line 13, column 5.
+Was expecting one of:
+    "(" ...
+    <NIL> ...
+    

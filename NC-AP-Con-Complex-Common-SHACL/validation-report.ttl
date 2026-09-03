@@ -1,11 +1,11 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
 @prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rsx: <http://rdf4j.org/shacl-extensions#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
 
 [] a sh:ValidationReport;
   sh:conforms false;
@@ -43,7 +43,7 @@
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:e953c171-b83a-4f87-bdef-c0a0c1d828d5>;
+      sh:focusNode <urn:uuid:03e76bc6-be5b-4436-8eea-27eae2dcbf9d>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;
@@ -51,7 +51,79 @@
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:76bea528-aec5-4235-8f96-19e155278d63>;
+      sh:focusNode <urn:uuid:14b4410c-e040-4147-b148-aed1f7a4337f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5ecd2a3e-2330-4b21-9be1-c26ec1ab5f38>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:0d009e1e-210c-46fb-963d-93f1adc69342>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:cce234eb-ec10-4252-a4fb-6c41c4988440>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:468fc202-2423-4aeb-9998-e366a05ae9b0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:957210cd-d30b-4d7a-a0c3-ab6ad918646e>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:426926c8-0cd9-4b0d-9fa8-ddeb1a966c75>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7aeb7915-d4c6-4b43-80e9-386556516d9b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:9f04e22f-854e-6af6-949c-6fe93178e64f>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:515bd41d-c5bc-4d0c-bf0f-449875c7bd9b>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;
@@ -475,7 +547,39 @@
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
     ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:eec90c21-09d0-9bb8-6647-eecd29ebe4e9>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:b86037bb-22ad-4008-a5a9-8826c6787f80>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:c724d1f1-83d7-4675-91f0-acf022bdccd7>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:31189d70-dfd9-4022-a405-b3f2661e845a>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;
@@ -499,6 +603,62 @@
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
     ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:5e1ef82e-ac7b-4568-a60a-c6120e0d3741>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:d139e10d-1ae3-4142-a07c-325b24bd34c3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:721c1837-fa4a-1c87-452f-5cfaecb1990b>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7df8b72b-0734-4d6c-9366-313819b808d1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:93d86ce7-5468-4d20-91a5-9c9ea2b9b602>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:854d9677-867e-47d2-9770-fb245f6b5aa0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7c43d75f-f169-4525-9a55-ef54c6f95f3c>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:c868997a-3b5d-4d65-a13c-e5a6fe5ef955>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
@@ -515,6 +675,14 @@
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
     ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:25948857-f3d9-92cd-37cf-d10315c92c63>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:eecece7f-7cb2-b012-748d-4e3b8c163313>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
@@ -523,55 +691,87 @@
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
     ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c4e69774-d342-6869-56b1-1e1dd472e3c1>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:41eb633f-b5c4-1471-78fd-005ebb9653c0>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:c329207e-9cfb-cac9-db88-9e804fa32962>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:7512e66f-8552-986d-1273-4519711b9728>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:1c5b0552-ee6a-b3ab-3edf-a1ca250fe0c3>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4250fc93-a0a8-9d9b-108e-3c7ae0bb5d10>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:969b5d09-89e5-f7b8-e0c8-b110e1ad1697>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4a7ea0f4-fbc5-7dd4-7eb2-0e779b972b28>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:2cb6bcf0-3706-d890-3414-efd153324779>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
+      sh:focusNode <urn:uuid:4373cc8f-1f0e-c44a-85e1-9a4a6f621e16>;
+      rsx:shapesGraph rdf4j:nil;
+      sh:resultPath rdf:type;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
+      sh:resultSeverity sh:Violation;
+      sh:resultMessage "Dangling reference is present in the model.";
+      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
+    ], [ a sh:ValidationResult;
       sh:focusNode <urn:uuid:0cfc8edc-7de6-236d-83cd-d1ede6b717d8>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "Dangling reference is present in the model.";
-      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:4dea9287-ca83-0abe-d70e-5f119741eff1>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "Dangling reference is present in the model.";
-      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:c40a9adb-b5d4-d2e8-c7e6-6b7efcd0bb58>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "Dangling reference is present in the model.";
-      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:73c18416-7f40-b004-d3de-fb99c8b8a7e1>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "Dangling reference is present in the model.";
-      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:fbe42f6e-c343-d920-88d3-1db3ef2fbc29>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "Dangling reference is present in the model.";
-      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:8a1db1ff-9a78-ff04-beb8-23f4c918aa00>;
-      rsx:shapesGraph rdf4j:nil;
-      sh:resultPath rdf:type;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent;
-      sh:resultSeverity sh:Violation;
-      sh:resultMessage "Dangling reference is present in the model.";
-      sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
-    ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:3615f98b-c1c3-4d47-82ae-0edfc22b4680>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;
@@ -603,7 +803,7 @@
       sh:resultMessage "Dangling reference is present in the model.";
       sh:sourceShape <https://ap-con.cim4.eu/Common-Complex/1.1#All-DanglingReferences>
     ], [ a sh:ValidationResult;
-      sh:focusNode <urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281>;
+      sh:focusNode <urn:uuid:4129d214-f57e-4a2b-b14c-c5ef458b6703>;
       rsx:shapesGraph rdf4j:nil;
       sh:resultPath rdf:type;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent;

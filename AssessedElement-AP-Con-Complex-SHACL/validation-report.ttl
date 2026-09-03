@@ -1,1 +1,1 @@
-VisitorException: QName 'nc:AssessedElement.ConductingEquipment' uses an undefined prefix
+VisitorException: QName 'nc:AssessedElement.OperationalLimit' uses an undefined prefix

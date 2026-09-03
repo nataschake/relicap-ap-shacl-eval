@@ -99,11 +99,28 @@ Re-run with higher `validationResultsLimitPerConstraint` /
 `validate-all.sh` POSTs each SHACL file to the GraphDB validation endpoint,
 saves the Turtle report per profile, and then runs `collect-timings.py` so
 both `validation-results.html` and `timing-results.html` are produced in the
-same run:
+same run. Validation runs against the `relicapgrid` repository on
+[cim.ontotext.com/graphdb](https://cim.ontotext.com/graphdb/), which requires
+authentication. Export `GDBUSER` / `GDBPASS` before running the script:
 
 ```bash
+export GDBUSER=<username>
+export GDBPASS=<password>
+./validate-all.sh
+```
+
+The script logs in to obtain a bearer token, then validates each file:
+
+```bash
+# authenticate and extract the bearer token
+auth_header=$(curl -s 'https://cim.ontotext.com/graphdb/rest/login/<username>' \
+  -X POST -H 'X-GraphDB-Password: <password>' -I | grep -i "authorization:")
+token=${auth_header#*: }
+
+# validate a shape file using the token
 curl -X POST --header 'Accept: text/turtle' \
-  'http://localhost:7200/rest/repositories/relicapgrid/validate/file' \
+  -H "Authorization: Bearer ${token%$'\r'}" \
+  'https://cim.ontotext.com/graphdb/rest/repositories/relicapgrid/validate/file' \
   -F 'file=@<shape>.ttl;type=text/turtle'
 ```
 
