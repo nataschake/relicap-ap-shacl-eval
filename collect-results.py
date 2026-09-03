@@ -20,10 +20,13 @@ Usage:
 from __future__ import annotations
 
 import csv
+import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import quote
+from urllib.error import URLError, HTTPError
+from urllib.parse import quote, urlencode
+from urllib.request import Request, urlopen
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -48,6 +51,8 @@ EVAL_REPO_BLOB = "https://github.com/nataschake/relicap-ap-shacl-eval/blob/main"
 
 GRAPHDB_RESOURCE = "https://cim.ontotext.com/graphdb/resource"
 GRAPHDB_REPO = "relicapgrid"
+GRAPHDB_SPARQL = f"https://cim.ontotext.com/graphdb/repositories/{GRAPHDB_REPO}"
+GDB_LOOKUP_CHUNK = 250
 
 # Snapshot timestamp of the ReliCapGrid ENTSO-E data that was validated (not
 # the latest upstream version).
@@ -195,8 +200,56 @@ def graphdb_link(focus_term: str | None) -> tuple[str, str]:
     if iri is None:
         return (shorten(focus_term), "")
     href = (f"{GRAPHDB_RESOURCE}?uri={quote(iri, safe=':/')}"
-            f"&repositoryId={GRAPHDB_REPO}&role=subject")
+            f"&repositoryId={GRAPHDB_REPO}&role=all")
     return (iri, href)
+
+
+def _sparql_iri(iri: str) -> str:
+    return "<" + iri.replace("\\", "\\\\").replace(">", "\\>") + ">"
+
+
+def iris_present_in_graphdb(iris: set[str], chunk: int = GDB_LOOKUP_CHUNK) -> set[str]:
+    """Return the subset of IRIs that appear in relicapgrid as s/p/o/graph."""
+    found: set[str] = set()
+    ordered = [i for i in iris if i and not i.startswith("_:")]
+    if not ordered:
+        return found
+    total = (len(ordered) + chunk - 1) // chunk
+    for n, start in enumerate(range(0, len(ordered), chunk), start=1):
+        batch = ordered[start:start + chunk]
+        values = " ".join(_sparql_iri(u) for u in batch)
+        query = (
+            "SELECT DISTINCT ?iri WHERE {\n"
+            f"  VALUES ?iri {{ {values} }}\n"
+            "  FILTER(\n"
+            "    EXISTS { ?iri ?p ?o }\n"
+            "    || EXISTS { ?s ?iri ?o }\n"
+            "    || EXISTS { ?s ?p ?iri }\n"
+            "    || EXISTS { GRAPH ?iri { ?s ?p ?o } }\n"
+            "  )\n"
+            "}"
+        )
+        req = Request(
+            GRAPHDB_SPARQL,
+            data=urlencode({"query": query}).encode(),
+            headers={
+                "Accept": "application/sparql-results+json",
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            method="POST",
+        )
+        try:
+            with urlopen(req, timeout=120) as resp:
+                payload = json.loads(resp.read().decode())
+        except (URLError, HTTPError, TimeoutError, json.JSONDecodeError, OSError) as exc:
+            print(f"GraphDB presence lookup batch {n}/{total} failed: {exc}", file=sys.stderr)
+            continue
+        for binding in payload.get("results", {}).get("bindings", []):
+            val = binding.get("iri", {}).get("value")
+            if val:
+                found.add(val)
+        print(f"GraphDB presence lookup {n}/{total} ({len(found)} found so far)", file=sys.stderr)
+    return found
 
 
 def github_link(term: str | None, shacl_file: str,

@@ -16,6 +16,7 @@ import sys
 import os
 from collections import defaultdict
 from pathlib import Path
+from urllib.parse import quote
 
 EVAL_DIR = Path(__file__).resolve().parent
 
@@ -35,7 +36,11 @@ ct = _load("collect_timings", "collect-timings.py")
 DASH_DIR = EVAL_DIR / "dashboard"
 DETAIL_PAGE_SIZE = 1500
 FAMILIES = ("CGMES", "NCP")
+RELICAP_SEARCH = "https://github.com/search?q=repo%3Aentsoe%2Frelicapgrid+{q}&type=code"
 APL_BLOB = cr.GITHUB_REPO_BLOB  # …/application-profiles-library/blob/main
+UUID_RE = re.compile(
+    r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
+)
 SHAPE_TYPE = re.compile(r"\b(?:a|rdf:type)\s+sh:(PropertyShape|NodeShape)\b")
 GROUP_TYPE = re.compile(r"\b(?:a|rdf:type)\s+sh:PropertyGroup\b")
 GROUP_PRED = re.compile(r"\bsh:group\s+(\S+)")
@@ -174,6 +179,46 @@ def parse_report_meta(path: Path) -> dict[str, object]:
         "truncated": "rdf4j:truncated true" in head,
         "is_turtle": head.lstrip().startswith("@prefix") or "sh:ValidationReport" in head,
     }
+
+
+def focus_file_href(focus_term: str | None) -> str:
+    """Link a focus node to the ReliCapGrid file that mentions it (GitHub search)."""
+    iri = iri_of(focus_term) or (focus_term or "")
+    found = UUID_RE.search(iri)
+    q = found.group(0) if found else iri
+    if not q:
+        return ""
+    return RELICAP_SEARCH.format(q=quote(q))
+
+
+def assign_focus_hrefs(data: dict) -> tuple[int, int]:
+    """Set focus_href to GraphDB when the IRI exists there, else the instance file."""
+    items: list[dict] = []
+    iris: set[str] = set()
+    for rec in data.get("profiles", {}).values():
+        for sev_items in rec.get("by_sev", {}).values():
+            for item in sev_items:
+                iri = item.get("focus_iri") or ""
+                if iri:
+                    iris.add(iri)
+                items.append(item)
+    present = cr.iris_present_in_graphdb(iris)
+    in_gdb = missing = 0
+    seen: set[str] = set()
+    for item in items:
+        iri = item.get("focus_iri") or ""
+        gdb_href = item.get("gdb_href") or ""
+        if iri and iri in present and gdb_href:
+            item["focus_href"] = gdb_href
+            if iri not in seen:
+                in_gdb += 1
+                seen.add(iri)
+        else:
+            item["focus_href"] = item.get("file_href") or ""
+            if iri and iri not in seen:
+                missing += 1
+                seen.add(iri)
+    return in_gdb, missing
 
 
 def group_slug(group_uri: str) -> str:
@@ -362,7 +407,7 @@ def collect_validation(index: dict[str, dict], timings: dict[str, dict]) -> dict
                 rec["failed_uris"].add(iri_of(result.get("sh:sourceShape")))
                 rec["failed_uris"].discard("")
             focus_term = result.get("sh:focusNode")
-            focus_disp, focus_href = cr.graphdb_link(focus_term)
+            focus_disp, gdb_href = cr.graphdb_link(focus_term)
             constraint_uri = iri_of(result.get("sh:sourceConstraint"))
             source_shape_uri = iri_of(result.get("sh:sourceShape"))
             group_uri = shape_group.get(constraint_uri) or shape_group.get(source_shape_uri) or ""
@@ -370,7 +415,10 @@ def collect_validation(index: dict[str, dict], timings: dict[str, dict]) -> dict
             shape_uri = constraint_uri or source_shape_uri
             rec["by_sev"].setdefault(severity, []).append({
                 "focus_disp": focus_disp,
-                "focus_href": focus_href,
+                "focus_iri": iri_of(focus_term),
+                "gdb_href": gdb_href,
+                "file_href": focus_file_href(focus_term),
+                "focus_href": gdb_href,
                 "shacl_href": shacl_href(shape_uri, shacl_file, index),
                 "message": cr.strip_literal(result.get("sh:resultMessage")),
                 "severity": severity,
@@ -555,8 +603,8 @@ def write_focus_list(
     meta = (
         f"Check time <strong>{esc(profile_time)}</strong> · "
         f"{len(uniq)} distinct sh:focusNode values. "
-        f"Each focus node opens the resource in GraphDB repository "
-        f"<code>{esc(cr.GRAPHDB_REPO)}</code>. "
+        f"IRIs present in GraphDB <code>{esc(cr.GRAPHDB_REPO)}</code> open the resource there; "
+        f"others open the ReliCapGrid instance file (GitHub search). "
         f"<code>sh:sourceConstraint</code> opens the profile shape file."
     )
     return write_paged_table(
@@ -1004,6 +1052,8 @@ def build() -> Path:
     timing_rows = ct.collect_rows()
     timings = {str(r["profile"]): r for r in timing_rows}
     data = collect_validation(index, timings)
+    in_gdb, missing = assign_focus_hrefs(data)
+    print(f"Focus nodes in GraphDB: {in_gdb}; missing (file link): {missing}")
 
     http_hrefs: dict[str, str] = {}
     for err in data["http_errors"]:
@@ -1126,9 +1176,10 @@ def build() -> Path:
 <p class="meta">
   <a href="{esc(repo_url)}" target="_blank" rel="noopener">repository on GitHub</a>
   <br>
-  Focus nodes open the resource in GraphDB repository
+  Focus nodes present in GraphDB open
   <a href="https://cim.ontotext.com/graphdb/" target="_blank" rel="noopener"><code>{esc(cr.GRAPHDB_REPO)}</code></a>;
-  shape names and <code>sh:sourceConstraint</code> open the profile shape file.
+  focus nodes missing from GraphDB open the ReliCapGrid instance file.
+  Shape names and <code>sh:sourceConstraint</code> open the profile shape file.
   Click a profile name for its <code>sh:PropertyGroup</code> table.<br>
   <strong>Note:</strong> the ReliCapGrid ENTSO-E data is a snapshot
   (<time datetime="{esc(cr.DATA_TIMESTAMP)}">{esc(cr.DATA_TIMESTAMP)}</time>)

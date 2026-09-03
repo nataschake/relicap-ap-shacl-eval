@@ -60,12 +60,12 @@ Each profile folder is named after its source SHACL file
   failing-shape list; Total (focus-node) counts open the focus-node list;
   good opens the passing-shape list. Zero counts are left blank.
 - **Drill-down** — Violations and warnings list distinct `sh:focusNode`
-  values (with `sh:message`). Each focus node opens the resource in GraphDB
-  repository [`relicapgrid`](https://cim.ontotext.com/graphdb/)
-  (`…/graphdb/resource?uri=…&repositoryId=relicapgrid&role=subject`);
-  `sh:sourceConstraint` opens the matching constraint in the profile shape
-  file. Good lists declared shapes that produced no violation or warning
-  (shape names open the SHACL file).
+  values (with `sh:message`). Focus nodes that exist in GraphDB repository
+  [`relicapgrid`](https://cim.ontotext.com/graphdb/) open the resource explorer
+  (`role=all`); focus nodes that are not in GraphDB open the ReliCapGrid
+  instance file on GitHub. `sh:sourceConstraint` opens the matching constraint
+  in the profile shape file. Good lists declared shapes that produced no
+  violation or warning (shape names open the SHACL file).
 
 `collect-results.py` still writes `validation-results.csv`.
 `collect-timings.py` still writes `timing-results.html`.
@@ -76,7 +76,7 @@ python3 build_dashboard.py
 
 Links on the drill-down pages:
 
-- `sh:focusNode` → GraphDB resource explorer, e.g. `https://cim.ontotext.com/graphdb/resource?uri=urn:uuid:…&repositoryId=relicapgrid&role=subject`.
+- `sh:focusNode` → GraphDB resource explorer when the IRI is in `relicapgrid`; otherwise GitHub code search in `entsoe/relicapgrid`.
 - `sh:sourceConstraint` / shape name → the matching constraint in the profile SHACL file (`CGMES/SHACL` or `NCP/SHACL`).
 
 The CSV from `collect-results.py` is capped **per constraint** — keyed by
