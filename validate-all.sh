@@ -9,7 +9,9 @@ SHACL_DIRS=(
 )
 echo "SHACL Directories: ${SHACL_DIRS[*]}"
 OUT_DIR="$(cd "$(dirname "$0")" && pwd)"
+#REPO_URL="https://cim.ontotext.com/graphdb/rest/repositories/relicapgrid/validate/file"
 REPO_URL="http://localhost:7200/rest/repositories/relicapgrid/validate/file"
+
 LOG="$OUT_DIR/batch.log"
 
 mkdir -p "$OUT_DIR"
@@ -58,3 +60,5 @@ done
 echo "[$(date -Iseconds)] BATCH COMPLETE: $done_count succeeded, $fail_count failed" | tee -a "$LOG"
 echo "[$(date -Iseconds)] GENERATING TIMING SUMMARY" | tee -a "$LOG"
 python3 "$OUT_DIR/collect-timings.py" | tee -a "$LOG"
+echo "[$(date -Iseconds)] GENERATING VALIDATION DASHBOARD" | tee -a "$LOG"
+python3 "$OUT_DIR/collect-results.py" | tee -a "$LOG"

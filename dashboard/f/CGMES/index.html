@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CGMES · SHACL evaluation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../dashboard.css">
+</head>
+<body>
+
+<p class="crumb"><a href="../../../index.html">Dashboard</a></p>
+<section data-family="CGMES">
+<div class="family-head">
+  <h2>CGMES</h2>
+  <div class="stats">
+    <div class="stat"><span>Profiles</span><strong>74</strong></div>
+    <div class="stat"><span>Family check time</span><strong>15.154s</strong></div>
+    <div class="stat"><span>Average</span><strong>0.205s</strong></div>
+    <div class="stat"><span>Max</span><strong>3.391s</strong></div>
+    <div class="stat"><span>Distinct errors</span><strong>3</strong></div>
+    <div class="stat"><span>Distinct warnings</span><strong>0</strong></div>
+    <div class="stat"><span>Errors</span><strong>77</strong></div>
+    <div class="stat"><span>Warnings</span><strong>0</strong></div>
+    <div class="stat"><span>Good shapes</span><strong>8736</strong></div>
+    <div class="stat"><span>Total shapes</span><strong>8739</strong></div>
+    <div class="stat"><span>Non-200 HTTP</span><strong>2</strong></div>
+  </div>
+</div>
+  <div class="family-toolbar">
+    <input class="filter family-filter" type="search" placeholder="Filter CGMES profiles…">
+    <span>Order:</span>
+    <button type="button" class="sort-btn" data-sort="time" data-dir="desc">Check time</button>
+    <button type="button" class="sort-btn" data-sort="v" data-dir="desc">Errors</button>
+    <button type="button" class="sort-btn" data-sort="dv" data-dir="desc">Distinct errors</button>
+  </div>
+<div class="table-wrap">
+<table class="family-table compact">
+  <colgroup></colgroup>
+  <colgroup></colgroup>
+  <colgroup class="errors" span="2"></colgroup>
+  <colgroup class="warnings" span="2"></colgroup>
+  <thead>
+    <tr>
+      <th class="profile" rowspan="2">Profile</th>
+      <th class="dur" rowspan="2">Time</th>
+      <th class="num group-err" colspan="2"><span class="icon violation" title="sh:Violation">&#9679;</span> Errors</th>
+      <th class="num group-warn" colspan="2"><span class="icon warning" title="sh:Warning">&#9650;</span> Warnings</th>
+      <th class="num" rowspan="2"><span class="icon good" title="good shape">&#9679;</span> Good</th>
+      <th class="num" rowspan="2">Total</th>
+    </tr>
+    <tr>
+      <th class="num group-err">Total</th>
+      <th class="num group-err">Distinct</th>
+      <th class="num group-warn">Total</th>
+      <th class="num group-warn">Distinct</th>
+    </tr>
+  </thead>
+  <tbody class="family-profiles">
+<tr class="profile-block" data-profile="61970-600-2_Dynamics-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="3.391000">
+  <td class="profile"><a href="../../p/61970-600-2_Dynamics-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Dynamics-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">3.391s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Dynamics-AP-Con-Simple-SHACL/good/index.html">5565</a></td>
+  <td class="num">5565</td>
+</tr><tr class="profile-block" data-profile="61970-600-1_AllProfiles-AP-Con-Complex-SHACL" data-v="1" data-dv="1" data-time="1.325000">
+  <td class="profile"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SHACL/index.html">61970-<wbr>600-<wbr>1_<wbr>AllProfiles-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">1.325s</td>
+  <td class="num cell"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SHACL/violation/index.html">1</a></td>
+  <td class="num cell"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SHACL/distinct-violation/index.html">1</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SHACL/good/index.html">9</a></td>
+  <td class="num">10</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Equipment-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="1.190000">
+  <td class="profile"><a href="../../p/61970-600-2_Equipment-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">1.190s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Equipment-AP-Con-Simple-SHACL/good/index.html">572</a></td>
+  <td class="num">572</td>
+</tr><tr class="profile-block" data-profile="61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL" data-v="75" data-dv="1" data-time="0.636000">
+  <td class="profile"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/index.html">61970-<wbr>600-<wbr>1_<wbr>AllProfiles-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.636s</td>
+  <td class="num cell"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/violation/index.html">75</a></td>
+  <td class="num cell"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/distinct-violation/index.html">1</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/good/index.html">7</a></td>
+  <td class="num">8</td>
+</tr><tr class="profile-block" data-profile="61970-302_Dynamics-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.462000">
+  <td class="profile"><a href="../../p/61970-302_Dynamics-AP-Con-Complex-SHACL/index.html">61970-<wbr>302_<wbr>Dynamics-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.462s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-302_Dynamics-AP-Con-Complex-SHACL/good/index.html">1348</a></td>
+  <td class="num">1348</td>
+</tr><tr class="profile-block" data-profile="61970-452_Equipment-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.286000">
+  <td class="profile"><a href="../../p/61970-452_Equipment-AP-Con-Complex-SHACL/index.html">61970-<wbr>452_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.286s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-452_Equipment-AP-Con-Complex-SHACL/good/index.html">68</a></td>
+  <td class="num">68</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_SteadyStateHypothesis-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.261000">
+  <td class="profile"><a href="../../p/61970-600-2_SteadyStateHypothesis-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>SteadyStateHypothesis-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.261s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_SteadyStateHypothesis-AP-Con-Simple-SHACL/good/index.html">130</a></td>
+  <td class="num">130</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Operation-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.250000">
+  <td class="profile"><a href="../../p/61970-600-2_Operation-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Operation-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.250s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Operation-AP-Con-Simple-SHACL/good/index.html">112</a></td>
+  <td class="num">112</td>
+</tr><tr class="profile-block" data-profile="61970-301_ShortCircuit-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.208000">
+  <td class="profile"><a href="../../p/61970-301_ShortCircuit-AP-Con-Complex-SHACL/index.html">61970-<wbr>301_<wbr>ShortCircuit-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/61970-301_ShortCircuit-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.208s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_ShortCircuit-AP-Con-Complex-SHACL/good/index.html">10</a></td>
+  <td class="num">10</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_ShortCircuit-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.208000">
+  <td class="profile"><a href="../../p/61970-600-2_ShortCircuit-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>ShortCircuit-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.208s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_ShortCircuit-AP-Con-Simple-SHACL/good/index.html">208</a></td>
+  <td class="num">208</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Operation-AP-Con-Complex-Implicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.199000">
+  <td class="profile"><a href="../../p/61970-600-2_Operation-AP-Con-Complex-Implicit-CrossProfile-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Operation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Implicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.199s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Operation-AP-Con-Complex-Implicit-CrossProfile-SHACL/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_DiagramLayout-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.193000">
+  <td class="profile"><a href="../../p/61970-600-2_DiagramLayout-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>DiagramLayout-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.193s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_DiagramLayout-AP-Con-Simple-SHACL/good/index.html">52</a></td>
+  <td class="num">52</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_GeographicalLocation-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.182000">
+  <td class="profile"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>GeographicalLocation-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.182s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Simple-SHACL/good/index.html">77</a></td>
+  <td class="num">77</td>
+</tr><tr class="profile-block" data-profile="61970-301_Equipment-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.151000">
+  <td class="profile"><a href="../../p/61970-301_Equipment-AP-Con-Complex-SHACL/index.html">61970-<wbr>301_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.151s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_Equipment-AP-Con-Complex-SHACL/good/index.html">100</a></td>
+  <td class="num">100</td>
+</tr><tr class="profile-block" data-profile="61970-301_StateVariables-AP-Con-Complex-SolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.143000">
+  <td class="profile"><a href="../../p/61970-301_StateVariables-AP-Con-Complex-SolvedMAS-SHACL/index.html">61970-<wbr>301_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.143s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_StateVariables-AP-Con-Complex-SolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-453_DiagramLayout-AP-Con-Complex-Implicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.135000">
+  <td class="profile"><a href="../../p/61970-453_DiagramLayout-AP-Con-Complex-Implicit-CrossProfile-SHACL/index.html">61970-<wbr>453_<wbr>DiagramLayout-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Implicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.135s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-453_DiagramLayout-AP-Con-Complex-Implicit-CrossProfile-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-301_StateVariables-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.132000">
+  <td class="profile"><a href="../../p/61970-301_StateVariables-AP-Con-Complex-SHACL/index.html">61970-<wbr>301_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.132s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_StateVariables-AP-Con-Complex-SHACL/good/index.html">11</a></td>
+  <td class="num">11</td>
+</tr><tr class="profile-block" data-profile="61970-301_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.130000">
+  <td class="profile"><a href="../../p/61970-301_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>301_<wbr>SteadyStateHypothesis-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/61970-301_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.130s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">11</a></td>
+  <td class="num">11</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_EquipmentBoundary-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.128000">
+  <td class="profile"><a href="../../p/61970-600-2_EquipmentBoundary-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>EquipmentBoundary-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.128s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_EquipmentBoundary-AP-Con-Simple-SHACL/good/index.html">54</a></td>
+  <td class="num">54</td>
+</tr><tr class="profile-block" data-profile="61970-457_Dynamics-AP-Con-Complex-Implicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.126000">
+  <td class="profile"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-Implicit-CrossProfile-SHACL/index.html">61970-<wbr>457_<wbr>Dynamics-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Implicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.126s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-Implicit-CrossProfile-SHACL/good/index.html">8</a></td>
+  <td class="num">8</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_StateVariables-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.125000">
+  <td class="profile"><a href="../../p/61970-600-2_StateVariables-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.125s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_StateVariables-AP-Con-Simple-SHACL/good/index.html">51</a></td>
+  <td class="num">51</td>
+</tr><tr class="profile-block" data-profile="61970-452_Operation-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.122000">
+  <td class="profile"><a href="../../p/61970-452_Operation-AP-Con-Complex-SHACL/index.html">61970-<wbr>452_<wbr>Operation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.122s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-452_Operation-AP-Con-Complex-SHACL/good/index.html">7</a></td>
+  <td class="num">7</td>
+</tr><tr class="profile-block" data-profile="61970-452_ShortCircuit-AP-Con-Complex-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.122000">
+  <td class="profile"><a href="../../p/61970-452_ShortCircuit-AP-Con-Complex-CrossProfile-SHACL/index.html">61970-<wbr>452_<wbr>ShortCircuit-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.122s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-452_ShortCircuit-AP-Con-Complex-CrossProfile-SHACL/good/index.html">2</a></td>
+  <td class="num">2</td>
+</tr><tr class="profile-block" data-profile="61970-456_StateVariables-AP-Con-Complex-SolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.120000">
+  <td class="profile"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-SolvedMAS-SHACL/index.html">61970-<wbr>456_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.120s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-SolvedMAS-SHACL/good/index.html">8</a></td>
+  <td class="num">8</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_GeographicalLocation-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.118000">
+  <td class="profile"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>GeographicalLocation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.118s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-301_Topology-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.117000">
+  <td class="profile"><a href="../../p/61970-301_Topology-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>301_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.117s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_Topology-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-552-Header-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.116000">
+  <td class="profile"><a href="../../p/61970-552-Header-AP-Con-Simple-SHACL/index.html">61970-<wbr>552-<wbr>Header-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.116s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-552-Header-AP-Con-Simple-SHACL/good/index.html">26</a></td>
+  <td class="num">26</td>
+</tr><tr class="profile-block" data-profile="61970-301_SteadyStateHypothesis-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.115000">
+  <td class="profile"><a href="../../p/61970-301_SteadyStateHypothesis-AP-Con-Complex-SHACL/index.html">61970-<wbr>301_<wbr>SteadyStateHypothesis-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.115s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_SteadyStateHypothesis-AP-Con-Complex-SHACL/good/index.html">42</a></td>
+  <td class="num">42</td>
+</tr><tr class="profile-block" data-profile="61970-456_Topology-AP-Con-Complex-Implicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.115000">
+  <td class="profile"><a href="../../p/61970-456_Topology-AP-Con-Complex-Implicit-CrossProfile-SHACL/index.html">61970-<wbr>456_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Implicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.115s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_Topology-AP-Con-Complex-Implicit-CrossProfile-SHACL/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="61970-456_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.113000">
+  <td class="profile"><a href="../../p/61970-456_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>456_<wbr>SteadyStateHypothesis-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.113s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">15</a></td>
+  <td class="num">15</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Operation-AP-Con-Complex-Explicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.113000">
+  <td class="profile"><a href="../../p/61970-600-2_Operation-AP-Con-Complex-Explicit-CrossProfile-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Operation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Explicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.113s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Operation-AP-Con-Complex-Explicit-CrossProfile-SHACL/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="61970-301_ShortCircuit-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.112000">
+  <td class="profile"><a href="../../p/61970-301_ShortCircuit-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>301_<wbr>ShortCircuit-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.112s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_ShortCircuit-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-456_StateVariables-AP-Con-Complex-Explicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.112000">
+  <td class="profile"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-Explicit-CrossProfile-SHACL/index.html">61970-<wbr>456_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Explicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.112s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-Explicit-CrossProfile-SHACL/good/index.html">10</a></td>
+  <td class="num">10</td>
+</tr><tr class="profile-block" data-profile="61970-600_Topology-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.112000">
+  <td class="profile"><a href="../../p/61970-600_Topology-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>600_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.112s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600_Topology-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_GeographicalLocation-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.111000">
+  <td class="profile"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>GeographicalLocation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.111s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-452_ShortCircuit-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.110000">
+  <td class="profile"><a href="../../p/61970-452_ShortCircuit-AP-Con-Complex-SHACL/index.html">61970-<wbr>452_<wbr>ShortCircuit-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.110s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-452_ShortCircuit-AP-Con-Complex-SHACL/good/index.html">2</a></td>
+  <td class="num">2</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_DiagramLayout-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.107000">
+  <td class="profile"><a href="../../p/61970-600-2_DiagramLayout-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>DiagramLayout-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.107s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_DiagramLayout-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-456_SteadyStateHypothesis-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.106000">
+  <td class="profile"><a href="../../p/61970-456_SteadyStateHypothesis-AP-Con-Complex-SHACL/index.html">61970-<wbr>456_<wbr>SteadyStateHypothesis-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.106s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_SteadyStateHypothesis-AP-Con-Complex-SHACL/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="61970-457_Dynamics-AP-Con-Complex-Explicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.105000">
+  <td class="profile"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-Explicit-CrossProfile-SHACL/index.html">61970-<wbr>457_<wbr>Dynamics-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Explicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.105s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-Explicit-CrossProfile-SHACL/good/index.html">8</a></td>
+  <td class="num">8</td>
+</tr><tr class="profile-block" data-profile="61970-600_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.105000">
+  <td class="profile"><a href="../../p/61970-600_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>600_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.105s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">4</a></td>
+  <td class="num">4</td>
+</tr><tr class="profile-block" data-profile="61970-301_EquipmentBoundary-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.104000">
+  <td class="profile"><a href="../../p/61970-301_EquipmentBoundary-AP-Con-Complex-SHACL/index.html">61970-<wbr>301_<wbr>EquipmentBoundary-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.104s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_EquipmentBoundary-AP-Con-Complex-SHACL/good/index.html">9</a></td>
+  <td class="num">9</td>
+</tr><tr class="profile-block" data-profile="61970-600-1_Prof10-Header-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.104000">
+  <td class="profile"><a href="../../p/61970-600-1_Prof10-Header-AP-Con-Complex-SHACL/index.html">61970-<wbr>600-<wbr>1_<wbr>Prof10-<wbr>Header-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.104s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-1_Prof10-Header-AP-Con-Complex-SHACL/good/index.html">12</a></td>
+  <td class="num">12</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.103000">
+  <td class="profile"><a href="../../p/61970-600-2_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>AllProfiles-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.103s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/good/index.html">2</a></td>
+  <td class="num">2</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_EquipmentBoundary-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.103000">
+  <td class="profile"><a href="../../p/61970-600-2_EquipmentBoundary-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>EquipmentBoundary-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.103s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_EquipmentBoundary-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-456_StateVariables-AP-Con-Complex-Implicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.102000">
+  <td class="profile"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-Implicit-CrossProfile-SHACL/index.html">61970-<wbr>456_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Implicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.102s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-Implicit-CrossProfile-SHACL/good/index.html">10</a></td>
+  <td class="num">10</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Dynamics-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.102000">
+  <td class="profile"><a href="../../p/61970-600-2_Dynamics-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Dynamics-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.102s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Dynamics-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">68</a></td>
+  <td class="num">68</td>
+</tr><tr class="profile-block" data-profile="61970-301_DiagramLayout-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.101000">
+  <td class="profile"><a href="../../p/61970-301_DiagramLayout-AP-Con-Complex-SHACL/index.html">61970-<wbr>301_<wbr>DiagramLayout-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.101s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_DiagramLayout-AP-Con-Complex-SHACL/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="61970-457_Dynamics-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.101000">
+  <td class="profile"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-SHACL/index.html">61970-<wbr>457_<wbr>Dynamics-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.101s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-SHACL/good/index.html">4</a></td>
+  <td class="num">4</td>
+</tr><tr class="profile-block" data-profile="61970-600-1_Equipment-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.101000">
+  <td class="profile"><a href="../../p/61970-600-1_Equipment-AP-Con-Complex-SHACL/index.html">61970-<wbr>600-<wbr>1_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.101s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-1_Equipment-AP-Con-Complex-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-456_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.100000">
+  <td class="profile"><a href="../../p/61970-456_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/index.html">61970-<wbr>456_<wbr>AllProfiles-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.100s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Equipment-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.099000">
+  <td class="profile"><a href="../../p/61970-600-2_Equipment-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.099s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Equipment-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">21</a></td>
+  <td class="num">21</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_ShortCircuit-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.099000">
+  <td class="profile"><a href="../../p/61970-600-2_ShortCircuit-AP-Con-Complex-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>ShortCircuit-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.099s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_ShortCircuit-AP-Con-Complex-SHACL/good/index.html">2</a></td>
+  <td class="num">2</td>
+</tr><tr class="profile-block" data-profile="61970-301_Operation-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.097000">
+  <td class="profile"><a href="../../p/61970-301_Operation-AP-Con-Complex-SHACL/index.html">61970-<wbr>301_<wbr>Operation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.097s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_Operation-AP-Con-Complex-SHACL/good/index.html">2</a></td>
+  <td class="num">2</td>
+</tr><tr class="profile-block" data-profile="61970-456_Topology-AP-Con-Complex-Explicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.097000">
+  <td class="profile"><a href="../../p/61970-456_Topology-AP-Con-Complex-Explicit-CrossProfile-SHACL/index.html">61970-<wbr>456_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Explicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.097s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_Topology-AP-Con-Complex-Explicit-CrossProfile-SHACL/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Topology-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.096000">
+  <td class="profile"><a href="../../p/61970-600-2_Topology-AP-Con-Simple-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.096s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Topology-AP-Con-Simple-SHACL/good/index.html">22</a></td>
+  <td class="num">22</td>
+</tr><tr class="profile-block" data-profile="61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.095000">
+  <td class="profile"><a href="../../p/61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>456_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.095s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-453_DiagramLayout-AP-Con-Complex-Explicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.094000">
+  <td class="profile"><a href="../../p/61970-453_DiagramLayout-AP-Con-Complex-Explicit-CrossProfile-SHACL/index.html">61970-<wbr>453_<wbr>DiagramLayout-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Explicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.094s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-453_DiagramLayout-AP-Con-Complex-Explicit-CrossProfile-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-456_Topology-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.094000">
+  <td class="profile"><a href="../../p/61970-456_Topology-AP-Con-Complex-SHACL/index.html">61970-<wbr>456_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.094s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-456_Topology-AP-Con-Complex-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_IdentifiedObjectCommon_AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.094000">
+  <td class="profile"><a href="../../p/61970-600-2_IdentifiedObjectCommon_AP-Con-Complex-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>IdentifiedObjectCommon_<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.094s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_IdentifiedObjectCommon_AP-Con-Complex-SHACL/good/index.html">4</a></td>
+  <td class="num">4</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_GeographicalLocation-AP-Con-Complex-Implicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.093000">
+  <td class="profile"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-Implicit-CrossProfile-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>GeographicalLocation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Implicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.093s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-Implicit-CrossProfile-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-456_StateVariables-AP-Con-Complex-SHACL" data-v="1" data-dv="1" data-time="0.089000">
+  <td class="profile"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-SHACL/index.html">61970-<wbr>456_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.089s</td>
+  <td class="num cell"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-SHACL/violation/index.html">1</a></td>
+  <td class="num cell"><a href="../../p/61970-456_StateVariables-AP-Con-Complex-SHACL/distinct-violation/index.html">1</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-457_Dynamics-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.089000">
+  <td class="profile"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>457_<wbr>Dynamics-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.089s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-457_Dynamics-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-301_DiagramLayout-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.088000">
+  <td class="profile"><a href="../../p/61970-301_DiagramLayout-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>301_<wbr>DiagramLayout-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.088s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_DiagramLayout-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-453_DiagramLayout-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.087000">
+  <td class="profile"><a href="../../p/61970-453_DiagramLayout-AP-Con-Complex-SHACL/index.html">61970-<wbr>453_<wbr>DiagramLayout-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.087s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-453_DiagramLayout-AP-Con-Complex-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Topology-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.087000">
+  <td class="profile"><a href="../../p/61970-600-2_Topology-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Topology-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.087s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Topology-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-301_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.085000">
+  <td class="profile"><a href="../../p/61970-301_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>301_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.085s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Operation-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.085000">
+  <td class="profile"><a href="../../p/61970-600-2_Operation-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Operation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.085s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Operation-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">6</a></td>
+  <td class="num">6</td>
+</tr><tr class="profile-block" data-profile="61968-13_GeographicalLocation-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.083000">
+  <td class="profile"><a href="../../p/61968-13_GeographicalLocation-AP-Con-Complex-SHACL/index.html">61968-<wbr>13_<wbr>GeographicalLocation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.083s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61968-13_GeographicalLocation-AP-Con-Complex-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_StateVariables-AP-Con-Complex-InverseAssociation-SHACL" data-v="0" data-dv="0" data-time="0.083000">
+  <td class="profile"><a href="../../p/61970-600-2_StateVariables-AP-Con-Complex-InverseAssociation-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>StateVariables-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>InverseAssociation-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.083s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_StateVariables-AP-Con-Complex-InverseAssociation-SHACL/good/index.html">9</a></td>
+  <td class="num">9</td>
+</tr><tr class="profile-block" data-profile="61970-452_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.079000">
+  <td class="profile"><a href="../../p/61970-452_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>452_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.079s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-452_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-452_Operation-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.078000">
+  <td class="profile"><a href="../../p/61970-452_Operation-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>452_<wbr>Operation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.078s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-452_Operation-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-301_EquipmentBoundary-AP-Con-Complex-NotSolvedMAS-SHACL" data-v="0" data-dv="0" data-time="0.077000">
+  <td class="profile"><a href="../../p/61970-301_EquipmentBoundary-AP-Con-Complex-NotSolvedMAS-SHACL/index.html">61970-<wbr>301_<wbr>EquipmentBoundary-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>NotSolvedMAS-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.077s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-301_EquipmentBoundary-AP-Con-Complex-NotSolvedMAS-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_Equipment-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.077000">
+  <td class="profile"><a href="../../p/61970-600-2_Equipment-AP-Con-Complex-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>Equipment-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.077s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_Equipment-AP-Con-Complex-SHACL/good/index.html">5</a></td>
+  <td class="num">5</td>
+</tr><tr class="profile-block" data-profile="61970-600-2_GeographicalLocation-AP-Con-Complex-Explicit-CrossProfile-SHACL" data-v="0" data-dv="0" data-time="0.076000">
+  <td class="profile"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-Explicit-CrossProfile-SHACL/index.html">61970-<wbr>600-<wbr>2_<wbr>GeographicalLocation-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Explicit-<wbr>CrossProfile-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.076s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/61970-600-2_GeographicalLocation-AP-Con-Complex-Explicit-CrossProfile-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<script>
+(function () {
+  function sortFamily(section, key, dir) {
+    var wrap = section.querySelector("tbody.family-profiles");
+    if (!wrap) return;
+    var blocks = Array.prototype.slice.call(wrap.querySelectorAll("tr.profile-block"));
+    var desc = dir !== "asc";
+    blocks.sort(function (a, b) {
+      var av = parseFloat(a.getAttribute("data-" + key) || "-1");
+      var bv = parseFloat(b.getAttribute("data-" + key) || "-1");
+      if (av === bv) {
+        return (a.getAttribute("data-profile") || "").localeCompare(b.getAttribute("data-profile") || "");
+      }
+      return desc ? bv - av : av - bv;
+    });
+    blocks.forEach(function (el) { wrap.appendChild(el); });
+  }
+  document.querySelectorAll("section[data-family]").forEach(function (section) {
+    var filter = section.querySelector(".family-filter");
+    if (filter) {
+      filter.addEventListener("input", function () {
+        var q = this.value.toLowerCase();
+        section.querySelectorAll(".profile-block").forEach(function (el) {
+          var name = el.getAttribute("data-profile") || "";
+          el.classList.toggle("hidden", q && name.toLowerCase().indexOf(q) === -1);
+        });
+      });
+    }
+    section.querySelectorAll(".sort-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var key = btn.getAttribute("data-sort");
+        var dir = btn.getAttribute("data-dir") || "desc";
+        if (btn.classList.contains("active")) {
+          dir = dir === "desc" ? "asc" : "desc";
+          btn.setAttribute("data-dir", dir);
+        }
+        section.querySelectorAll(".sort-btn").forEach(function (other) { other.classList.remove("active"); });
+        btn.classList.add("active");
+        sortFamily(section, key, dir);
+      });
+    });
+  });
+})();
+</script>
+
+
+
+<script>
+(function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    table.querySelectorAll("thead th").forEach(function (th) {
+      if (th.colSpan > 1) return;
+      var grip = document.createElement("span");
+      grip.className = "col-resize";
+      grip.title = "Drag to resize column";
+      th.appendChild(grip);
+      grip.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var startX = e.pageX;
+        var startW = th.getBoundingClientRect().width;
+        table.classList.add("resizing");
+        function move(ev) {
+          th.style.width = Math.max(36, startW + (ev.pageX - startX)) + "px";
+        }
+        function up() {
+          table.classList.remove("resizing");
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
+        }
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", up);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

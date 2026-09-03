@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contingency-AP-Con-Simple-SHACL · property groups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../dashboard.css">
+</head>
+<body>
+
+<p class="crumb"><a href="../../../index.html">Dashboard</a> ·
+<a href="../../f/NCP/index.html">NCP</a></p>
+<h1>Contingency-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</h1>
+<p class="meta">Check time <strong>0.598s</strong> ·
+HTTP 200 · shape file <a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/Contingency-AP-Con-Simple-SHACL.ttl" target="_blank" rel="noopener">Contingency-AP-Con-Simple-SHACL.ttl</a>.</p>
+<div class="table-wrap">
+<table class="family-table compact">
+  <colgroup></colgroup>
+  <colgroup class="errors" span="2"></colgroup>
+  <colgroup class="warnings" span="2"></colgroup>
+  <thead>
+    <tr>
+      <th class="profile" rowspan="2">Property group</th>
+      <th class="num group-err" colspan="2"><span class="icon violation" title="sh:Violation">&#9679;</span> Errors</th>
+      <th class="num group-warn" colspan="2"><span class="icon warning" title="sh:Warning">&#9650;</span> Warnings</th>
+      <th class="num" rowspan="2"><span class="icon good" title="good shape">&#9679;</span> Good</th>
+      <th class="num" rowspan="2">Total</th>
+    </tr>
+    <tr>
+      <th class="num group-err">Total</th>
+      <th class="num group-err">Distinct</th>
+      <th class="num group-warn">Total</th>
+      <th class="num group-warn">Distinct</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td class="profile">Cardinality</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/CardinalityGroup/good/index.html">9</a></td>
+  <td class="num">9</td>
+</tr><tr>
+  <td class="profile">CardinalityIO (CardinalityGroup)</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num"></td>
+</tr><tr>
+  <td class="profile">CardinalityIO (CardinalityIO)</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/CardinalityIO/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr>
+  <td class="profile">Datatypes</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/DatatypesGroup/good/index.html">4</a></td>
+  <td class="num">4</td>
+</tr><tr>
+  <td class="profile">DatatypesIO</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/DatatypesGroupIO/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr>
+  <td class="profile">InverseAssociations</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/InverseAssociationsGroup/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr>
+  <td class="profile">ProfileClasses</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/ProfileClassesGroup/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr>
+  <td class="profile">ProfileProperties</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/ProfilePropertiesGroup/good/index.html">4</a></td>
+  <td class="num">4</td>
+</tr><tr>
+  <td class="profile">Associations</td>
+  <td class="num cell"><a href="g/AssociationsGroup/violation/index.html">326</a></td>
+  <td class="num cell"><a href="g/AssociationsGroup/distinct-violation/index.html">1</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="g/AssociationsGroup/good/index.html">3</a></td>
+  <td class="num">4</td>
+</tr>
+  </tbody>
+</table>
+</div>
+
+
+<script>
+(function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    table.querySelectorAll("thead th").forEach(function (th) {
+      if (th.colSpan > 1) return;
+      var grip = document.createElement("span");
+      grip.className = "col-resize";
+      grip.title = "Drag to resize column";
+      th.appendChild(grip);
+      grip.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var startX = e.pageX;
+        var startW = th.getBoundingClientRect().width;
+        table.classList.add("resizing");
+        function move(ev) {
+          th.style.width = Math.max(36, startW + (ev.pageX - startX)) + "px";
+        }
+        function up() {
+          table.classList.remove("resizing");
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
+        }
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", up);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

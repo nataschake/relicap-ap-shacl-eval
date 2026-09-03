@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Good shapes · DatasetMetadata-AP-Con-SHACL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../dashboard.css">
+</head>
+<body>
+
+<p class="crumb"><a href="../../../../../../index.html">Dashboard</a> · <a href="../../../../../f/NCP/index.html">NCP</a> · <a href="../../../index.html">DatasetMetadata-<wbr>AP-<wbr>Con-<wbr>SHACL</a> · CardinalityCustom</p>
+<h1><span class="icon good" title="good shape">&#9679;</span> Good shapes · CardinalityCustom · DatasetMetadata-<wbr>AP-<wbr>Con-<wbr>SHACL</h1>
+<p class="meta">Check time <strong>0.114s</strong> · 11 declared shapes with no sh:Violation or sh:Warning. Shape names open the profile SHACL file.</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>shape</th><th>kind</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1131" target="_blank" rel="noopener">accessRights-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1073" target="_blank" rel="noopener">accrualPeriodicity-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1323" target="_blank" rel="noopener">alternativeVersionAndPreferredVersion-<wbr>dependency</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1160" target="_blank" rel="noopener">conformsTo-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1349" target="_blank" rel="noopener">forwardReverse-<wbr>dependency</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1217" target="_blank" rel="noopener">issued-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1247" target="_blank" rel="noopener">keyword-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1187" target="_blank" rel="noopener">requires-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1365" target="_blank" rel="noopener">reverseDifferencePreviousVersion-<wbr>dependency</a></td><td>NodeShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1043" target="_blank" rel="noopener">spatial-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr><tr><td><a href="https://github.com/nataschake/application-profiles-library/blob/main/NCP/SHACL/DatasetMetadata-AP-Con-SHACL.ttl#L1102" target="_blank" rel="noopener">usedSettings-<wbr>NC-<wbr>cardinality</a></td><td>PropertyShape</td></tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<script>
+(function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    table.querySelectorAll("thead th").forEach(function (th) {
+      if (th.colSpan > 1) return;
+      var grip = document.createElement("span");
+      grip.className = "col-resize";
+      grip.title = "Drag to resize column";
+      th.appendChild(grip);
+      grip.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var startX = e.pageX;
+        var startW = th.getBoundingClientRect().width;
+        table.classList.add("resizing");
+        function move(ev) {
+          th.style.width = Math.max(36, startW + (ev.pageX - startX)) + "px";
+        }
+        function up() {
+          table.classList.remove("resizing");
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
+        }
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", up);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

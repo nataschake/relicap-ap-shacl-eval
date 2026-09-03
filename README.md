@@ -5,7 +5,7 @@ and NCP (Network Code Profiles) Application-Profiles shapes, with a script
 that gathers every `sh:ValidationResult` from all the per-profile reports
 into one browsable table.
 
-**[View the results table →](https://nataschake.github.io/relicap-ap-shacl-eval/)**
+**[View the dashboard →](https://nataschake.github.io/relicap-ap-shacl-eval/)**
 
 ## Links
 
@@ -13,7 +13,7 @@ into one browsable table.
 - **Data** — [`entsoe/relicapgrid`](https://github.com/entsoe/relicapgrid),
   loaded into the GraphDB repository
   [`relicapgrid` on cim.ontotext.com](https://cim.ontotext.com/graphdb/).
-- **Results** — [project home page on GitHub Pages](https://nataschake.github.io/relicap-ap-shacl-eval/), with links to the validation and timing tables.
+- **Results** — [dashboard on GitHub Pages](https://nataschake.github.io/relicap-ap-shacl-eval/), with family matrices, timings, and focus-node drill-down pages.
 
 ## Layout
 
@@ -21,46 +21,66 @@ into one browsable table.
 ap-relicap-eval/
 ├── <PROFILE-SHACL>/            # one folder per validated SHACL file
 │   └── validation-report.ttl   # GraphDB SHACL report (+ timing.txt, etc.)
-├── collect-results.py          # builds the combined validation table (HTML + CSV)
+├── collect-results.py          # CSV export + stub validation-results.html; invokes the dashboard
 ├── collect-timings.py          # builds timing-results.html with current/previous timings
-├── validation-results.html     # combined validation table, clickable links + filter box
-├── validation-results.csv      # same validation data + raw resolved URLs
+├── build_dashboard.py          # index.html + dashboard/ family and focus-node pages
+├── dashboard.css               # shared styles for the dashboard
+├── dashboard/                  # family pages (f/) + focus-node pages (p/, paginated)
+├── validation-results.html     # short pointer to the dashboard
+├── validation-results.csv      # validation data + raw resolved URLs (capped per constraint)
 ├── timing-results.html         # per-profile timing table with previous/current durations
-├── index.html                  # landing page for GitHub Pages with clickable links to both tables
-├── validate-all.sh             # validate every SHACL file against GraphDB and generate both HTML reports
+├── index.html                  # dashboard: frontmatter stats + links to family pages
+├── validate-all.sh             # validate every SHACL file against GraphDB and generate reports
 └── continue-validate.sh        # resume a batch, skipping done/slow files
 ```
 
 Each profile folder is named after its source SHACL file
 (`<name>/` ⇄ `…/SHACL/<name>.ttl`).
 
-## The combined table
+## The dashboard
 
-`collect-results.py` parses all `*/validation-report.ttl` and writes one
-row per `sh:ValidationResult` to `validation-results.html` / `.csv`, with
-columns: `Family` (CGMES or NCP), `Profile`, `Report`, `sh:focusNode`,
-`sh:resultPath`, `sh:sourceConstraint`, `sh:sourceConstraintComponent`,
-`sh:resultSeverity`, `sh:resultMessage`, `sh:sourceShape`, `sh:value`.
+`build_dashboard.py` (also run from `collect-results.py`) writes `index.html`:
 
-`collect-timings.py` reads the current per-profile `timing.txt` files and
-writes `timing-results.html` with two timing columns: `Previous` and
-`Current`.
+- **Frontmatter** — one combined block: profiles tested, total/average/max
+  check time, conforming and truncated reports, distinct errors/warnings
+  (declared shapes), errors/warnings (distinct `sh:focusNode`s), good
+  shapes, total shapes, HTTP errors. Distinct errors + Distinct warnings +
+  Good = Total shapes. Family and profile tables use the same counters, so
+  summing profiles yields the family totals and summing families yields the
+  frontmatter. Family names on this page open the family dashboard.
+- **Families** — CGMES then NCP. Each family name (section title)
+  opens `dashboard/f/<family>/index.html`, which has the family summary
+  (sum of check times, average, max, severity totals), a filter/sort row, and one results table in the same grouped style as the
+  profile page: profile name, time, Errors (Total / Distinct), Warnings
+  (Total / Distinct), good, total. HTTP status sits under the profile name.
+  The profile name opens a table of
+  `sh:PropertyGroup` rows (`rdfs:label` via `sh:group`). Error and warning
+  columns are grouped: Total / Distinct errors, then Total / Distinct
+  warnings, then good and total. Distinct (declared-shape) counts open the
+  failing-shape list; Total (focus-node) counts open the focus-node list;
+  good opens the passing-shape list. Zero counts are left blank.
+- **Drill-down** — Violations and warnings list distinct `sh:focusNode`
+  values (with `sh:message`). Each focus node opens the ReliCapGrid instance
+  file that contains it; `sh:sourceConstraint` opens the matching constraint
+  in the profile shape file. Good lists declared shapes that produced no
+  violation or warning (shape names open the SHACL file).
 
-Links in the table:
-
-- `sh:focusNode` → the [GraphDB resource viewer](https://cim.ontotext.com/graphdb/) for `relicapgrid`.
-- `sh:sourceShape` / `sh:sourceConstraint` → the exact line in the shape's `.ttl` on GitHub.
-- `Report` → that profile's `validation-report.ttl` in this repo.
-
-Run it (Python 3 standard library only):
+`collect-results.py` still writes `validation-results.csv`.
+`collect-timings.py` still writes `timing-results.html`.
 
 ```bash
-python3 collect-results.py
+python3 build_dashboard.py
 ```
 
-Results are capped **per constraint** — keyed by
-`(Profile, sh:sourceShape, sh:sourceConstraintComponent)`. Change the cap
-at the top of the script:
+Links on the drill-down pages:
+
+- `sh:focusNode` → the ReliCapGrid instance file on GitHub that contains that UUID.
+- `sh:sourceConstraint` / shape name → the matching constraint in the profile SHACL file (`CGMES/SHACL` or `NCP/SHACL`).
+
+The CSV from `collect-results.py` is capped **per constraint** — keyed by
+`(Profile, sh:sourceShape, sh:sourceConstraintComponent)`. Dashboard counts
+are not capped (they still cannot exceed GraphDB’s own report limits).
+Change the CSV cap at the top of `collect-results.py`:
 
 ```python
 MAX_PER_CONSTRAINT = 100   # set to None for no limit

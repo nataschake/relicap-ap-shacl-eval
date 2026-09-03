@@ -20,7 +20,6 @@ Usage:
 from __future__ import annotations
 
 import csv
-import html
 import re
 import sys
 from pathlib import Path
@@ -39,7 +38,9 @@ GITHUB_REPO_BLOB = ("https://github.com/nataschake/application-profiles-library"
 # the "Family" column. The order also sets link-resolution preference.
 SHACL_SOURCES = [
     ("CGMES", "CGMES/CurrentRelease/SHACL"),
+    ("CGMES", "CGMES/SHACL"),
     ("NCP", "NCP/CurrentRelease/SHACL"),
+    ("NCP", "NCP/SHACL"),
 ]
 
 # This repository on GitHub, used to link each row to its source report.
@@ -80,24 +81,28 @@ def build_shacl_index() -> dict[str, dict]:
         for ttl in sorted((APL_DIR / subpath).glob("*.ttl")):
             if ttl.name in {"validation-report.ttl", "relicap-val-report.ttl"}:
                 continue
+            if ttl.name in index:
+                continue
             prefixes: dict[str, str] = {}
             base: str | None = None
             uri_to_line: dict[str, int] = {}
             lines = ttl.read_text(encoding="utf-8").splitlines()
 
-            # First pass: collect @prefix / @base directives.
+            # First pass: collect @prefix/@base and SPARQL PREFIX/BASE directives.
             for line in lines:
-                m = re.match(r'\s*@prefix\s+([\w.-]*):\s+<([^>]*)>', line)
+                m = re.match(r'\s*(?:@prefix|PREFIX)\s+([\w.-]*):\s+<([^>]*)>', line, re.I)
                 if m:
                     prefixes[m.group(1)] = m.group(2)
                     continue
-                m = re.match(r'\s*@base\s+<([^>]*)>', line)
+                m = re.match(r'\s*(?:@base|BASE)\s+<([^>]*)>', line, re.I)
                 if m:
                     base = m.group(1)
 
             # Second pass: find subject declarations (token at column 0).
             for n, line in enumerate(lines, start=1):
                 if not line or line[0] in " \t#@":
+                    continue
+                if line.upper().startswith("PREFIX ") or line.upper().startswith("BASE "):
                     continue
                 token = line.split(None, 1)[0]
                 full = resolve_term(token, prefixes, base)
@@ -267,9 +272,13 @@ def main() -> int:
     write_csv(rows, EVAL_DIR / "validation-results.csv")
     write_html(rows, report_dirs, EVAL_DIR / "validation-results.html")
 
+    from build_dashboard import build as build_dashboard
+    dash_index = build_dashboard()
+
     print(f"Parsed {len(report_dirs)} reports, {len(rows)} validation results.")
     print(f"  CSV : {EVAL_DIR / 'validation-results.csv'}")
     print(f"  HTML: {EVAL_DIR / 'validation-results.html'}")
+    print(f"  Dashboard: {dash_index}")
     return 0
 
 
@@ -286,115 +295,35 @@ def write_csv(rows: list[dict], path: Path) -> None:
 
 
 def write_html(rows: list[dict], report_dirs: list[Path], path: Path) -> None:
-    def brk(text: str) -> str:
-        # Escape, then add break opportunities after punctuation so long
-        # qnames/URIs wrap instead of stretching the column. Entities such as
-        # &amp; are left intact (their chars are not in the punctuation set).
-        return re.sub(r'(?<=[/:#._?=-])(?!$)', '<wbr>', html.escape(text))
-
-    def cell(text: str) -> str:
-        return html.escape(text)
-
-    def link_cell(disp: str, href: str) -> str:
-        if href:
-            return f'<a href="{html.escape(href)}" target="_blank" rel="noopener">{brk(disp)}</a>'
-        return brk(disp)
-
-    counts = {}
-    for r in rows:
-        counts[r["profile"]] = counts.get(r["profile"], 0) + 1
-
-    summary_rows = "".join(
-        f"<tr><td>{brk(p)}</td><td class='num'>{counts.get(p, 0)}</td></tr>"
-        for p in sorted(counts)
-    )
-
-    body_rows = []
-    for r in rows:
-        body_rows.append(
-            "<tr>"
-            f"<td>{cell(r['family'])}</td>"
-            f"<td>{brk(r['profile'])}</td>"
-            f"<td>{link_cell('report', r['report_href'])}</td>"
-            f"<td>{link_cell(r['focus_disp'], r['focus_href'])}</td>"
-            f"<td>{brk(r['result_path'])}</td>"
-            f"<td>{link_cell(r['sc_disp'], r['sc_href'])}</td>"
-            f"<td>{cell(r['scc'])}</td>"
-            f"<td>{cell(r['severity'])}</td>"
-            f"<td class='msg'>{cell(r['message'])}</td>"
-            f"<td>{link_cell(r['ss_disp'], r['ss_href'])}</td>"
-            f"<td>{brk(r['value'])}</td>"
-            "</tr>"
-        )
-
-    header_cells = "".join(f"<th>{cell(c)}</th>" for c in COLUMNS)
+    """Stub page: the browsable UI lives in the dashboard (index.html)."""
     repo_url = EVAL_REPO_BLOB.rsplit("/blob/", 1)[0]
     cap_note = (
-        f"Capped at {MAX_PER_CONSTRAINT} results per constraint "
+        f"CSV export is capped at {MAX_PER_CONSTRAINT} results per constraint "
         "(per <code>sh:sourceShape</code> + <code>sh:sourceConstraintComponent</code>)."
-        if MAX_PER_CONSTRAINT is not None else "No per-constraint cap applied."
+        if MAX_PER_CONSTRAINT is not None else "No per-constraint cap applied to the CSV export."
     )
-
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=index.html">
 <title>ReliCapGrid ENTSO-E SHACL validation results</title>
 <style>
   body {{ font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 1.5rem; color: #1b1b1b; }}
-  h1 {{ font-size: 1.4rem; }}
-  .meta {{ color: #555; margin-bottom: 1rem; }}
-  #filter {{ padding: .4rem .6rem; width: 22rem; font-size: .95rem; margin: .3rem 0 1rem; }}
-  table {{ border-collapse: collapse; width: 100%; font-size: .82rem; }}
-  th, td {{ border: 1px solid #ddd; padding: .35rem .5rem; vertical-align: top; text-align: left; }}
-  thead th {{ position: sticky; top: 0; background: #f4f4f4; z-index: 2; }}
-  tbody tr:nth-child(even) {{ background: #fafafa; }}
-  td.msg {{ max-width: 32rem; }}
-  td.num {{ text-align: right; }}
-  a {{ color: #0b5fff; text-decoration: none; }}
-  a:hover {{ text-decoration: underline; }}
-  details {{ margin-bottom: 1.2rem; }}
-  summary {{ cursor: pointer; font-weight: 600; }}
-  .summary-table {{ width: auto; margin-top: .5rem; }}
+  a {{ color: #0b5fff; }}
+  .meta {{ color: #555; line-height: 1.5; }}
 </style>
 </head>
 <body>
-<h1>ReliCapGrid ENTSO-E SHACL validation results</h1>
-<div class="meta">{len(rows)} validation results from {len(report_dirs)} profiles &middot;
-<a href="{repo_url}" target="_blank" rel="noopener">repository on GitHub</a>.<br>
-Focus nodes link to the GraphDB <code>{GRAPHDB_REPO}</code> resource viewer;
-source shapes/constraints link to the exact line in the SHACL file on GitHub.<br>
+<h1>Validation results moved to the dashboard</h1>
+<p class="meta">{len(rows)} validation results from {len(report_dirs)} profiles
+are summarised on the <a href="index.html">dashboard</a>
+(focus-node lists open from the count links).
+<a href="{repo_url}">repository on GitHub</a>.<br>
 {cap_note}<br>
 <strong>Note:</strong> the ReliCapGrid ENTSO-E data is a snapshot
 (<time datetime="{DATA_TIMESTAMP}">{DATA_TIMESTAMP}</time>) and is not the
-latest upstream version.</div>
-
-<details>
-  <summary>Per-profile result counts</summary>
-  <table class="summary-table">
-    <thead><tr><th>Profile</th><th>Results</th></tr></thead>
-    <tbody>{summary_rows}</tbody>
-  </table>
-</details>
-
-<input id="filter" type="text" placeholder="Filter rows (substring match)..." oninput="filterRows(this.value)">
-
-<table id="results">
-  <thead><tr>{header_cells}</tr></thead>
-  <tbody>
-    {''.join(body_rows)}
-  </tbody>
-</table>
-
-<script>
-function filterRows(q) {{
-  q = q.toLowerCase();
-  const rows = document.querySelectorAll('#results tbody tr');
-  for (const row of rows) {{
-    row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
-  }}
-}}
-</script>
+latest upstream version.</p>
 </body>
 </html>
 """

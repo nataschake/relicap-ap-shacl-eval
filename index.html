@@ -2,14 +2,120 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>ReliCapGrid SHACL validation results</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReliCapGrid SHACL evaluation dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-<h1>ReliCapGrid SHACL evaluation reports</h1>
-<p>Choose a report:</p>
-<ul>
-  <li><a href="validation-results.html">Validation results table</a></li>
-  <li><a href="timing-results.html">Timing results table</a></li>
-</ul>
+
+<h1>ReliCapGrid SHACL evaluation dashboard</h1>
+<p class="meta">
+  <a href="https://github.com/nataschake/relicap-ap-shacl-eval" target="_blank" rel="noopener">repository on GitHub</a>
+  · per-profile timings also in <a href="timing-results.html">timing-results.html</a>.<br>
+  Focus nodes open the ReliCapGrid instance file that contains them;
+  shape names and <code>sh:sourceConstraint</code> open the profile shape file.
+  Click a profile name for its <code>sh:PropertyGroup</code> table.<br>
+  <strong>Note:</strong> the ReliCapGrid ENTSO-E data is a snapshot
+  (<time datetime="2025-06-15T22:30:00Z">2025-06-15T22:30:00Z</time>)
+  and is not the latest upstream version.
+</p>
+
+<div class="stats">
+  <div class="stat"><span>Profiles tested</span><strong>106</strong></div>
+  <div class="stat"><span>Total check time</span><strong>56.624s</strong></div>
+  <div class="stat"><span>Average / max</span><strong>0.534s / 22.623s</strong></div>
+  <div class="stat"><span>Conforming</span><strong>71</strong></div>
+  <div class="stat"><span>Truncated</span><strong>18</strong></div>
+  <div class="stat"><span>Distinct errors</span><strong>62</strong></div>
+  <div class="stat"><span>Distinct warnings</span><strong>1</strong></div>
+  <div class="stat"><span>Errors</span><strong>2664</strong></div>
+  <div class="stat"><span>Warnings</span><strong>313</strong></div>
+  <div class="stat"><span>Good shapes</span><strong>13263</strong></div>
+  <div class="stat"><span>Total shapes</span><strong>13326</strong></div>
+  <div class="stat"><span>Non-200 HTTP</span><strong>12</strong></div>
+</div>
+<p class="note">Truncated GraphDB reports are lower bounds
+(18 profiles).
+<strong>Distinct errors / Distinct warnings</strong> count declared shapes that
+produced at least one <code>sh:Violation</code> / <code>sh:Warning</code>.
+<strong>Errors / Warnings</strong> count distinct <code>sh:focusNode</code> values.
+<strong>Good</strong> is declared shapes with neither.
+Distinct errors + Distinct warnings + Good = Total shapes, at profile, family,
+and dashboard level (family figures sum the profiles; the frontmatter sums
+the families). Click a family name for its results table. Click a profile name
+for property groups. Click a count for the matching list.
+Family check time is the sum of per-profile GraphDB durations.</p>
+
+<section id="family-CGMES">
+<div class="family-head">
+  <h2><a href="dashboard/f/CGMES/index.html">CGMES</a></h2>
+  <div class="stats">
+    <div class="stat"><span>Profiles</span><strong>74</strong></div>
+    <div class="stat"><span>Family check time</span><strong>15.154s</strong></div>
+    <div class="stat"><span>Average</span><strong>0.205s</strong></div>
+    <div class="stat"><span>Max</span><strong>3.391s</strong></div>
+    <div class="stat"><span>Distinct errors</span><strong>3</strong></div>
+    <div class="stat"><span>Distinct warnings</span><strong>0</strong></div>
+    <div class="stat"><span>Errors</span><strong>77</strong></div>
+    <div class="stat"><span>Warnings</span><strong>0</strong></div>
+    <div class="stat"><span>Good shapes</span><strong>8736</strong></div>
+    <div class="stat"><span>Total shapes</span><strong>8739</strong></div>
+    <div class="stat"><span>Non-200 HTTP</span><strong>2</strong></div>
+  </div>
+</div>
+</section><section id="family-NCP">
+<div class="family-head">
+  <h2><a href="dashboard/f/NCP/index.html">NCP</a></h2>
+  <div class="stats">
+    <div class="stat"><span>Profiles</span><strong>32</strong></div>
+    <div class="stat"><span>Family check time</span><strong>41.470s</strong></div>
+    <div class="stat"><span>Average</span><strong>1.296s</strong></div>
+    <div class="stat"><span>Max</span><strong>22.623s</strong></div>
+    <div class="stat"><span>Distinct errors</span><strong>59</strong></div>
+    <div class="stat"><span>Distinct warnings</span><strong>1</strong></div>
+    <div class="stat"><span>Errors</span><strong>2587</strong></div>
+    <div class="stat"><span>Warnings</span><strong>313</strong></div>
+    <div class="stat"><span>Good shapes</span><strong>4527</strong></div>
+    <div class="stat"><span>Total shapes</span><strong>4587</strong></div>
+    <div class="stat"><span>Non-200 HTTP</span><strong>10</strong></div>
+  </div>
+</div>
+</section>
+
+
+<script>
+(function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    table.querySelectorAll("thead th").forEach(function (th) {
+      if (th.colSpan > 1) return;
+      var grip = document.createElement("span");
+      grip.className = "col-resize";
+      grip.title = "Drag to resize column";
+      th.appendChild(grip);
+      grip.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var startX = e.pageX;
+        var startW = th.getBoundingClientRect().width;
+        table.classList.add("resizing");
+        function move(ev) {
+          th.style.width = Math.max(36, startW + (ev.pageX - startX)) + "px";
+        }
+        function up() {
+          table.classList.remove("resizing");
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
+        }
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", up);
+      });
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

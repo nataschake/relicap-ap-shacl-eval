@@ -210,7 +210,8 @@ def write_html(rows: list[dict[str, object]], path: Path) -> None:
 <div class="meta">
   {len(rows)} profiles sorted by decreasing validation time &middot;
   <a href="{repo_url}" target="_blank" rel="noopener">repository on GitHub</a> &middot;
-  <a href="validation-results.html">validation results table</a> &middot;
+  <a href="index.html">dashboard</a> &middot;
+  <a href="validation-results.html">validation results</a> &middot;
   previous vs current timing comparison
 </div>
 

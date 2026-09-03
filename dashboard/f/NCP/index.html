@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCP · SHACL evaluation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../dashboard.css">
+</head>
+<body>
+
+<p class="crumb"><a href="../../../index.html">Dashboard</a></p>
+<section data-family="NCP">
+<div class="family-head">
+  <h2>NCP</h2>
+  <div class="stats">
+    <div class="stat"><span>Profiles</span><strong>32</strong></div>
+    <div class="stat"><span>Family check time</span><strong>41.470s</strong></div>
+    <div class="stat"><span>Average</span><strong>1.296s</strong></div>
+    <div class="stat"><span>Max</span><strong>22.623s</strong></div>
+    <div class="stat"><span>Distinct errors</span><strong>59</strong></div>
+    <div class="stat"><span>Distinct warnings</span><strong>1</strong></div>
+    <div class="stat"><span>Errors</span><strong>2587</strong></div>
+    <div class="stat"><span>Warnings</span><strong>313</strong></div>
+    <div class="stat"><span>Good shapes</span><strong>4527</strong></div>
+    <div class="stat"><span>Total shapes</span><strong>4587</strong></div>
+    <div class="stat"><span>Non-200 HTTP</span><strong>10</strong></div>
+  </div>
+</div>
+  <div class="family-toolbar">
+    <input class="filter family-filter" type="search" placeholder="Filter NCP profiles…">
+    <span>Order:</span>
+    <button type="button" class="sort-btn" data-sort="time" data-dir="desc">Check time</button>
+    <button type="button" class="sort-btn" data-sort="v" data-dir="desc">Errors</button>
+    <button type="button" class="sort-btn" data-sort="dv" data-dir="desc">Distinct errors</button>
+  </div>
+<div class="table-wrap">
+<table class="family-table compact">
+  <colgroup></colgroup>
+  <colgroup></colgroup>
+  <colgroup class="errors" span="2"></colgroup>
+  <colgroup class="warnings" span="2"></colgroup>
+  <thead>
+    <tr>
+      <th class="profile" rowspan="2">Profile</th>
+      <th class="dur" rowspan="2">Time</th>
+      <th class="num group-err" colspan="2"><span class="icon violation" title="sh:Violation">&#9679;</span> Errors</th>
+      <th class="num group-warn" colspan="2"><span class="icon warning" title="sh:Warning">&#9650;</span> Warnings</th>
+      <th class="num" rowspan="2"><span class="icon good" title="good shape">&#9679;</span> Good</th>
+      <th class="num" rowspan="2">Total</th>
+    </tr>
+    <tr>
+      <th class="num group-err">Total</th>
+      <th class="num group-err">Distinct</th>
+      <th class="num group-warn">Total</th>
+      <th class="num group-warn">Distinct</th>
+    </tr>
+  </thead>
+  <tbody class="family-profiles">
+<tr class="profile-block" data-profile="SteadyStateInstruction-AP-Con-Simple-SHACL" data-v="867" data-dv="18" data-time="22.623000">
+  <td class="profile"><a href="../../p/SteadyStateInstruction-AP-Con-Simple-SHACL/index.html">SteadyStateInstruction-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">22.623s</td>
+  <td class="num cell"><a href="../../p/SteadyStateInstruction-AP-Con-Simple-SHACL/violation/index.html">867</a></td>
+  <td class="num cell"><a href="../../p/SteadyStateInstruction-AP-Con-Simple-SHACL/distinct-violation/index.html">18</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/SteadyStateInstruction-AP-Con-Simple-SHACL/good/index.html">480</a></td>
+  <td class="num">498</td>
+</tr><tr class="profile-block" data-profile="EquipmentReliability-AP-Con-Simple-SHACL" data-v="890" data-dv="11" data-time="7.164000">
+  <td class="profile"><a href="../../p/EquipmentReliability-AP-Con-Simple-SHACL/index.html">EquipmentReliability-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">7.164s</td>
+  <td class="num cell"><a href="../../p/EquipmentReliability-AP-Con-Simple-SHACL/violation/index.html">890</a></td>
+  <td class="num cell"><a href="../../p/EquipmentReliability-AP-Con-Simple-SHACL/distinct-violation/index.html">11</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/EquipmentReliability-AP-Con-Simple-SHACL/good/index.html">1221</a></td>
+  <td class="num">1232</td>
+</tr><tr class="profile-block" data-profile="NC-AP-Con-ClassCount-Complex-SHACL" data-v="0" data-dv="0" data-time="2.742000">
+  <td class="profile"><a href="../../p/NC-AP-Con-ClassCount-Complex-SHACL/index.html">NC-<wbr>AP-<wbr>Con-<wbr>ClassCount-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">2.742s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/NC-AP-Con-ClassCount-Complex-SHACL/good/index.html">1</a></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="AssessedElement-AP-Con-Simple-SHACL" data-v="319" data-dv="2" data-time="1.279000">
+  <td class="profile"><a href="../../p/AssessedElement-AP-Con-Simple-SHACL/index.html">AssessedElement-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">1.279s</td>
+  <td class="num cell"><a href="../../p/AssessedElement-AP-Con-Simple-SHACL/violation/index.html">319</a></td>
+  <td class="num cell"><a href="../../p/AssessedElement-AP-Con-Simple-SHACL/distinct-violation/index.html">2</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/AssessedElement-AP-Con-Simple-SHACL/good/index.html">114</a></td>
+  <td class="num">116</td>
+</tr><tr class="profile-block" data-profile="StateInstructionSchedule-AP-Con-Simple-SHACL" data-v="3" data-dv="3" data-time="0.963000">
+  <td class="profile"><a href="../../p/StateInstructionSchedule-AP-Con-Simple-SHACL/index.html">StateInstructionSchedule-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.963s</td>
+  <td class="num cell"><a href="../../p/StateInstructionSchedule-AP-Con-Simple-SHACL/violation/index.html">3</a></td>
+  <td class="num cell"><a href="../../p/StateInstructionSchedule-AP-Con-Simple-SHACL/distinct-violation/index.html">3</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/StateInstructionSchedule-AP-Con-Simple-SHACL/good/index.html">753</a></td>
+  <td class="num">756</td>
+</tr><tr class="profile-block" data-profile="RemedialAction-AP-Con-Simple-SHACL" data-v="75" data-dv="9" data-time="0.717000">
+  <td class="profile"><a href="../../p/RemedialAction-AP-Con-Simple-SHACL/index.html">RemedialAction-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.717s</td>
+  <td class="num cell"><a href="../../p/RemedialAction-AP-Con-Simple-SHACL/violation/index.html">75</a></td>
+  <td class="num cell"><a href="../../p/RemedialAction-AP-Con-Simple-SHACL/distinct-violation/index.html">9</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/RemedialAction-AP-Con-Simple-SHACL/good/index.html">275</a></td>
+  <td class="num">284</td>
+</tr><tr class="profile-block" data-profile="GridDisturbance-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.681000">
+  <td class="profile"><a href="../../p/GridDisturbance-AP-Con-Simple-SHACL/index.html">GridDisturbance-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.681s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/GridDisturbance-AP-Con-Simple-SHACL/good/index.html">221</a></td>
+  <td class="num">221</td>
+</tr><tr class="profile-block" data-profile="SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.650000">
+  <td class="profile"><a href="../../p/SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL/index.html">SteadyStateHypothesisSchedule-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.650s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL/good/index.html">512</a></td>
+  <td class="num">512</td>
+</tr><tr class="profile-block" data-profile="NC-AP-Con-Complex-Common-SHACL" data-v="75" data-dv="1" data-time="0.606000">
+  <td class="profile"><a href="../../p/NC-AP-Con-Complex-Common-SHACL/index.html">NC-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>Common-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.606s</td>
+  <td class="num cell"><a href="../../p/NC-AP-Con-Complex-Common-SHACL/violation/index.html">75</a></td>
+  <td class="num cell"><a href="../../p/NC-AP-Con-Complex-Common-SHACL/distinct-violation/index.html">1</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num">1</td>
+</tr><tr class="profile-block" data-profile="Contingency-AP-Con-Simple-SHACL" data-v="326" data-dv="1" data-time="0.598000">
+  <td class="profile"><a href="../../p/Contingency-AP-Con-Simple-SHACL/index.html">Contingency-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.598s</td>
+  <td class="num cell"><a href="../../p/Contingency-AP-Con-Simple-SHACL/violation/index.html">326</a></td>
+  <td class="num cell"><a href="../../p/Contingency-AP-Con-Simple-SHACL/distinct-violation/index.html">1</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/Contingency-AP-Con-Simple-SHACL/good/index.html">28</a></td>
+  <td class="num">29</td>
+</tr><tr class="profile-block" data-profile="AvailabilitySchedule-AP-Con-Simple-SHACL" data-v="9" data-dv="3" data-time="0.355000">
+  <td class="profile"><a href="../../p/AvailabilitySchedule-AP-Con-Simple-SHACL/index.html">AvailabilitySchedule-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.355s</td>
+  <td class="num cell"><a href="../../p/AvailabilitySchedule-AP-Con-Simple-SHACL/violation/index.html">9</a></td>
+  <td class="num cell"><a href="../../p/AvailabilitySchedule-AP-Con-Simple-SHACL/distinct-violation/index.html">3</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/AvailabilitySchedule-AP-Con-Simple-SHACL/good/index.html">215</a></td>
+  <td class="num">218</td>
+</tr><tr class="profile-block" data-profile="RemedialActionSchedule-AP-Con-Simple-SHACL" data-v="21" data-dv="8" data-time="0.272000">
+  <td class="profile"><a href="../../p/RemedialActionSchedule-AP-Con-Simple-SHACL/index.html">RemedialActionSchedule-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.272s</td>
+  <td class="num cell"><a href="../../p/RemedialActionSchedule-AP-Con-Simple-SHACL/violation/index.html">21</a></td>
+  <td class="num cell"><a href="../../p/RemedialActionSchedule-AP-Con-Simple-SHACL/distinct-violation/index.html">8</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/RemedialActionSchedule-AP-Con-Simple-SHACL/good/index.html">158</a></td>
+  <td class="num">166</td>
+</tr><tr class="profile-block" data-profile="PowerSchedule-AP-Con-Simple-SHACL" data-v="2" data-dv="3" data-time="0.234000">
+  <td class="profile"><a href="../../p/PowerSchedule-AP-Con-Simple-SHACL/index.html">PowerSchedule-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.234s</td>
+  <td class="num cell"><a href="../../p/PowerSchedule-AP-Con-Simple-SHACL/violation/index.html">2</a></td>
+  <td class="num cell"><a href="../../p/PowerSchedule-AP-Con-Simple-SHACL/distinct-violation/index.html">3</a></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/PowerSchedule-AP-Con-Simple-SHACL/good/index.html">93</a></td>
+  <td class="num">96</td>
+</tr><tr class="profile-block" data-profile="AssessedElement-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.226000">
+  <td class="profile"><a href="../../p/AssessedElement-AP-Con-Complex-SHACL/index.html">AssessedElement-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/AssessedElement-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.226s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/AssessedElement-AP-Con-Complex-SHACL/good/index.html">3</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="SensitivityMatrix-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.189000">
+  <td class="profile"><a href="../../p/SensitivityMatrix-AP-Con-Simple-SHACL/index.html">SensitivityMatrix-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.189s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/SensitivityMatrix-AP-Con-Simple-SHACL/good/index.html">39</a></td>
+  <td class="num">39</td>
+</tr><tr class="profile-block" data-profile="SecurityAnalysisResult-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.176000">
+  <td class="profile"><a href="../../p/SecurityAnalysisResult-AP-Con-Simple-SHACL/index.html">SecurityAnalysisResult-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.176s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/SecurityAnalysisResult-AP-Con-Simple-SHACL/good/index.html">45</a></td>
+  <td class="num">45</td>
+</tr><tr class="profile-block" data-profile="PowerSystemProject-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.169000">
+  <td class="profile"><a href="../../p/PowerSystemProject-AP-Con-Simple-SHACL/index.html">PowerSystemProject-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.169s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/PowerSystemProject-AP-Con-Simple-SHACL/good/index.html">75</a></td>
+  <td class="num">75</td>
+</tr><tr class="profile-block" data-profile="NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL" data-v="0" data-dv="0" data-time="0.168000">
+  <td class="profile"><a href="../../p/NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL/index.html">NC-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>IdentifiedObjecStringLength-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.168s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL/good/index.html">2</a></td>
+  <td class="num">2</td>
+</tr><tr class="profile-block" data-profile="ImpactAssessmentMatrix-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.158000">
+  <td class="profile"><a href="../../p/ImpactAssessmentMatrix-AP-Con-Simple-SHACL/index.html">ImpactAssessmentMatrix-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.158s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/ImpactAssessmentMatrix-AP-Con-Simple-SHACL/good/index.html">54</a></td>
+  <td class="num">54</td>
+</tr><tr class="profile-block" data-profile="AvailabilitySchedule-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.151000">
+  <td class="profile"><a href="../../p/AvailabilitySchedule-AP-Con-Complex-SHACL/index.html">AvailabilitySchedule-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/AvailabilitySchedule-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.151s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/AvailabilitySchedule-AP-Con-Complex-SHACL/good/index.html">6</a></td>
+  <td class="num">6</td>
+</tr><tr class="profile-block" data-profile="MonitoringArea-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.144000">
+  <td class="profile"><a href="../../p/MonitoringArea-AP-Con-Simple-SHACL/index.html">MonitoringArea-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.144s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/MonitoringArea-AP-Con-Simple-SHACL/good/index.html">30</a></td>
+  <td class="num">30</td>
+</tr><tr class="profile-block" data-profile="ObjectRegistry-AP-Con-Simple-SHACL" data-v="0" data-dv="0" data-time="0.138000">
+  <td class="profile"><a href="../../p/ObjectRegistry-AP-Con-Simple-SHACL/index.html">ObjectRegistry-<wbr>AP-<wbr>Con-<wbr>Simple-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.138s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/ObjectRegistry-AP-Con-Simple-SHACL/good/index.html">44</a></td>
+  <td class="num">44</td>
+</tr><tr class="profile-block" data-profile="RemedialActionSchedule-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.138000">
+  <td class="profile"><a href="../../p/RemedialActionSchedule-AP-Con-Complex-SHACL/index.html">RemedialActionSchedule-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/RemedialActionSchedule-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.138s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/RemedialActionSchedule-AP-Con-Complex-SHACL/good/index.html">12</a></td>
+  <td class="num">12</td>
+</tr><tr class="profile-block" data-profile="ImpactAssessmentMatrix-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.134000">
+  <td class="profile"><a href="../../p/ImpactAssessmentMatrix-AP-Con-Complex-SHACL/index.html">ImpactAssessmentMatrix-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/ImpactAssessmentMatrix-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.134s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/ImpactAssessmentMatrix-AP-Con-Complex-SHACL/good/index.html">5</a></td>
+  <td class="num">5</td>
+</tr><tr class="profile-block" data-profile="Contingency-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.123000">
+  <td class="profile"><a href="../../p/Contingency-AP-Con-Complex-SHACL/index.html">Contingency-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.123s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/Contingency-AP-Con-Complex-SHACL/warning/index.html">313</a></td>
+  <td class="num cell"><a href="../../p/Contingency-AP-Con-Complex-SHACL/distinct-warning/index.html">1</a></td>
+  <td class="num cell"><a href="../../p/Contingency-AP-Con-Complex-SHACL/good/index.html">2</a></td>
+  <td class="num">3</td>
+</tr><tr class="profile-block" data-profile="SecurityAnalysisResult-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.123000">
+  <td class="profile"><a href="../../p/SecurityAnalysisResult-AP-Con-Complex-SHACL/index.html">SecurityAnalysisResult-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/SecurityAnalysisResult-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.123s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/SecurityAnalysisResult-AP-Con-Complex-SHACL/good/index.html">11</a></td>
+  <td class="num">11</td>
+</tr><tr class="profile-block" data-profile="EquipmentReliability-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.117000">
+  <td class="profile"><a href="../../p/EquipmentReliability-AP-Con-Complex-SHACL/index.html">EquipmentReliability-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/EquipmentReliability-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.117s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/EquipmentReliability-AP-Con-Complex-SHACL/good/index.html">20</a></td>
+  <td class="num">20</td>
+</tr><tr class="profile-block" data-profile="DatasetMetadata-AP-Con-SHACL" data-v="0" data-dv="0" data-time="0.114000">
+  <td class="profile"><a href="../../p/DatasetMetadata-AP-Con-SHACL/index.html">DatasetMetadata-<wbr>AP-<wbr>Con-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/DatasetMetadata-AP-Con-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.114s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/DatasetMetadata-AP-Con-SHACL/good/index.html">90</a></td>
+  <td class="num">90</td>
+</tr><tr class="profile-block" data-profile="StateInstructionSchedule-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.096000">
+  <td class="profile"><a href="../../p/StateInstructionSchedule-AP-Con-Complex-SHACL/index.html">StateInstructionSchedule-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/StateInstructionSchedule-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.096s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/StateInstructionSchedule-AP-Con-Complex-SHACL/good/index.html">11</a></td>
+  <td class="num">11</td>
+</tr><tr class="profile-block" data-profile="RemedialAction-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.093000">
+  <td class="profile"><a href="../../p/RemedialAction-AP-Con-Complex-SHACL/index.html">RemedialAction-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/RemedialAction-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.093s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/RemedialAction-AP-Con-Complex-SHACL/good/index.html">5</a></td>
+  <td class="num">5</td>
+</tr><tr class="profile-block" data-profile="PowerSchedule-AP-Con-Complex-SHACL" data-v="0" data-dv="0" data-time="0.090000">
+  <td class="profile"><a href="../../p/PowerSchedule-AP-Con-Complex-SHACL/index.html">PowerSchedule-<wbr>AP-<wbr>Con-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub bad">HTTP <a href="../../http/PowerSchedule-AP-Con-Complex-SHACL.html">500</a></span></div>
+  </td>
+  <td class="dur bad">0.090s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"><a href="../../p/PowerSchedule-AP-Con-Complex-SHACL/good/index.html">2</a></td>
+  <td class="num">2</td>
+</tr><tr class="profile-block" data-profile="NC-AP-Con-PrefixDeclaration-Complex-SHACL" data-v="0" data-dv="0" data-time="0.039000">
+  <td class="profile"><a href="../../p/NC-AP-Con-PrefixDeclaration-Complex-SHACL/index.html">NC-<wbr>AP-<wbr>Con-<wbr>PrefixDeclaration-<wbr>Complex-<wbr>SHACL</a>
+    <div class="sub"><span class="sub">HTTP 200</span></div>
+  </td>
+  <td class="dur">0.039s</td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num cell"></td>
+  <td class="num"></td>
+</tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<script>
+(function () {
+  function sortFamily(section, key, dir) {
+    var wrap = section.querySelector("tbody.family-profiles");
+    if (!wrap) return;
+    var blocks = Array.prototype.slice.call(wrap.querySelectorAll("tr.profile-block"));
+    var desc = dir !== "asc";
+    blocks.sort(function (a, b) {
+      var av = parseFloat(a.getAttribute("data-" + key) || "-1");
+      var bv = parseFloat(b.getAttribute("data-" + key) || "-1");
+      if (av === bv) {
+        return (a.getAttribute("data-profile") || "").localeCompare(b.getAttribute("data-profile") || "");
+      }
+      return desc ? bv - av : av - bv;
+    });
+    blocks.forEach(function (el) { wrap.appendChild(el); });
+  }
+  document.querySelectorAll("section[data-family]").forEach(function (section) {
+    var filter = section.querySelector(".family-filter");
+    if (filter) {
+      filter.addEventListener("input", function () {
+        var q = this.value.toLowerCase();
+        section.querySelectorAll(".profile-block").forEach(function (el) {
+          var name = el.getAttribute("data-profile") || "";
+          el.classList.toggle("hidden", q && name.toLowerCase().indexOf(q) === -1);
+        });
+      });
+    }
+    section.querySelectorAll(".sort-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var key = btn.getAttribute("data-sort");
+        var dir = btn.getAttribute("data-dir") || "desc";
+        if (btn.classList.contains("active")) {
+          dir = dir === "desc" ? "asc" : "desc";
+          btn.setAttribute("data-dir", dir);
+        }
+        section.querySelectorAll(".sort-btn").forEach(function (other) { other.classList.remove("active"); });
+        btn.classList.add("active");
+        sortFamily(section, key, dir);
+      });
+    });
+  });
+})();
+</script>
+
+
+
+<script>
+(function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    table.querySelectorAll("thead th").forEach(function (th) {
+      if (th.colSpan > 1) return;
+      var grip = document.createElement("span");
+      grip.className = "col-resize";
+      grip.title = "Drag to resize column";
+      th.appendChild(grip);
+      grip.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var startX = e.pageX;
+        var startW = th.getBoundingClientRect().width;
+        table.classList.add("resizing");
+        function move(ev) {
+          th.style.width = Math.max(36, startW + (ev.pageX - startX)) + "px";
+        }
+        function up() {
+          table.classList.remove("resizing");
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
+        }
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", up);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
