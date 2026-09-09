@@ -1,0 +1,54 @@
+{
+  "data": {
+    "timestamp": "2025-06-15T22:30:00Z",
+    "graphdb_resource": "http://localhost:7200/resource",
+    "graphdb_repository": "relicapgrid",
+    "graphdb_sparql": "http://localhost:7200/repositories/relicapgrid",
+    "instance_github_repository": "entsoe/relicapgrid"
+  },
+  "repositories": [
+    {
+      "id": "application-profiles-library",
+      "title": "ENTSO-E Application Profiles Library",
+      "checkout": "../application-profiles-library",
+      "github_repository": "entsoe/application-profiles-library",
+      "github_ref": "main",
+      "evaluation_results": ".",
+      "families": [
+        {
+          "id": "CGMES",
+          "title": "CGMES",
+          "shacl_dirs": [
+            "CGMES/CurrentRelease/SHACL",
+            "CGMES/SHACL"
+          ],
+          "rdfs_dirs": [
+            "CGMES/CurrentRelease/RDFS",
+            "CGMES/RDFS",
+            "CGMES/RDFS_Beta_501_Ed2_CD"
+          ],
+          "prof_dirs": [
+            "CGMES/PROF"
+          ],
+          "profile_overrides": {}
+        },
+        {
+          "id": "NCP",
+          "title": "NCP",
+          "shacl_dirs": [
+            "NCP/CurrentRelease/SHACL",
+            "NCP/SHACL"
+          ],
+          "rdfs_dirs": [
+            "NCP/CurrentRelease/RDFS",
+            "NCP/RDFS"
+          ],
+          "prof_dirs": [
+            "NCP/PROF"
+          ],
+          "profile_overrides": {}
+        }
+      ]
+    }
+  ]
+}

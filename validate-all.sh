@@ -9,7 +9,7 @@ SHACL_DIRS=(
 )
 echo "SHACL Directories: ${SHACL_DIRS[*]}"
 OUT_DIR="$(cd "$(dirname "$0")" && pwd)"
-GDB_URL="https://cim.ontotext.com/graphdb/"
+GDB_URL="http://localhost:7200/"
 REPO_URL="${GDB_URL}rest/repositories/relicapgrid/validate/file"
 
 LOG="$OUT_DIR/batch.log"

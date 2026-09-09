@@ -3,89 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ReliCapGrid SHACL evaluation dashboard</title>
+<title>All configured repositories · SHACL cube</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="dashboard.css?v=936de84f5451">
 </head>
-<body>
+<body class="level-zero">
+<p class="crumb">All configured repositories</p>
+<h1>All configured repositories</h1>
+<p class="meta">Configured shape repositories. Every measure links to the next level where it is grounded. Timing sum/max use unique SHACL-file validation runs.</p>
+<div class="stats-panel"><div class="stats"><div class="stat"><span>Time total</span><strong><a href="dashboard/all/m/time_sum/index.html">2m 9.0s</a></strong></div><div class="stat"><span>Time max</span><strong><a href="dashboard/all/m/time_max/index.html">39.986s</a></strong></div><div class="stat"><span>Errors</span><strong><a href="dashboard/all/m/v_count/index.html">2701</a></strong></div><div class="stat"><span>Distinct errors</span><strong><a href="dashboard/all/m/dv_count/index.html">62</a></strong></div><div class="stat"><span>Warnings</span><strong><a href="dashboard/all/m/w_count/index.html">313</a></strong></div><div class="stat"><span>Distinct warnings</span><strong><a href="dashboard/all/m/dw_count/index.html">1</a></strong></div><div class="stat"><span>Good shapes</span><strong><a href="dashboard/all/m/g_count/index.html">13262</a></strong></div><div class="stat"><span>Total shapes</span><strong><a href="dashboard/all/m/t_count/index.html">13325</a></strong></div></div></div>
 
-<h1>ReliCapGrid SHACL evaluation dashboard</h1>
-<p class="meta">
-  <a href="https://github.com/nataschake/relicap-ap-shacl-eval" target="_blank" rel="noopener">repository on GitHub</a>
-  <br>
-  Focus nodes present in GraphDB open
-  <a href="https://cim.ontotext.com/graphdb/" target="_blank" rel="noopener"><code>relicapgrid</code></a>;
-  focus nodes missing from GraphDB open the ReliCapGrid instance file.
-  Shape names and <code>sh:sourceConstraint</code> open the profile shape file.
-  Click a profile name for its <code>sh:PropertyGroup</code> table.<br>
-  <strong>Note:</strong> the ReliCapGrid ENTSO-E data is a snapshot
-  (<time datetime="2025-06-15T22:30:00Z">2025-06-15T22:30:00Z</time>)
-  and is not the latest upstream version.
-</p>
-
-<div class="stats">
-  <div class="stat"><span>Profiles tested</span><strong>106</strong></div>
-  <div class="stat"><span>Total check time</span><strong>41.596s</strong></div>
-  <div class="stat"><span>Average / max</span><strong>0.392s / 2.702s</strong></div>
-  <div class="stat"><span>Conforming</span><strong>70</strong></div>
-  <div class="stat"><span>Truncated</span><strong>18</strong></div>
-  <div class="stat"><span>Distinct errors</span><strong>70</strong></div>
-  <div class="stat"><span>Distinct warnings</span><strong>1</strong></div>
-  <div class="stat"><span>Errors</span><strong>1533</strong></div>
-  <div class="stat"><span>Warnings</span><strong>18</strong></div>
-  <div class="stat"><span>Good shapes</span><strong>13255</strong></div>
-  <div class="stat"><span>Total shapes</span><strong>13326</strong></div>
-  <div class="stat"><span>Non-200 HTTP</span><strong>13</strong></div>
-</div>
-<p class="note">Truncated GraphDB reports are lower bounds
-(18 profiles).
-<strong>Distinct errors / Distinct warnings</strong> count declared shapes that
-produced at least one <code>sh:Violation</code> / <code>sh:Warning</code>.
-<strong>Errors / Warnings</strong> count distinct <code>sh:focusNode</code> values.
-<strong>Good</strong> is declared shapes with neither.
-Distinct errors + Distinct warnings + Good = Total shapes, at profile, family,
-and dashboard level (family figures sum the profiles; the frontmatter sums
-the families). Click a family name for its results table. Click a profile name
-for property groups. Click a count for the matching list.
-Family check time is the sum of per-profile GraphDB durations.</p>
-
-<section id="family-CGMES">
-<div class="family-head">
-  <h2><a href="dashboard/f/CGMES/index.html">CGMES</a></h2>
-  <div class="stats">
-    <div class="stat"><span>Profiles</span><strong>74</strong></div>
-    <div class="stat"><span>Family check time</span><strong>20.118s</strong></div>
-    <div class="stat"><span>Average</span><strong>0.272s</strong></div>
-    <div class="stat"><span>Max</span><strong>2.702s</strong></div>
-    <div class="stat"><span>Distinct errors</span><strong>3</strong></div>
-    <div class="stat"><span>Distinct warnings</span><strong>0</strong></div>
-    <div class="stat"><span>Errors</span><strong>102</strong></div>
-    <div class="stat"><span>Warnings</span><strong>0</strong></div>
-    <div class="stat"><span>Good shapes</span><strong>8736</strong></div>
-    <div class="stat"><span>Total shapes</span><strong>8739</strong></div>
-    <div class="stat"><span>Non-200 HTTP</span><strong>3</strong></div>
-  </div>
-</div>
-</section><section id="family-NCP">
-<div class="family-head">
-  <h2><a href="dashboard/f/NCP/index.html">NCP</a></h2>
-  <div class="stats">
-    <div class="stat"><span>Profiles</span><strong>32</strong></div>
-    <div class="stat"><span>Family check time</span><strong>21.478s</strong></div>
-    <div class="stat"><span>Average</span><strong>0.671s</strong></div>
-    <div class="stat"><span>Max</span><strong>2.688s</strong></div>
-    <div class="stat"><span>Distinct errors</span><strong>67</strong></div>
-    <div class="stat"><span>Distinct warnings</span><strong>1</strong></div>
-    <div class="stat"><span>Errors</span><strong>1431</strong></div>
-    <div class="stat"><span>Warnings</span><strong>18</strong></div>
-    <div class="stat"><span>Good shapes</span><strong>4519</strong></div>
-    <div class="stat"><span>Total shapes</span><strong>4587</strong></div>
-    <div class="stat"><span>Non-200 HTTP</span><strong>10</strong></div>
-  </div>
-</div>
-</section>
+<div class="table-wrap">
+<table class="family-table compact">
+<colgroup></colgroup><colgroup span="2"></colgroup>
+<colgroup class="errors" span="2"></colgroup>
+<colgroup class="warnings" span="2"></colgroup>
+<thead>
+<tr>
+<th class="profile" rowspan="2">Repository</th>
+<th class="num" colspan="2">Timing</th>
+<th class="num group-err" colspan="2"><span class="icon violation" title="sh:Violation">&#10060;</span> Errors</th>
+<th class="num group-warn" colspan="2"><span class="icon warning" title="sh:Warning">&#9888;</span> Warnings</th>
+<th class="num" rowspan="2"><span class="icon good" title="good shape">&#128994;</span> Good</th>
+<th class="num" rowspan="2">Total</th>
+</tr>
+<tr>
+<th class="num">Sum</th><th class="num">Max</th>
+<th class="num group-err">Total</th><th class="num group-err">Distinct</th>
+<th class="num group-warn">Total</th><th class="num group-warn">Distinct</th>
+</tr>
+</thead>
+<tbody><tr>
+<td class="profile"><a href="dashboard/r/application-profiles-library/index.html">ENTSO-<wbr>E Application Profiles Library</a></td>
+<td class="dur"><a href="dashboard/r/application-profiles-library/m/time_sum/index.html">2m 9.0s</a></td>
+<td class="dur"><a href="dashboard/r/application-profiles-library/m/time_max/index.html">39.986s</a></td>
+<td class="num cell"><a href="dashboard/r/application-profiles-library/m/v_count/index.html">2701</a></td>
+<td class="num cell"><a href="dashboard/r/application-profiles-library/m/dv_count/index.html">62</a></td>
+<td class="num cell"><a href="dashboard/r/application-profiles-library/m/w_count/index.html">313</a></td>
+<td class="num cell"><a href="dashboard/r/application-profiles-library/m/dw_count/index.html">1</a></td>
+<td class="num cell"><a href="dashboard/r/application-profiles-library/m/g_count/index.html">13262</a></td>
+<td class="num cell"><a href="dashboard/r/application-profiles-library/m/t_count/index.html">13325</a></td>
+</tr></tbody>
+</table></div>
 
 
 <script>
@@ -95,19 +56,12 @@ Family check time is the sum of per-profile GraphDB durations.</p>
       if (th.colSpan > 1) return;
       var grip = document.createElement("span");
       grip.className = "col-resize";
-      grip.title = "Drag to resize column";
       th.appendChild(grip);
-      grip.addEventListener("mousedown", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var startX = e.pageX;
-        var startW = th.getBoundingClientRect().width;
-        table.classList.add("resizing");
-        function move(ev) {
-          th.style.width = Math.max(36, startW + (ev.pageX - startX)) + "px";
-        }
+      grip.addEventListener("mousedown", function (event) {
+        event.preventDefault();
+        var x = event.pageX, width = th.getBoundingClientRect().width;
+        function move(e) { th.style.width = Math.max(36, width + e.pageX - x) + "px"; }
         function up() {
-          table.classList.remove("resizing");
           document.removeEventListener("mousemove", move);
           document.removeEventListener("mouseup", up);
         }
@@ -118,6 +72,5 @@ Family check time is the sum of per-profile GraphDB durations.</p>
   });
 })();
 </script>
-
 </body>
 </html>

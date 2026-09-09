@@ -12,7 +12,7 @@ into one browsable table.
 - **Shapes** — [`entsoe/application-profiles-library`](https://github.com/entsoe/application-profiles-library/tree/main), specifically [`CGMES/CurrentRelease/SHACL/`](https://github.com/entsoe/application-profiles-library/tree/main/CGMES/CurrentRelease/SHACL) and [`NCP/CurrentRelease/SHACL/`](https://github.com/entsoe/application-profiles-library/tree/main/NCP/CurrentRelease/SHACL).
 - **Data** — [`entsoe/relicapgrid`](https://github.com/entsoe/relicapgrid),
   loaded into the GraphDB repository
-  [`relicapgrid` on cim.ontotext.com](https://cim.ontotext.com/graphdb/).
+  [`relicapgrid` on a local GraphDB instance](http://localhost:7200/).
 - **Results** — [dashboard on GitHub Pages](https://nataschake.github.io/relicap-ap-shacl-eval/), with family matrices, timings, and focus-node drill-down pages.
 
 ## Layout
@@ -23,9 +23,12 @@ ap-relicap-eval/
 │   └── validation-report.ttl   # GraphDB SHACL report (+ timing.txt, etc.)
 ├── collect-results.py          # CSV export + stub validation-results.html; invokes the dashboard
 ├── collect-timings.py          # builds timing-results.html with current/previous timings
-├── build_dashboard.py          # index.html + dashboard/ family and focus-node pages
+├── dashboard-config.json       # repositories, families, local paths, GitHub links
+├── dashboard_config.py         # validated config + PROF source catalog
+├── build_dashboard.py          # stable dashboard entry point
+├── cube_dashboard.py           # cube construction and static page generation
 ├── dashboard.css               # shared styles for the dashboard
-├── dashboard/                  # family pages (f/) + focus-node pages (p/, paginated)
+├── dashboard/r/                # repository/family/profile/shape pages
 ├── validation-results.html     # short pointer to the dashboard
 ├── validation-results.csv      # validation data + raw resolved URLs (capped per constraint)
 ├── timing-results.html         # per-profile timing table with previous/current durations
@@ -39,33 +42,39 @@ Each profile folder is named after its source SHACL file
 
 ## The dashboard
 
-`build_dashboard.py` (also run from `collect-results.py`) writes `index.html`:
+`build_dashboard.py` (also run from `collect-results.py`) writes a four-dimensional
+static cube:
 
-- **Frontmatter** — one combined block: profiles tested, total/average/max
-  check time, conforming and truncated reports, distinct errors/warnings
-  (declared shapes), errors/warnings (distinct `sh:focusNode`s), good
-  shapes, total shapes, HTTP errors. Distinct errors + Distinct warnings +
-  Good = Total shapes. Family and profile tables use the same counters, so
-  summing profiles yields the family totals and summing families yields the
-  frontmatter. Family names on this page open the family dashboard.
-- **Families** — CGMES then NCP. Each family name (section title)
-  opens `dashboard/f/<family>/index.html`, which has the family summary
-  (sum of check times, average, max, severity totals), a filter/sort row, and one results table in the same grouped style as the
-  profile page: profile name, time, Errors (Total / Distinct), Warnings
-  (Total / Distinct), good, total. HTTP status sits under the profile name.
-  The profile name opens a table of
-  `sh:PropertyGroup` rows (`rdfs:label` via `sh:group`). Error and warning
-  columns are grouped: Total / Distinct errors, then Total / Distinct
-  warnings, then good and total. Distinct (declared-shape) counts open the
-  failing-shape list; Total (focus-node) counts open the focus-node list;
-  good opens the passing-shape list. Zero counts are left blank.
-- **Drill-down** — Violations and warnings list distinct `sh:focusNode`
-  values (with `sh:message`). Focus nodes that exist in GraphDB repository
-  [`relicapgrid`](https://cim.ontotext.com/graphdb/) open the resource explorer
-  (`role=all`); focus nodes that are not in GraphDB open the ReliCapGrid
-  instance file on GitHub. `sh:sourceConstraint` opens the matching constraint
-  in the profile shape file. Good lists declared shapes that produced no
-  violation or warning (shape names open the SHACL file).
+```
+all repositories → repository → family → ontology profile → individual SHACL shape
+```
+
+- `index.html` contains one aggregation row per configured shapes repository.
+- `dashboard/r/<repository>/index.html` aggregates its configured families.
+- `dashboard/r/<repository>/f/<family>/index.html` aggregates ontology profiles.
+- `dashboard/r/<repository>/f/<family>/p/<profile>/index.html` shows individual
+  shapes. The frontmatter links to the profile's RDFS ontology on GitHub.
+- `.../s/<shape>/index.html` grounds one shape. Its frontmatter links to the exact
+  SHACL declaration line; error and warning counts open focus-node evidence.
+
+Every level uses the same measures: timing sum/max, errors, warnings, distinct
+errors, distinct warnings, good shapes, and total shapes. Validation measures
+are additive, and the build checks every rollup. A shape is classified in exactly
+one bucket (error takes precedence over warning), so:
+
+```
+distinct errors + distinct warnings + good shapes = total shapes
+```
+
+Errors and warnings count distinct focus nodes **per individual shape** and are
+summed upward. Timing uses unique SHACL-file validation runs, so a run is counted
+once at profile/family/repository levels. Until per-shape timings are queried
+from GraphDB, each shape repeats its containing file's run time as non-additive
+context.
+
+All non-zero measures are links. Aggregate links open lower-level rows ordered
+by that measure. Shape-level error/warning links open paginated evidence with
+`sh:focusNode`, GitHub, `sh:message`, and `sh:sourceConstraint` columns.
 
 `collect-results.py` still writes `validation-results.csv`.
 `collect-timings.py` still writes `timing-results.html`.
@@ -76,8 +85,21 @@ python3 build_dashboard.py
 
 Links on the drill-down pages:
 
-- `sh:focusNode` → GraphDB resource explorer when the IRI is in `relicapgrid`; otherwise GitHub code search in `entsoe/relicapgrid`.
+- `sh:focusNode` → GraphDB resource explorer when the IRI is in `relicapgrid`; otherwise unlinked text.
+- GitHub → code search in `entsoe/relicapgrid` for the same IRI.
 - `sh:sourceConstraint` / shape name → the matching constraint in the profile SHACL file (`CGMES/SHACL` or `NCP/SHACL`).
+
+### Configuration
+
+`dashboard-config.json` is the source of repository/family configuration. A
+repository defines its checkout, upstream GitHub repository/ref, evaluation
+results root, and an extensible family list. Each family defines SHACL, RDFS,
+and PROF directories plus optional `profile_overrides`.
+
+PROF manifests provide the SHACL-to-ontology mapping, including CGMES
+many-SHACL-to-one-RDFS mappings. Artifacts referenced by multiple profiles are
+counted once under `Shared constraints (no single ontology)`. An explicit
+override maps a SHACL filename to a PROF-derived profile ID.
 
 The CSV from `collect-results.py` is capped **per constraint** — keyed by
 `(Profile, sh:sourceShape, sh:sourceConstraintComponent)`. Dashboard counts
@@ -101,8 +123,8 @@ Re-run with higher `validationResultsLimitPerConstraint` /
 `validate-all.sh` POSTs each SHACL file to the GraphDB validation endpoint,
 saves the Turtle report per profile, and then runs `collect-timings.py` so
 both `validation-results.html` and `timing-results.html` are produced in the
-same run. Validation runs against the `relicapgrid` repository on
-[cim.ontotext.com/graphdb](https://cim.ontotext.com/graphdb/), which requires
+same run. Validation runs against the `relicapgrid` repository on a local
+GraphDB instance at [localhost:7200](http://localhost:7200/), which requires
 authentication. Export `GDBUSER` / `GDBPASS` before running the script:
 
 ```bash
@@ -115,14 +137,14 @@ The script logs in to obtain a bearer token, then validates each file:
 
 ```bash
 # authenticate and extract the bearer token
-auth_header=$(curl -s 'https://cim.ontotext.com/graphdb/rest/login/<username>' \
+auth_header=$(curl -s 'http://localhost:7200/rest/login/<username>' \
   -X POST -H 'X-GraphDB-Password: <password>' -I | grep -i "authorization:")
 token=${auth_header#*: }
 
 # validate a shape file using the token
 curl -X POST --header 'Accept: text/turtle' \
   -H "Authorization: Bearer ${token%$'\r'}" \
-  'https://cim.ontotext.com/graphdb/rest/repositories/relicapgrid/validate/file' \
+  'http://localhost:7200/rest/repositories/relicapgrid/validate/file' \
   -F 'file=@<shape>.ttl;type=text/turtle'
 ```
 

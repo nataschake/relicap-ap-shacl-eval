@@ -23,40 +23,47 @@ import csv
 import json
 import re
 import sys
+import time
 from pathlib import Path
 from urllib.error import URLError, HTTPError
 from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
+import dashboard_config as dc
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
 EVAL_DIR = Path(__file__).resolve().parent
-APL_DIR = (EVAL_DIR / ".." / "application-profiles-library").resolve()
-
-GITHUB_REPO_BLOB = ("https://github.com/nataschake/application-profiles-library"
-                    "/blob/main")
-
-# SHACL source folders (repo-relative), each tagged with a profile family for
-# the "Family" column. The order also sets link-resolution preference.
+CONFIG = dc.load_config()
+CATALOG = dc.build_catalog(CONFIG)
+_PRIMARY_REPO = CATALOG["repositories"][0]
+APL_DIR = _PRIMARY_REPO["checkout_path"]  # Backwards-compatible public constant.
+GITHUB_REPO_BLOB = (
+    f"https://github.com/{_PRIMARY_REPO['github_repository']}/blob/"
+    f"{_PRIMARY_REPO.get('github_ref') or 'main'}"
+)
 SHACL_SOURCES = [
-    ("CGMES", "CGMES/CurrentRelease/SHACL"),
-    ("CGMES", "CGMES/SHACL"),
-    ("NCP", "NCP/CurrentRelease/SHACL"),
-    ("NCP", "NCP/SHACL"),
+    (family["id"], subpath)
+    for family in _PRIMARY_REPO["families_index"]
+    for subpath in family.get("shacl_dirs") or []
 ]
 
 # This repository on GitHub, used to link each row to its source report.
 EVAL_REPO_BLOB = "https://github.com/nataschake/relicap-ap-shacl-eval/blob/main"
 
-GRAPHDB_RESOURCE = "https://cim.ontotext.com/graphdb/resource"
-GRAPHDB_REPO = "relicapgrid"
-GRAPHDB_SPARQL = f"https://cim.ontotext.com/graphdb/repositories/{GRAPHDB_REPO}"
-GDB_LOOKUP_CHUNK = 250
+_DATA_CONFIG = CONFIG.get("data") or {}
+GRAPHDB_RESOURCE = _DATA_CONFIG.get("graphdb_resource") or "http://localhost:7200/resource"
+GRAPHDB_REPO = _DATA_CONFIG.get("graphdb_repository") or "relicapgrid"
+GRAPHDB_SPARQL = (
+    _DATA_CONFIG.get("graphdb_sparql")
+    or f"http://localhost:7200/repositories/{GRAPHDB_REPO}"
+)
+GDB_LOOKUP_CHUNK = 100
 
 # Snapshot timestamp of the ReliCapGrid ENTSO-E data that was validated (not
 # the latest upstream version).
-DATA_TIMESTAMP = "2025-06-15T22:30:00Z"
+DATA_TIMESTAMP = _DATA_CONFIG.get("timestamp") or ""
 
 # Cap the number of results kept per constraint, where a constraint is keyed by
 # (profile, sh:sourceShape, sh:sourceConstraintComponent) -- mirroring GraphDB's
@@ -80,41 +87,44 @@ DISPLAY_PREFIXES = {
 # start at column 0, which makes this reliable.
 # ---------------------------------------------------------------------------
 def build_shacl_index() -> dict[str, dict]:
-    """Return {shacl_filename: {"family", "subpath", "lines": {uri: line}}}."""
+    """Return a source-aware subject index, with filename aliases when unique."""
     index: dict[str, dict] = {}
-    for family, subpath in SHACL_SOURCES:
-        for ttl in sorted((APL_DIR / subpath).glob("*.ttl")):
-            if ttl.name in {"validation-report.ttl", "relicap-val-report.ttl"}:
+    for source in CATALOG["sources"].values():
+        ttl = source["shacl_path"]
+        prefixes: dict[str, str] = {}
+        base: str | None = None
+        uri_to_line: dict[str, int] = {}
+        lines = ttl.read_text(encoding="utf-8").splitlines()
+        for line in lines:
+            m = re.match(r'\s*(?:@prefix|PREFIX)\s+([\w.-]*):\s+<([^>]*)>', line, re.I)
+            if m:
+                prefixes[m.group(1)] = m.group(2)
                 continue
-            if ttl.name in index:
+            m = re.match(r'\s*(?:@base|BASE)\s+<([^>]*)>', line, re.I)
+            if m:
+                base = m.group(1)
+        for n, line in enumerate(lines, start=1):
+            if not line or line[0] in " \t#@":
                 continue
-            prefixes: dict[str, str] = {}
-            base: str | None = None
-            uri_to_line: dict[str, int] = {}
-            lines = ttl.read_text(encoding="utf-8").splitlines()
-
-            # First pass: collect @prefix/@base and SPARQL PREFIX/BASE directives.
-            for line in lines:
-                m = re.match(r'\s*(?:@prefix|PREFIX)\s+([\w.-]*):\s+<([^>]*)>', line, re.I)
-                if m:
-                    prefixes[m.group(1)] = m.group(2)
-                    continue
-                m = re.match(r'\s*(?:@base|BASE)\s+<([^>]*)>', line, re.I)
-                if m:
-                    base = m.group(1)
-
-            # Second pass: find subject declarations (token at column 0).
-            for n, line in enumerate(lines, start=1):
-                if not line or line[0] in " \t#@":
-                    continue
-                if line.upper().startswith("PREFIX ") or line.upper().startswith("BASE "):
-                    continue
-                token = line.split(None, 1)[0]
-                full = resolve_term(token, prefixes, base)
-                if full and full not in uri_to_line:
-                    uri_to_line[full] = n
-            index[ttl.name] = {"family": family, "subpath": subpath,
-                               "lines": uri_to_line}
+            if line.upper().startswith(("PREFIX ", "BASE ")):
+                continue
+            token = line.split(None, 1)[0]
+            full = resolve_term(token, prefixes, base)
+            if full and full not in uri_to_line:
+                uri_to_line[full] = n
+        entry = {
+            **source,
+            "family": source["family_id"],
+            "subpath": source["shacl_subpath"].rsplit("/", 1)[0],
+            "blob_base": (
+                f"https://github.com/{source['repo']['github_repository']}/blob/"
+                f"{source['repo'].get('github_ref') or 'main'}"
+            ),
+            "lines": uri_to_line,
+        }
+        index[source["id"]] = entry
+        if len(CATALOG["by_filename"].get(ttl.name, [])) == 1:
+            index[ttl.name] = entry
     return index
 
 
@@ -238,11 +248,33 @@ def iris_present_in_graphdb(iris: set[str], chunk: int = GDB_LOOKUP_CHUNK) -> se
             },
             method="POST",
         )
-        try:
-            with urlopen(req, timeout=120) as resp:
-                payload = json.loads(resp.read().decode())
-        except (URLError, HTTPError, TimeoutError, json.JSONDecodeError, OSError) as exc:
-            print(f"GraphDB presence lookup batch {n}/{total} failed: {exc}", file=sys.stderr)
+        payload = None
+        for attempt in range(2):
+            try:
+                with urlopen(req, timeout=120) as resp:
+                    payload = json.loads(resp.read().decode())
+                break
+            except (URLError, HTTPError, TimeoutError, json.JSONDecodeError, OSError) as exc:
+                if isinstance(exc, URLError) and isinstance(exc.reason, ConnectionRefusedError):
+                    print(f"GraphDB presence lookup batch {n}/{total} failed: {exc}", file=sys.stderr)
+                    print("GraphDB endpoint is unavailable; skipping remaining presence batches.", file=sys.stderr)
+                    return found
+                if attempt == 0:
+                    print(
+                        f"GraphDB presence lookup batch {n}/{total} failed: {exc}; retrying",
+                        file=sys.stderr,
+                    )
+                    time.sleep(0.25)
+                else:
+                    print(f"GraphDB presence lookup batch {n}/{total} failed: {exc}", file=sys.stderr)
+        if payload is None:
+            if len(batch) > 1:
+                split_size = max(1, len(batch) // 2)
+                print(
+                    f"Splitting failed GraphDB batch {n}/{total} into chunks of {split_size}.",
+                    file=sys.stderr,
+                )
+                found.update(iris_present_in_graphdb(set(batch), chunk=split_size))
             continue
         for binding in payload.get("results", {}).get("bindings", []):
             val = binding.get("iri", {}).get("value")
@@ -265,7 +297,8 @@ def github_link(term: str | None, shacl_file: str,
         if entry and iri in entry["lines"]:
             line = entry["lines"][iri]
             return (shorten(term),
-                    f"{GITHUB_REPO_BLOB}/{entry['subpath']}/{fname}#L{line}")
+                    f"{entry.get('blob_base') or GITHUB_REPO_BLOB}/"
+                    f"{entry['subpath']}/{entry.get('shacl_file') or fname}#L{line}")
     return (shorten(term), "")
 
 
@@ -273,6 +306,7 @@ def github_link(term: str | None, shacl_file: str,
 # Output
 # ---------------------------------------------------------------------------
 COLUMNS = [
+    "Repository",
     "Family",
     "Profile",
     "Report",
@@ -289,15 +323,19 @@ COLUMNS = [
 
 def main() -> int:
     index = build_shacl_index()
-
-    report_dirs = sorted(p for p in EVAL_DIR.iterdir()
-                         if p.is_dir() and (p / "validation-report.ttl").exists())
+    report_sources = [
+        (source, source["result_dir"])
+        for source in CATALOG["sources"].values()
+        if (source["result_dir"] / "validation-report.ttl").is_file()
+    ]
+    report_sources.sort(key=lambda pair: pair[0]["id"])
+    report_dirs = [directory for _, directory in report_sources]
 
     rows: list[dict] = []
-    for d in report_dirs:
-        profile = d.name
-        shacl_file = f"{profile}.ttl"
-        family = index.get(shacl_file, {}).get("family", "")
+    for source, d in report_sources:
+        profile = Path(source["shacl_file"]).stem
+        shacl_file = source["id"]
+        family = source["family_id"]
         per_constraint: dict[tuple[str, str], int] = {}
         for r in parse_report(d / "validation-report.ttl"):
             if MAX_PER_CONSTRAINT is not None:
@@ -309,6 +347,7 @@ def main() -> int:
             sc_disp, sc_href = github_link(r.get("sh:sourceConstraint"), shacl_file, index)
             ss_disp, ss_href = github_link(r.get("sh:sourceShape"), shacl_file, index)
             rows.append({
+                "repository": source["repository_id"],
                 "family": family,
                 "profile": profile,
                 "report_href": f"{EVAL_REPO_BLOB}/{profile}/validation-report.ttl",
@@ -341,7 +380,7 @@ def write_csv(rows: list[dict], path: Path) -> None:
         w.writerow(COLUMNS + ["focusNode URL", "sourceConstraint URL", "sourceShape URL"])
         for r in rows:
             w.writerow([
-                r["family"], r["profile"], r["report_href"], r["focus_disp"],
+                r["repository"], r["family"], r["profile"], r["report_href"], r["focus_disp"],
                 r["result_path"], r["sc_disp"], r["scc"], r["severity"], r["message"],
                 r["ss_disp"], r["value"], r["focus_href"], r["sc_href"], r["ss_href"],
             ])

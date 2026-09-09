@@ -12,10 +12,13 @@ import re
 import sys
 from pathlib import Path
 
+import dashboard_config as dc
+
 EVAL_DIR = Path(__file__).resolve().parent
 EVAL_REPO_BLOB = "https://github.com/nataschake/relicap-ap-shacl-eval/blob/main"
-SHAPES_REPO_BLOB = "https://github.com/entsoe/application-profiles-library/blob/main"
 TIMING_HISTORY_PATH = EVAL_DIR / ".timing-history.json"
+CONFIG = dc.load_config()
+CATALOG = dc.build_catalog(CONFIG)
 
 
 def parse_timing(path: Path) -> dict[str, str]:
@@ -35,8 +38,11 @@ def infer_family(profile: str) -> str:
 
 
 def shape_href(profile: str, family: str) -> str:
-    shape_dir = "CGMES/SHACL" if family == "CGMES" else "NCP/SHACL"
-    return f"{SHAPES_REPO_BLOB}/{shape_dir}/{profile}.ttl"
+    matches = CATALOG["by_filename"].get(f"{profile}.ttl") or []
+    if not matches:
+        return ""
+    source = next((item for item in matches if item["family_id"] == family), matches[0])
+    return dc.github_blob(source["repo"], source["shacl_subpath"])
 
 
 def format_duration(seconds: float | None) -> str:
@@ -68,23 +74,34 @@ def collect_rows() -> list[dict[str, object]]:
     previous_timings = load_previous_timings(TIMING_HISTORY_PATH)
     rows: list[dict[str, object]] = []
 
-    timing_paths = sorted(path for path in EVAL_DIR.glob("*/timing.txt") if path.is_file())
-    for timing_path in timing_paths:
-        profile = timing_path.parent.name
+    sources = sorted(CATALOG["sources"].values(), key=lambda source: source["id"])
+    for source in sources:
+        timing_path = source["result_dir"] / "timing.txt"
+        if not timing_path.is_file():
+            continue
+        profile = Path(source["shacl_file"]).stem
         raw = parse_timing(timing_path)
         duration_raw = raw.get("duration_seconds")
         duration = float(duration_raw) if duration_raw else None
         http_status = raw.get("http_status") or raw.get("status", "")
 
-        previous = previous_timings.get(profile, {}) if isinstance(previous_timings.get(profile), dict) else {}
+        previous_key = source["id"] if source["id"] in previous_timings else profile
+        previous = (
+            previous_timings.get(previous_key, {})
+            if isinstance(previous_timings.get(previous_key), dict) else {}
+        )
         previous_duration_raw = previous.get("duration")
         previous_duration = float(previous_duration_raw) if previous_duration_raw not in (None, "") else None
 
-        family = infer_family(profile)
+        family = source["family_id"]
         rows.append(
             {
+                "source_id": source["id"],
+                "repository": source["repository_id"],
                 "profile": profile,
                 "family": family,
+                "ontology_profile": source["profile_id"],
+                "ontology_file": source["ontology_file"],
                 "duration": duration,
                 "duration_disp": format_duration(duration),
                 "previous_duration": previous_duration,
@@ -98,7 +115,7 @@ def collect_rows() -> list[dict[str, object]]:
                     if (timing_path.parent / "validation-report.ttl").exists()
                     else ""
                 ),
-                "shape_href": shape_href(profile, family),
+                "shape_href": dc.github_blob(source["repo"], source["shacl_subpath"]),
             }
         )
 
@@ -150,6 +167,7 @@ def write_html(rows: list[dict[str, object]], path: Path) -> None:
         body_rows.append(
             "<tr>"
             f"<td class='num'>{rank}</td>"
+            f"<td>{cell(str(row['repository']))}</td>"
             f"<td>{cell(str(row['family']))}</td>"
             f"<td>{profile_cell(str(row['profile']), str(row['shape_href']))}</td>"
             f"<td class='num dur'>{cell(str(row['previous_duration_disp']))}</td>"
@@ -163,7 +181,7 @@ def write_html(rows: list[dict[str, object]], path: Path) -> None:
         )
 
     history_payload = {
-        str(row["profile"]): {
+        str(row["source_id"]): {
             "duration": row["duration"],
             "http_status": row["http_status"],
             "finished_at": row["finished_at"],
@@ -230,6 +248,7 @@ def write_html(rows: list[dict[str, object]], path: Path) -> None:
   <thead>
     <tr>
       <th>#</th>
+      <th>Repository</th>
       <th>Family</th>
       <th>Profile</th>
       <th>Current</th>

@@ -1,5 +1,5 @@
 file: 61970-456_StateVariables-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 0.210
-finished_at: 2026-09-03T11:54:12+03:00
+duration_seconds: 0.108
+finished_at: 2026-09-08T14:07:52+03:00

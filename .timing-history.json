@@ -1,532 +1,532 @@
 {
   "61968-13_GeographicalLocation-AP-Con-Complex-SHACL": {
-    "duration": 0.182,
-    "finished_at": "2026-09-03T11:54:06+03:00",
+    "duration": 0.394,
+    "finished_at": "2026-09-08T14:07:45+03:00",
     "http_status": "200"
   },
   "61970-301_DiagramLayout-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.166,
-    "finished_at": "2026-09-03T11:54:06+03:00",
+    "duration": 0.161,
+    "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "200"
   },
   "61970-301_DiagramLayout-AP-Con-Complex-SHACL": {
-    "duration": 0.167,
-    "finished_at": "2026-09-03T11:54:06+03:00",
+    "duration": 0.226,
+    "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "200"
   },
   "61970-301_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.176,
-    "finished_at": "2026-09-03T11:54:06+03:00",
+    "duration": 0.092,
+    "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "200"
   },
   "61970-301_Equipment-AP-Con-Complex-SHACL": {
-    "duration": 0.318,
-    "finished_at": "2026-09-03T11:54:07+03:00",
+    "duration": 0.485,
+    "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "500"
   },
   "61970-301_EquipmentBoundary-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.18,
-    "finished_at": "2026-09-03T11:54:07+03:00",
+    "duration": 0.105,
+    "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
   "61970-301_EquipmentBoundary-AP-Con-Complex-SHACL": {
-    "duration": 0.184,
-    "finished_at": "2026-09-03T11:54:07+03:00",
+    "duration": 0.116,
+    "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
   "61970-301_Operation-AP-Con-Complex-SHACL": {
-    "duration": 0.189,
-    "finished_at": "2026-09-03T11:54:07+03:00",
+    "duration": 0.104,
+    "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
   "61970-301_ShortCircuit-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.166,
-    "finished_at": "2026-09-03T11:54:08+03:00",
+    "duration": 0.12,
+    "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
   "61970-301_ShortCircuit-AP-Con-Complex-SHACL": {
-    "duration": 0.224,
-    "finished_at": "2026-09-03T11:54:08+03:00",
+    "duration": 0.12,
+    "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "500"
   },
   "61970-301_StateVariables-AP-Con-Complex-SHACL": {
-    "duration": 0.212,
-    "finished_at": "2026-09-03T11:54:08+03:00",
+    "duration": 0.167,
+    "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
   "61970-301_StateVariables-AP-Con-Complex-SolvedMAS-SHACL": {
-    "duration": 0.165,
-    "finished_at": "2026-09-03T11:54:08+03:00",
+    "duration": 0.094,
+    "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
   "61970-301_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.232,
-    "finished_at": "2026-09-03T11:54:09+03:00",
+    "duration": 0.147,
+    "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "500"
   },
   "61970-301_SteadyStateHypothesis-AP-Con-Complex-SHACL": {
-    "duration": 0.26,
-    "finished_at": "2026-09-03T11:54:09+03:00",
+    "duration": 0.24,
+    "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
   "61970-301_Topology-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.169,
-    "finished_at": "2026-09-03T11:54:09+03:00",
+    "duration": 0.086,
+    "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
   "61970-302_Dynamics-AP-Con-Complex-SHACL": {
-    "duration": 0.613,
-    "finished_at": "2026-09-03T11:54:10+03:00",
+    "duration": 1.643,
+    "finished_at": "2026-09-08T14:07:50+03:00",
     "http_status": "200"
   },
   "61970-452_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.169,
-    "finished_at": "2026-09-03T11:54:10+03:00",
+    "duration": 0.09,
+    "finished_at": "2026-09-08T14:07:50+03:00",
     "http_status": "200"
   },
   "61970-452_Equipment-AP-Con-Complex-SHACL": {
-    "duration": 0.316,
-    "finished_at": "2026-09-03T11:54:10+03:00",
+    "duration": 0.242,
+    "finished_at": "2026-09-08T14:07:50+03:00",
     "http_status": "200"
   },
   "61970-452_Operation-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.167,
-    "finished_at": "2026-09-03T11:54:11+03:00",
+    "duration": 0.113,
+    "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
   "61970-452_Operation-AP-Con-Complex-SHACL": {
-    "duration": 0.165,
-    "finished_at": "2026-09-03T11:54:11+03:00",
+    "duration": 0.086,
+    "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
   "61970-452_ShortCircuit-AP-Con-Complex-CrossProfile-SHACL": {
-    "duration": 0.174,
-    "finished_at": "2026-09-03T11:54:11+03:00",
+    "duration": 0.129,
+    "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
   "61970-452_ShortCircuit-AP-Con-Complex-SHACL": {
-    "duration": 0.168,
-    "finished_at": "2026-09-03T11:54:11+03:00",
+    "duration": 0.095,
+    "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
   "61970-453_DiagramLayout-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
-    "duration": 0.204,
-    "finished_at": "2026-09-03T11:54:11+03:00",
+    "duration": 0.095,
+    "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
   "61970-453_DiagramLayout-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
-    "duration": 0.176,
-    "finished_at": "2026-09-03T11:54:12+03:00",
+    "duration": 0.092,
+    "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
   "61970-453_DiagramLayout-AP-Con-Complex-SHACL": {
-    "duration": 0.164,
-    "finished_at": "2026-09-03T11:54:12+03:00",
+    "duration": 0.098,
+    "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
   "61970-456_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL": {
-    "duration": 0.164,
-    "finished_at": "2026-09-03T11:54:12+03:00",
+    "duration": 0.1,
+    "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
   "61970-456_StateVariables-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
-    "duration": 0.21,
-    "finished_at": "2026-09-03T11:54:12+03:00",
+    "duration": 0.108,
+    "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
   "61970-456_StateVariables-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
-    "duration": 0.204,
-    "finished_at": "2026-09-03T11:54:13+03:00",
+    "duration": 0.098,
+    "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
   "61970-456_StateVariables-AP-Con-Complex-SHACL": {
-    "duration": 0.165,
-    "finished_at": "2026-09-03T11:54:13+03:00",
+    "duration": 0.111,
+    "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
   "61970-456_StateVariables-AP-Con-Complex-SolvedMAS-SHACL": {
-    "duration": 0.217,
-    "finished_at": "2026-09-03T11:54:13+03:00",
+    "duration": 0.164,
+    "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
   "61970-456_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.21,
-    "finished_at": "2026-09-03T11:54:13+03:00",
+    "duration": 0.196,
+    "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
   "61970-456_SteadyStateHypothesis-AP-Con-Complex-SHACL": {
-    "duration": 0.165,
-    "finished_at": "2026-09-03T11:54:14+03:00",
+    "duration": 0.108,
+    "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
   "61970-456_Topology-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
-    "duration": 0.17,
-    "finished_at": "2026-09-03T11:54:14+03:00",
+    "duration": 0.103,
+    "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
   "61970-456_Topology-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
-    "duration": 0.166,
-    "finished_at": "2026-09-03T11:54:14+03:00",
+    "duration": 0.103,
+    "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
   "61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.162,
-    "finished_at": "2026-09-03T11:54:14+03:00",
+    "duration": 0.101,
+    "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
   "61970-456_Topology-AP-Con-Complex-SHACL": {
-    "duration": 0.169,
-    "finished_at": "2026-09-03T11:54:14+03:00",
+    "duration": 0.11,
+    "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
   "61970-457_Dynamics-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
-    "duration": 0.206,
-    "finished_at": "2026-09-03T11:54:15+03:00",
+    "duration": 0.112,
+    "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
   "61970-457_Dynamics-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
-    "duration": 0.209,
-    "finished_at": "2026-09-03T11:54:15+03:00",
+    "duration": 0.114,
+    "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
   "61970-457_Dynamics-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.172,
-    "finished_at": "2026-09-03T11:54:15+03:00",
+    "duration": 0.1,
+    "finished_at": "2026-09-08T14:07:54+03:00",
     "http_status": "200"
   },
   "61970-457_Dynamics-AP-Con-Complex-SHACL": {
-    "duration": 0.204,
-    "finished_at": "2026-09-03T11:54:15+03:00",
+    "duration": 0.117,
+    "finished_at": "2026-09-08T14:07:54+03:00",
     "http_status": "200"
   },
   "61970-552-Header-AP-Con-Simple-SHACL": {
-    "duration": 0.214,
-    "finished_at": "2026-09-03T11:54:16+03:00",
+    "duration": 0.241,
+    "finished_at": "2026-09-08T14:07:54+03:00",
     "http_status": "200"
   },
   "61970-600-1_AllProfiles-AP-Con-Complex-SHACL": {
-    "duration": 0.959,
-    "finished_at": "2026-09-03T11:54:17+03:00",
+    "duration": 3.848,
+    "finished_at": "2026-09-08T14:07:58+03:00",
     "http_status": "200"
   },
   "61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL": {
-    "duration": 0.667,
-    "finished_at": "2026-09-03T11:54:17+03:00",
+    "duration": 15.542,
+    "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
   "61970-600-1_Equipment-AP-Con-Complex-SHACL": {
-    "duration": 0.169,
-    "finished_at": "2026-09-03T11:54:17+03:00",
+    "duration": 0.177,
+    "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
   "61970-600-1_Prof10-Header-AP-Con-Complex-SHACL": {
-    "duration": 0.227,
-    "finished_at": "2026-09-03T11:54:18+03:00",
+    "duration": 0.232,
+    "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
   "61970-600-2_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL": {
-    "duration": 0.218,
-    "finished_at": "2026-09-03T11:54:18+03:00",
+    "duration": 0.161,
+    "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
   "61970-600-2_DiagramLayout-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.166,
-    "finished_at": "2026-09-03T11:54:18+03:00",
+    "duration": 0.099,
+    "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
   "61970-600-2_DiagramLayout-AP-Con-Simple-SHACL": {
-    "duration": 0.272,
-    "finished_at": "2026-09-03T11:54:19+03:00",
+    "duration": 0.39,
+    "finished_at": "2026-09-08T14:08:15+03:00",
     "http_status": "200"
   },
   "61970-600-2_Dynamics-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.281,
-    "finished_at": "2026-09-03T11:54:19+03:00",
+    "duration": 0.244,
+    "finished_at": "2026-09-08T14:08:15+03:00",
     "http_status": "200"
   },
   "61970-600-2_Dynamics-AP-Con-Simple-SHACL": {
-    "duration": 2.702,
-    "finished_at": "2026-09-03T11:54:22+03:00",
+    "duration": 8.661,
+    "finished_at": "2026-09-08T14:08:24+03:00",
     "http_status": "200"
   },
   "61970-600-2_Equipment-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.222,
-    "finished_at": "2026-09-03T11:54:22+03:00",
+    "duration": 0.136,
+    "finished_at": "2026-09-08T14:08:24+03:00",
     "http_status": "200"
   },
   "61970-600-2_Equipment-AP-Con-Complex-SHACL": {
-    "duration": 0.185,
-    "finished_at": "2026-09-03T11:54:22+03:00",
+    "duration": 0.13,
+    "finished_at": "2026-09-08T14:08:24+03:00",
     "http_status": "200"
   },
   "61970-600-2_Equipment-AP-Con-Simple-SHACL": {
-    "duration": 1.016,
-    "finished_at": "2026-09-03T11:54:23+03:00",
+    "duration": 2.121,
+    "finished_at": "2026-09-08T14:08:26+03:00",
     "http_status": "200"
   },
   "61970-600-2_EquipmentBoundary-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.163,
-    "finished_at": "2026-09-03T11:54:23+03:00",
+    "duration": 0.175,
+    "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
   "61970-600-2_EquipmentBoundary-AP-Con-Simple-SHACL": {
-    "duration": 0.282,
-    "finished_at": "2026-09-03T11:54:24+03:00",
+    "duration": 0.29,
+    "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
   "61970-600-2_GeographicalLocation-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
-    "duration": 0.165,
-    "finished_at": "2026-09-03T11:54:24+03:00",
+    "duration": 0.086,
+    "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
   "61970-600-2_GeographicalLocation-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
-    "duration": 0.194,
-    "finished_at": "2026-09-03T11:54:24+03:00",
+    "duration": 0.107,
+    "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
   "61970-600-2_GeographicalLocation-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.165,
-    "finished_at": "2026-09-03T11:54:24+03:00",
+    "duration": 0.108,
+    "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
   "61970-600-2_GeographicalLocation-AP-Con-Complex-SHACL": {
-    "duration": 0.167,
-    "finished_at": "2026-09-03T11:54:25+03:00",
+    "duration": 0.104,
+    "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
   "61970-600-2_GeographicalLocation-AP-Con-Simple-SHACL": {
-    "duration": 0.285,
-    "finished_at": "2026-09-03T11:54:25+03:00",
+    "duration": 0.228,
+    "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
   "61970-600-2_IdentifiedObjectCommon_AP-Con-Complex-SHACL": {
-    "duration": 0.163,
-    "finished_at": "2026-09-03T11:54:25+03:00",
+    "duration": 0.105,
+    "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
   "61970-600-2_Operation-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
-    "duration": 0.179,
-    "finished_at": "2026-09-03T11:54:25+03:00",
+    "duration": 0.12,
+    "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
   "61970-600-2_Operation-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
-    "duration": 0.194,
-    "finished_at": "2026-09-03T11:54:26+03:00",
+    "duration": 0.142,
+    "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
   "61970-600-2_Operation-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.19,
-    "finished_at": "2026-09-03T11:54:26+03:00",
+    "duration": 0.116,
+    "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
   "61970-600-2_Operation-AP-Con-Simple-SHACL": {
-    "duration": 0.345,
-    "finished_at": "2026-09-03T11:54:26+03:00",
+    "duration": 0.349,
+    "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
   "61970-600-2_ShortCircuit-AP-Con-Complex-SHACL": {
-    "duration": 0.239,
-    "finished_at": "2026-09-03T11:54:26+03:00",
+    "duration": 0.118,
+    "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
   "61970-600-2_ShortCircuit-AP-Con-Simple-SHACL": {
-    "duration": 0.355,
-    "finished_at": "2026-09-03T11:54:27+03:00",
+    "duration": 0.242,
+    "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
   "61970-600-2_StateVariables-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.215,
-    "finished_at": "2026-09-03T11:54:27+03:00",
+    "duration": 0.096,
+    "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
   "61970-600-2_StateVariables-AP-Con-Simple-SHACL": {
-    "duration": 0.237,
-    "finished_at": "2026-09-03T11:54:27+03:00",
+    "duration": 0.22,
+    "finished_at": "2026-09-08T14:08:30+03:00",
     "http_status": "200"
   },
   "61970-600-2_SteadyStateHypothesis-AP-Con-Simple-SHACL": {
-    "duration": 0.38,
-    "finished_at": "2026-09-03T11:54:28+03:00",
+    "duration": 0.592,
+    "finished_at": "2026-09-08T14:08:30+03:00",
     "http_status": "200"
   },
   "61970-600-2_Topology-AP-Con-Complex-InverseAssociation-SHACL": {
-    "duration": 0.174,
-    "finished_at": "2026-09-03T11:54:28+03:00",
+    "duration": 0.218,
+    "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
   "61970-600-2_Topology-AP-Con-Simple-SHACL": {
-    "duration": 0.23,
-    "finished_at": "2026-09-03T11:54:28+03:00",
+    "duration": 0.181,
+    "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
   "61970-600_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.22,
-    "finished_at": "2026-09-03T11:54:29+03:00",
+    "duration": 0.105,
+    "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
   "61970-600_Topology-AP-Con-Complex-NotSolvedMAS-SHACL": {
-    "duration": 0.179,
-    "finished_at": "2026-09-03T11:54:29+03:00",
+    "duration": 0.102,
+    "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
   "AssessedElement-AP-Con-Complex-SHACL": {
-    "duration": 0.175,
-    "finished_at": "2026-09-03T11:54:29+03:00",
+    "duration": 0.313,
+    "finished_at": "2026-09-08T14:08:32+03:00",
     "http_status": "500"
   },
   "AssessedElement-AP-Con-Simple-SHACL": {
-    "duration": 0.709,
-    "finished_at": "2026-09-03T11:54:30+03:00",
+    "duration": 2.075,
+    "finished_at": "2026-09-08T14:08:34+03:00",
     "http_status": "200"
   },
   "AvailabilitySchedule-AP-Con-Complex-SHACL": {
-    "duration": 0.177,
-    "finished_at": "2026-09-03T11:54:30+03:00",
+    "duration": 0.132,
+    "finished_at": "2026-09-08T14:08:34+03:00",
     "http_status": "500"
   },
   "AvailabilitySchedule-AP-Con-Simple-SHACL": {
-    "duration": 0.723,
-    "finished_at": "2026-09-03T11:54:31+03:00",
+    "duration": 0.797,
+    "finished_at": "2026-09-08T14:08:35+03:00",
     "http_status": "200"
   },
   "Contingency-AP-Con-Complex-SHACL": {
-    "duration": 0.205,
-    "finished_at": "2026-09-03T11:54:31+03:00",
+    "duration": 0.152,
+    "finished_at": "2026-09-08T14:08:35+03:00",
     "http_status": "200"
   },
   "Contingency-AP-Con-Simple-SHACL": {
-    "duration": 0.552,
-    "finished_at": "2026-09-03T11:54:32+03:00",
+    "duration": 0.571,
+    "finished_at": "2026-09-08T14:08:36+03:00",
     "http_status": "200"
   },
   "DatasetMetadata-AP-Con-SHACL": {
-    "duration": 0.318,
-    "finished_at": "2026-09-03T11:54:32+03:00",
+    "duration": 0.289,
+    "finished_at": "2026-09-08T14:08:36+03:00",
     "http_status": "500"
   },
   "EquipmentReliability-AP-Con-Complex-SHACL": {
-    "duration": 0.25,
-    "finished_at": "2026-09-03T11:54:33+03:00",
+    "duration": 0.313,
+    "finished_at": "2026-09-08T14:08:36+03:00",
     "http_status": "500"
   },
   "EquipmentReliability-AP-Con-Simple-SHACL": {
-    "duration": 2.688,
-    "finished_at": "2026-09-03T11:54:35+03:00",
+    "duration": 9.986,
+    "finished_at": "2026-09-08T14:08:46+03:00",
     "http_status": "200"
   },
   "GridDisturbance-AP-Con-Simple-SHACL": {
-    "duration": 0.988,
-    "finished_at": "2026-09-03T11:54:36+03:00",
+    "duration": 0.927,
+    "finished_at": "2026-09-08T14:08:47+03:00",
     "http_status": "200"
   },
   "ImpactAssessmentMatrix-AP-Con-Complex-SHACL": {
-    "duration": 0.173,
-    "finished_at": "2026-09-03T11:54:37+03:00",
+    "duration": 0.141,
+    "finished_at": "2026-09-08T14:08:48+03:00",
     "http_status": "500"
   },
   "ImpactAssessmentMatrix-AP-Con-Simple-SHACL": {
-    "duration": 0.557,
-    "finished_at": "2026-09-03T11:54:37+03:00",
+    "duration": 0.241,
+    "finished_at": "2026-09-08T14:08:48+03:00",
     "http_status": "200"
   },
   "MonitoringArea-AP-Con-Simple-SHACL": {
-    "duration": 0.465,
-    "finished_at": "2026-09-03T11:54:38+03:00",
+    "duration": 0.164,
+    "finished_at": "2026-09-08T14:08:48+03:00",
     "http_status": "200"
   },
   "NC-AP-Con-ClassCount-Complex-SHACL": {
-    "duration": 2.633,
-    "finished_at": "2026-09-03T11:54:40+03:00",
+    "duration": 2.227,
+    "finished_at": "2026-09-08T14:08:50+03:00",
     "http_status": "200"
   },
   "NC-AP-Con-Complex-Common-SHACL": {
-    "duration": 0.622,
-    "finished_at": "2026-09-03T11:54:41+03:00",
+    "duration": 14.501,
+    "finished_at": "2026-09-08T14:09:05+03:00",
     "http_status": "200"
   },
   "NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL": {
-    "duration": 0.233,
-    "finished_at": "2026-09-03T11:54:41+03:00",
+    "duration": 0.421,
+    "finished_at": "2026-09-08T14:09:05+03:00",
     "http_status": "200"
   },
   "NC-AP-Con-PrefixDeclaration-Complex-SHACL": {
-    "duration": 0.177,
-    "finished_at": "2026-09-03T11:54:42+03:00",
+    "duration": 0.081,
+    "finished_at": "2026-09-08T14:09:05+03:00",
     "http_status": "200"
   },
   "ObjectRegistry-AP-Con-Simple-SHACL": {
-    "duration": 0.542,
-    "finished_at": "2026-09-03T11:54:42+03:00",
+    "duration": 0.974,
+    "finished_at": "2026-09-08T14:09:07+03:00",
     "http_status": "200"
   },
   "PowerSchedule-AP-Con-Complex-SHACL": {
-    "duration": 0.174,
-    "finished_at": "2026-09-03T11:54:42+03:00",
+    "duration": 0.165,
+    "finished_at": "2026-09-08T14:09:07+03:00",
     "http_status": "500"
   },
   "PowerSchedule-AP-Con-Simple-SHACL": {
-    "duration": 0.563,
-    "finished_at": "2026-09-03T11:54:43+03:00",
+    "duration": 1.093,
+    "finished_at": "2026-09-08T14:09:08+03:00",
     "http_status": "200"
   },
   "PowerSystemProject-AP-Con-Simple-SHACL": {
-    "duration": 0.563,
-    "finished_at": "2026-09-03T11:54:44+03:00",
+    "duration": 0.588,
+    "finished_at": "2026-09-08T14:09:09+03:00",
     "http_status": "200"
   },
   "RemedialAction-AP-Con-Complex-SHACL": {
-    "duration": 0.269,
-    "finished_at": "2026-09-03T11:54:44+03:00",
+    "duration": 0.249,
+    "finished_at": "2026-09-08T14:09:09+03:00",
     "http_status": "500"
   },
   "RemedialAction-AP-Con-Simple-SHACL": {
-    "duration": 0.904,
-    "finished_at": "2026-09-03T11:54:45+03:00",
+    "duration": 3.367,
+    "finished_at": "2026-09-08T14:09:12+03:00",
     "http_status": "200"
   },
   "RemedialActionSchedule-AP-Con-Complex-SHACL": {
-    "duration": 0.248,
-    "finished_at": "2026-09-03T11:54:45+03:00",
+    "duration": 0.158,
+    "finished_at": "2026-09-08T14:09:13+03:00",
     "http_status": "500"
   },
   "RemedialActionSchedule-AP-Con-Simple-SHACL": {
-    "duration": 0.644,
-    "finished_at": "2026-09-03T11:54:46+03:00",
+    "duration": 1.222,
+    "finished_at": "2026-09-08T14:09:14+03:00",
     "http_status": "200"
   },
   "SecurityAnalysisResult-AP-Con-Complex-SHACL": {
-    "duration": 0.221,
-    "finished_at": "2026-09-03T11:54:46+03:00",
+    "duration": 0.125,
+    "finished_at": "2026-09-08T14:09:14+03:00",
     "http_status": "500"
   },
   "SecurityAnalysisResult-AP-Con-Simple-SHACL": {
-    "duration": 0.503,
-    "finished_at": "2026-09-03T11:54:47+03:00",
+    "duration": 0.428,
+    "finished_at": "2026-09-08T14:09:15+03:00",
     "http_status": "200"
   },
   "SensitivityMatrix-AP-Con-Simple-SHACL": {
-    "duration": 0.488,
-    "finished_at": "2026-09-03T11:54:47+03:00",
+    "duration": 0.478,
+    "finished_at": "2026-09-08T14:09:15+03:00",
     "http_status": "200"
   },
   "StateInstructionSchedule-AP-Con-Complex-SHACL": {
-    "duration": 0.217,
-    "finished_at": "2026-09-03T11:54:48+03:00",
+    "duration": 0.212,
+    "finished_at": "2026-09-08T14:09:15+03:00",
     "http_status": "500"
   },
   "StateInstructionSchedule-AP-Con-Simple-SHACL": {
-    "duration": 1.004,
-    "finished_at": "2026-09-03T11:54:49+03:00",
+    "duration": 2.342,
+    "finished_at": "2026-09-08T14:09:18+03:00",
     "http_status": "200"
   },
   "SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL": {
-    "duration": 1.016,
-    "finished_at": "2026-09-03T11:54:50+03:00",
+    "duration": 1.368,
+    "finished_at": "2026-09-08T14:09:19+03:00",
     "http_status": "200"
   },
   "SteadyStateInstruction-AP-Con-Simple-SHACL": {
-    "duration": 2.477,
-    "finished_at": "2026-09-03T11:54:52+03:00",
+    "duration": 39.986,
+    "finished_at": "2026-09-08T14:09:59+03:00",
     "http_status": "200"
   }
 }

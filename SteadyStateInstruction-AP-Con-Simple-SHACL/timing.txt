@@ -1,5 +1,5 @@
 file: SteadyStateInstruction-AP-Con-Simple-SHACL.ttl
 repository: relicapgrid
 http_status: 200
-duration_seconds: 2.477
-finished_at: 2026-09-03T11:54:52+03:00
+duration_seconds: 39.986
+finished_at: 2026-09-08T14:09:59+03:00
