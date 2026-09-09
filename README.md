@@ -22,7 +22,7 @@ ap-relicap-eval/
 ├── <PROFILE-SHACL>/            # one folder per validated SHACL file
 │   └── validation-report.ttl   # GraphDB SHACL report (+ timing.txt, etc.)
 ├── collect-results.py          # CSV export + stub validation-results.html; invokes the dashboard
-├── collect-timings.py          # builds timing-results.html with current/previous timings
+├── collect-timings.py          # timing parser/formatter + timing-history refresh
 ├── dashboard-config.json       # repositories, families, local paths, GitHub links
 ├── dashboard_config.py         # validated config + PROF source catalog
 ├── build_dashboard.py          # stable dashboard entry point
@@ -31,7 +31,6 @@ ap-relicap-eval/
 ├── dashboard/r/                # repository/family/profile/shape pages
 ├── validation-results.html     # short pointer to the dashboard
 ├── validation-results.csv      # validation data + raw resolved URLs (capped per constraint)
-├── timing-results.html         # per-profile timing table with previous/current durations
 ├── index.html                  # dashboard: frontmatter stats + links to family pages
 ├── validate-all.sh             # validate every SHACL file against GraphDB and generate reports
 └── continue-validate.sh        # resume a batch, skipping done/slow files
@@ -77,7 +76,8 @@ by that measure. Shape-level error/warning links open paginated evidence with
 `sh:focusNode`, GitHub, `sh:message`, and `sh:sourceConstraint` columns.
 
 `collect-results.py` still writes `validation-results.csv`.
-`collect-timings.py` still writes `timing-results.html`.
+`collect-timings.py` refreshes `.timing-history.json`; timing pages are part of
+the main dashboard hierarchy.
 
 ```bash
 python3 build_dashboard.py
@@ -121,9 +121,9 @@ Re-run with higher `validationResultsLimitPerConstraint` /
 ## How the reports were produced
 
 `validate-all.sh` POSTs each SHACL file to the GraphDB validation endpoint,
-saves the Turtle report per profile, and then runs `collect-timings.py` so
-both `validation-results.html` and `timing-results.html` are produced in the
-same run. Validation runs against the `relicapgrid` repository on a local
+saves the Turtle report per profile, refreshes timing history, and generates
+the dashboard and `validation-results.html` in the same run. Validation runs
+against the `relicapgrid` repository on a local
 GraphDB instance at [localhost:7200](http://localhost:7200/), which requires
 authentication. Export `GDBUSER` / `GDBPASS` before running the script:
 

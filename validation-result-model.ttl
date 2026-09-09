@@ -1,0 +1,14 @@
+ <result> a    sh:ValidationResult;
+            sh:resultSeverity  <resultSeverity> ;
+            sh:sourceShape     <sourceShape> ;
+            sh:value <value> ; # or "value" ;
+            sh:focusNode <focusNode> ;
+            sh:message "message" ;
+            sh:description "description" .
+
+<resultSeverity> a sh:Violation ; # or sh:Warning, sh:Info
+                 rdfs:label "resultSeverity" .
+
+<sourceShape> a sh:NodeShape ;
+              rdfs:label "sourceShape" .
+
