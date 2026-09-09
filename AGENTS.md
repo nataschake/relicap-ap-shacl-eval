@@ -36,7 +36,7 @@ relicap-ap-shacl-eval/
 ├── build_dashboard.py            # stable dashboard entry point
 ├── cube_dashboard.py             # cube metrics + page generator
 ├── collect-results.py            # CSV export + calls build_dashboard
-├── collect-timings.py            # timing-results.html
+├── collect-timings.py            # timing parsing/formatting + history refresh
 ├── dashboard.css                 # shared styles (referenced with relative paths)
 ├── dashboard/                    # generated drill-down pages (safe to delete/rebuild)
 │   └── r/<REPOSITORY>/
@@ -49,7 +49,6 @@ relicap-ap-shacl-eval/
 ├── index.html                    # landing dashboard (generated)
 ├── validation-results.csv        # flat export (capped per constraint)
 ├── validation-results.html       # redirect stub → index.html
-├── timing-results.html           # per-profile timing table
 ├── validate-all.sh               # full batch validation + report generation
 ├── continue-validate.sh          # resume partial batch
 └── batch.log                     # validation run log
@@ -164,7 +163,7 @@ Or via the collect pipeline (also refreshes CSV):
 python3 collect-results.py
 ```
 
-Timing table only:
+Refresh timing history only:
 
 ```bash
 python3 collect-timings.py
@@ -178,8 +177,8 @@ export GDBPASS=<password>
 ./validate-all.sh
 ```
 
-This validates every SHACL file, writes per-profile reports, then runs
-`collect-timings.py`, `collect-results.py`, and `build_dashboard.py`.
+This validates every SHACL file, writes per-profile reports, refreshes timing
+history, then runs `collect-results.py` and `build_dashboard.py`.
 
 Resume a partial batch:
 
@@ -274,7 +273,7 @@ Non-200 validation responses store error text in `validation-report.ttl`.
 |------|----------------|
 | Dashboard structure, pages, metrics | `build_dashboard.py` |
 | Report parsing, CSV, GraphDB SPARQL lookup, GitHub shape links | `collect-results.py` |
-| Timing HTML, duration formatting | `collect-timings.py` |
+| Timing parsing, history, duration formatting | `collect-timings.py` |
 | Visual theme, table layout, icons | `dashboard.css` |
 | Batch validation | `validate-all.sh` |
 
@@ -283,6 +282,7 @@ When changing link behaviour, update both the implementation and the meta text o
 
 ## CI
 
-`.github/workflows/timing-results.yml` uploads `timing-results.html`,
-`validation-results.html`, and `index.html` as artifacts on push to `main`.
-It does not run validation or rebuild the dashboard.
+`.github/workflows/dashboard.yml` checks out this repository and
+`entsoe/application-profiles-library`, rebuilds the complete dashboard on push
+to `main`, stages the entry points, CSS, CSV, and complete `dashboard/` tree,
+then deploys that tree to GitHub Pages. It does not rerun SHACL validation.

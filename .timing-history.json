@@ -1,530 +1,530 @@
 {
-  "61968-13_GeographicalLocation-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61968-13_GeographicalLocation-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.394,
     "finished_at": "2026-09-08T14:07:45+03:00",
     "http_status": "200"
   },
-  "61970-301_DiagramLayout-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-301_DiagramLayout-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.161,
     "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "200"
   },
-  "61970-301_DiagramLayout-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-301_DiagramLayout-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.226,
     "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "200"
   },
-  "61970-301_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-301_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.092,
     "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "200"
   },
-  "61970-301_Equipment-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-301_Equipment-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.485,
     "finished_at": "2026-09-08T14:07:46+03:00",
     "http_status": "500"
   },
-  "61970-301_EquipmentBoundary-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-301_EquipmentBoundary-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.105,
     "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
-  "61970-301_EquipmentBoundary-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-301_EquipmentBoundary-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.116,
     "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
-  "61970-301_Operation-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-301_Operation-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.104,
     "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
-  "61970-301_ShortCircuit-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-301_ShortCircuit-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.12,
     "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "200"
   },
-  "61970-301_ShortCircuit-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-301_ShortCircuit-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.12,
     "finished_at": "2026-09-08T14:07:47+03:00",
     "http_status": "500"
   },
-  "61970-301_StateVariables-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-301_StateVariables-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.167,
     "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
-  "61970-301_StateVariables-AP-Con-Complex-SolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-301_StateVariables-AP-Con-Complex-SolvedMAS-SHACL.ttl": {
     "duration": 0.094,
     "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
-  "61970-301_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-301_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.147,
     "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "500"
   },
-  "61970-301_SteadyStateHypothesis-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-301_SteadyStateHypothesis-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.24,
     "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
-  "61970-301_Topology-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-301_Topology-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.086,
     "finished_at": "2026-09-08T14:07:48+03:00",
     "http_status": "200"
   },
-  "61970-302_Dynamics-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-302_Dynamics-AP-Con-Complex-SHACL.ttl": {
     "duration": 1.643,
     "finished_at": "2026-09-08T14:07:50+03:00",
     "http_status": "200"
   },
-  "61970-452_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-452_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.09,
     "finished_at": "2026-09-08T14:07:50+03:00",
     "http_status": "200"
   },
-  "61970-452_Equipment-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-452_Equipment-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.242,
     "finished_at": "2026-09-08T14:07:50+03:00",
     "http_status": "200"
   },
-  "61970-452_Operation-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-452_Operation-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.113,
     "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
-  "61970-452_Operation-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-452_Operation-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.086,
     "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
-  "61970-452_ShortCircuit-AP-Con-Complex-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-452_ShortCircuit-AP-Con-Complex-CrossProfile-SHACL.ttl": {
     "duration": 0.129,
     "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
-  "61970-452_ShortCircuit-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-452_ShortCircuit-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.095,
     "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
-  "61970-453_DiagramLayout-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-453_DiagramLayout-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl": {
     "duration": 0.095,
     "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
-  "61970-453_DiagramLayout-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-453_DiagramLayout-AP-Con-Complex-Implicit-CrossProfile-SHACL.ttl": {
     "duration": 0.092,
     "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
-  "61970-453_DiagramLayout-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-453_DiagramLayout-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.098,
     "finished_at": "2026-09-08T14:07:51+03:00",
     "http_status": "200"
   },
-  "61970-456_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-456_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL.ttl": {
     "duration": 0.1,
     "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
-  "61970-456_StateVariables-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-456_StateVariables-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl": {
     "duration": 0.108,
     "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
-  "61970-456_StateVariables-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-456_StateVariables-AP-Con-Complex-Implicit-CrossProfile-SHACL.ttl": {
     "duration": 0.098,
     "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
-  "61970-456_StateVariables-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-456_StateVariables-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.111,
     "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
-  "61970-456_StateVariables-AP-Con-Complex-SolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-456_StateVariables-AP-Con-Complex-SolvedMAS-SHACL.ttl": {
     "duration": 0.164,
     "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
-  "61970-456_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-456_SteadyStateHypothesis-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.196,
     "finished_at": "2026-09-08T14:07:52+03:00",
     "http_status": "200"
   },
-  "61970-456_SteadyStateHypothesis-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-456_SteadyStateHypothesis-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.108,
     "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
-  "61970-456_Topology-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-456_Topology-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl": {
     "duration": 0.103,
     "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
-  "61970-456_Topology-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-456_Topology-AP-Con-Complex-Implicit-CrossProfile-SHACL.ttl": {
     "duration": 0.103,
     "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
-  "61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-456_Topology-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.101,
     "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
-  "61970-456_Topology-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-456_Topology-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.11,
     "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
-  "61970-457_Dynamics-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-457_Dynamics-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl": {
     "duration": 0.112,
     "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
-  "61970-457_Dynamics-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-457_Dynamics-AP-Con-Complex-Implicit-CrossProfile-SHACL.ttl": {
     "duration": 0.114,
     "finished_at": "2026-09-08T14:07:53+03:00",
     "http_status": "200"
   },
-  "61970-457_Dynamics-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-457_Dynamics-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.1,
     "finished_at": "2026-09-08T14:07:54+03:00",
     "http_status": "200"
   },
-  "61970-457_Dynamics-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-457_Dynamics-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.117,
     "finished_at": "2026-09-08T14:07:54+03:00",
     "http_status": "200"
   },
-  "61970-552-Header-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-552-Header-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.241,
     "finished_at": "2026-09-08T14:07:54+03:00",
     "http_status": "200"
   },
-  "61970-600-1_AllProfiles-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-600-1_AllProfiles-AP-Con-Complex-SHACL.ttl": {
     "duration": 3.848,
     "finished_at": "2026-09-08T14:07:58+03:00",
     "http_status": "200"
   },
-  "61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-600-1_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL.ttl": {
     "duration": 15.542,
     "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
-  "61970-600-1_Equipment-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-600-1_Equipment-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.177,
     "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
-  "61970-600-1_Prof10-Header-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-600-1_Prof10-Header-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.232,
     "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
-  "61970-600-2_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_AllProfiles-AP-Con-Complex-SolvedMAS-SHACL.ttl": {
     "duration": 0.161,
     "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
-  "61970-600-2_DiagramLayout-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_DiagramLayout-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.099,
     "finished_at": "2026-09-08T14:08:14+03:00",
     "http_status": "200"
   },
-  "61970-600-2_DiagramLayout-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_DiagramLayout-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.39,
     "finished_at": "2026-09-08T14:08:15+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Dynamics-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Dynamics-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.244,
     "finished_at": "2026-09-08T14:08:15+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Dynamics-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Dynamics-AP-Con-Simple-SHACL.ttl": {
     "duration": 8.661,
     "finished_at": "2026-09-08T14:08:24+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Equipment-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Equipment-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.136,
     "finished_at": "2026-09-08T14:08:24+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Equipment-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Equipment-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.13,
     "finished_at": "2026-09-08T14:08:24+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Equipment-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Equipment-AP-Con-Simple-SHACL.ttl": {
     "duration": 2.121,
     "finished_at": "2026-09-08T14:08:26+03:00",
     "http_status": "200"
   },
-  "61970-600-2_EquipmentBoundary-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_EquipmentBoundary-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.175,
     "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
-  "61970-600-2_EquipmentBoundary-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_EquipmentBoundary-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.29,
     "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
-  "61970-600-2_GeographicalLocation-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_GeographicalLocation-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl": {
     "duration": 0.086,
     "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
-  "61970-600-2_GeographicalLocation-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_GeographicalLocation-AP-Con-Complex-Implicit-CrossProfile-SHACL.ttl": {
     "duration": 0.107,
     "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
-  "61970-600-2_GeographicalLocation-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_GeographicalLocation-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.108,
     "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
-  "61970-600-2_GeographicalLocation-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_GeographicalLocation-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.104,
     "finished_at": "2026-09-08T14:08:27+03:00",
     "http_status": "200"
   },
-  "61970-600-2_GeographicalLocation-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_GeographicalLocation-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.228,
     "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
-  "61970-600-2_IdentifiedObjectCommon_AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_IdentifiedObjectCommon_AP-Con-Complex-SHACL.ttl": {
     "duration": 0.105,
     "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Operation-AP-Con-Complex-Explicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Operation-AP-Con-Complex-Explicit-CrossProfile-SHACL.ttl": {
     "duration": 0.12,
     "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Operation-AP-Con-Complex-Implicit-CrossProfile-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Operation-AP-Con-Complex-Implicit-CrossProfile-SHACL.ttl": {
     "duration": 0.142,
     "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Operation-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Operation-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.116,
     "finished_at": "2026-09-08T14:08:28+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Operation-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Operation-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.349,
     "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
-  "61970-600-2_ShortCircuit-AP-Con-Complex-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_ShortCircuit-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.118,
     "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
-  "61970-600-2_ShortCircuit-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_ShortCircuit-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.242,
     "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
-  "61970-600-2_StateVariables-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_StateVariables-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.096,
     "finished_at": "2026-09-08T14:08:29+03:00",
     "http_status": "200"
   },
-  "61970-600-2_StateVariables-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_StateVariables-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.22,
     "finished_at": "2026-09-08T14:08:30+03:00",
     "http_status": "200"
   },
-  "61970-600-2_SteadyStateHypothesis-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_SteadyStateHypothesis-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.592,
     "finished_at": "2026-09-08T14:08:30+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Topology-AP-Con-Complex-InverseAssociation-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Topology-AP-Con-Complex-InverseAssociation-SHACL.ttl": {
     "duration": 0.218,
     "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
-  "61970-600-2_Topology-AP-Con-Simple-SHACL": {
+  "application-profiles-library::CGMES::61970-600-2_Topology-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.181,
     "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
-  "61970-600_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-600_Equipment-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.105,
     "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
-  "61970-600_Topology-AP-Con-Complex-NotSolvedMAS-SHACL": {
+  "application-profiles-library::CGMES::61970-600_Topology-AP-Con-Complex-NotSolvedMAS-SHACL.ttl": {
     "duration": 0.102,
     "finished_at": "2026-09-08T14:08:31+03:00",
     "http_status": "200"
   },
-  "AssessedElement-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::AssessedElement-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.313,
     "finished_at": "2026-09-08T14:08:32+03:00",
     "http_status": "500"
   },
-  "AssessedElement-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::AssessedElement-AP-Con-Simple-SHACL.ttl": {
     "duration": 2.075,
     "finished_at": "2026-09-08T14:08:34+03:00",
     "http_status": "200"
   },
-  "AvailabilitySchedule-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::AvailabilitySchedule-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.132,
     "finished_at": "2026-09-08T14:08:34+03:00",
     "http_status": "500"
   },
-  "AvailabilitySchedule-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::AvailabilitySchedule-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.797,
     "finished_at": "2026-09-08T14:08:35+03:00",
     "http_status": "200"
   },
-  "Contingency-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::Contingency-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.152,
     "finished_at": "2026-09-08T14:08:35+03:00",
     "http_status": "200"
   },
-  "Contingency-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::Contingency-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.571,
     "finished_at": "2026-09-08T14:08:36+03:00",
     "http_status": "200"
   },
-  "DatasetMetadata-AP-Con-SHACL": {
+  "application-profiles-library::NCP::DatasetMetadata-AP-Con-SHACL.ttl": {
     "duration": 0.289,
     "finished_at": "2026-09-08T14:08:36+03:00",
     "http_status": "500"
   },
-  "EquipmentReliability-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::EquipmentReliability-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.313,
     "finished_at": "2026-09-08T14:08:36+03:00",
     "http_status": "500"
   },
-  "EquipmentReliability-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::EquipmentReliability-AP-Con-Simple-SHACL.ttl": {
     "duration": 9.986,
     "finished_at": "2026-09-08T14:08:46+03:00",
     "http_status": "200"
   },
-  "GridDisturbance-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::GridDisturbance-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.927,
     "finished_at": "2026-09-08T14:08:47+03:00",
     "http_status": "200"
   },
-  "ImpactAssessmentMatrix-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::ImpactAssessmentMatrix-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.141,
     "finished_at": "2026-09-08T14:08:48+03:00",
     "http_status": "500"
   },
-  "ImpactAssessmentMatrix-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::ImpactAssessmentMatrix-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.241,
     "finished_at": "2026-09-08T14:08:48+03:00",
     "http_status": "200"
   },
-  "MonitoringArea-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::MonitoringArea-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.164,
     "finished_at": "2026-09-08T14:08:48+03:00",
     "http_status": "200"
   },
-  "NC-AP-Con-ClassCount-Complex-SHACL": {
+  "application-profiles-library::NCP::NC-AP-Con-ClassCount-Complex-SHACL.ttl": {
     "duration": 2.227,
     "finished_at": "2026-09-08T14:08:50+03:00",
     "http_status": "200"
   },
-  "NC-AP-Con-Complex-Common-SHACL": {
+  "application-profiles-library::NCP::NC-AP-Con-Complex-Common-SHACL.ttl": {
     "duration": 14.501,
     "finished_at": "2026-09-08T14:09:05+03:00",
     "http_status": "200"
   },
-  "NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL": {
+  "application-profiles-library::NCP::NC-AP-Con-Complex-IdentifiedObjecStringLength-SHACL.ttl": {
     "duration": 0.421,
     "finished_at": "2026-09-08T14:09:05+03:00",
     "http_status": "200"
   },
-  "NC-AP-Con-PrefixDeclaration-Complex-SHACL": {
+  "application-profiles-library::NCP::NC-AP-Con-PrefixDeclaration-Complex-SHACL.ttl": {
     "duration": 0.081,
     "finished_at": "2026-09-08T14:09:05+03:00",
     "http_status": "200"
   },
-  "ObjectRegistry-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::ObjectRegistry-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.974,
     "finished_at": "2026-09-08T14:09:07+03:00",
     "http_status": "200"
   },
-  "PowerSchedule-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::PowerSchedule-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.165,
     "finished_at": "2026-09-08T14:09:07+03:00",
     "http_status": "500"
   },
-  "PowerSchedule-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::PowerSchedule-AP-Con-Simple-SHACL.ttl": {
     "duration": 1.093,
     "finished_at": "2026-09-08T14:09:08+03:00",
     "http_status": "200"
   },
-  "PowerSystemProject-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::PowerSystemProject-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.588,
     "finished_at": "2026-09-08T14:09:09+03:00",
     "http_status": "200"
   },
-  "RemedialAction-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::RemedialAction-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.249,
     "finished_at": "2026-09-08T14:09:09+03:00",
     "http_status": "500"
   },
-  "RemedialAction-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::RemedialAction-AP-Con-Simple-SHACL.ttl": {
     "duration": 3.367,
     "finished_at": "2026-09-08T14:09:12+03:00",
     "http_status": "200"
   },
-  "RemedialActionSchedule-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::RemedialActionSchedule-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.158,
     "finished_at": "2026-09-08T14:09:13+03:00",
     "http_status": "500"
   },
-  "RemedialActionSchedule-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::RemedialActionSchedule-AP-Con-Simple-SHACL.ttl": {
     "duration": 1.222,
     "finished_at": "2026-09-08T14:09:14+03:00",
     "http_status": "200"
   },
-  "SecurityAnalysisResult-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::SecurityAnalysisResult-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.125,
     "finished_at": "2026-09-08T14:09:14+03:00",
     "http_status": "500"
   },
-  "SecurityAnalysisResult-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::SecurityAnalysisResult-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.428,
     "finished_at": "2026-09-08T14:09:15+03:00",
     "http_status": "200"
   },
-  "SensitivityMatrix-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::SensitivityMatrix-AP-Con-Simple-SHACL.ttl": {
     "duration": 0.478,
     "finished_at": "2026-09-08T14:09:15+03:00",
     "http_status": "200"
   },
-  "StateInstructionSchedule-AP-Con-Complex-SHACL": {
+  "application-profiles-library::NCP::StateInstructionSchedule-AP-Con-Complex-SHACL.ttl": {
     "duration": 0.212,
     "finished_at": "2026-09-08T14:09:15+03:00",
     "http_status": "500"
   },
-  "StateInstructionSchedule-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::StateInstructionSchedule-AP-Con-Simple-SHACL.ttl": {
     "duration": 2.342,
     "finished_at": "2026-09-08T14:09:18+03:00",
     "http_status": "200"
   },
-  "SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::SteadyStateHypothesisSchedule-AP-Con-Simple-SHACL.ttl": {
     "duration": 1.368,
     "finished_at": "2026-09-08T14:09:19+03:00",
     "http_status": "200"
   },
-  "SteadyStateInstruction-AP-Con-Simple-SHACL": {
+  "application-profiles-library::NCP::SteadyStateInstruction-AP-Con-Simple-SHACL.ttl": {
     "duration": 39.986,
     "finished_at": "2026-09-08T14:09:59+03:00",
     "http_status": "200"
