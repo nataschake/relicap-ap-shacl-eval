@@ -56,10 +56,14 @@ all repositories → repository → family → ontology profile → individual S
 - `.../s/<shape>/index.html` grounds one shape. Its frontmatter links to the exact
   SHACL declaration line; error and warning counts open focus-node evidence.
 
-Every level uses the same measures: timing sum/max, errors, warnings, distinct
-errors, distinct warnings, good shapes, and total shapes. Validation measures
-are additive, and the build checks every rollup. A shape is classified in exactly
-one bucket (error takes precedence over warning), so:
+Every level uses timing sum/max, errors, warnings, distinct errors, distinct
+warnings, good shapes, and total shapes. Landing, repository, and family
+frontmatter also shows **Validation execution errors**: validation runs whose
+`validation-report.ttl` is not a SHACL `sh:ValidationReport`, including empty
+or missing responses. The tile links to the affected SHACL files, HTTP statuses,
+and returned error text. Validation measures are additive, and the build checks
+every rollup. A shape is classified in exactly one bucket (error takes precedence
+over warning), so:
 
 ```
 distinct errors + distinct warnings + good shapes = total shapes
@@ -153,6 +157,8 @@ already have a report and a configurable skip-list of shapes whose
 validation hangs. Both scripts iterate over the CGMES and NCP SHACL
 folders.
 
-If a shape file has a syntax error GraphDB returns HTTP 500; that
-folder then holds the parser error instead of a report and contributes
-no rows (check `timing.txt` / `batch.log` for the HTTP status).
+If GraphDB returns an error instead of a validation report, that folder holds
+the returned error text in `validation-report.ttl`. It contributes no SHACL
+result rows, but is counted and exposed by the landing, repository, and family
+**Validation execution errors** tiles. Check `timing.txt` / `batch.log` for the
+HTTP status.

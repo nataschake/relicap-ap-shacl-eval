@@ -18,6 +18,7 @@ DASH = ROOT / "dashboard"
 PAGE_SIZE = 1500
 METRICS = ("time_sum", "time_max", "v_count", "dv_count", "w_count", "dw_count", "g_count", "t_count")
 VALIDATION_METRICS = ("v_count", "dv_count", "w_count", "dw_count", "g_count", "t_count")
+EXECUTION_ERROR_TILE_LEVELS = ("global", "repository", "family")
 METRIC_LABEL = {
     "time_sum": "Time total",
     "time_max": "Time max",
@@ -27,6 +28,7 @@ METRIC_LABEL = {
     "dw_count": "Distinct warnings",
     "g_count":  "Good shapes",
     "t_count":  "Total shapes",
+    "execution_err": "Validation execution errors",
 }
 ICON = {
     "Violation": '<span class="icon violation" title="sh:Violation">&#10060;</span>',
@@ -210,13 +212,29 @@ def parse_shapes(path: Path) -> list[dict]:
 
 def report_meta(path: Path) -> dict:
     if not path.is_file():
-        return {"exists": False, "turtle": False, "conforms": False, "truncated": False}
-    head = path.read_text(encoding="utf-8", errors="replace")[:5000]
+        return {
+            "exists": False,
+            "turtle": False,
+            "conforms": False,
+            "truncated": False,
+            "execution_error": True,
+            "error_text": "(missing validation-report.ttl)",
+        }
+    head = path.read_text(encoding="utf-8", errors="replace")[:20000]
+    is_validation_report = (
+        "sh:ValidationReport" in head
+        or "http://www.w3.org/ns/shacl#ValidationReport" in head
+    )
+    error_text = head.strip() if not is_validation_report else ""
+    if not is_validation_report and not error_text:
+        error_text = "(empty response)"
     return {
         "exists": True,
-        "turtle": head.lstrip().startswith("@prefix") or "sh:ValidationReport" in head,
+        "turtle": is_validation_report,
         "conforms": "sh:conforms true" in head,
         "truncated": "rdf4j:truncated true" in head,
+        "execution_error": not is_validation_report,
+        "error_text": error_text,
     }
 
 
@@ -383,6 +401,9 @@ def aggregate(children: list[dict], extra_runs: dict[str, dict] | None = None) -
             1 for run in runs.values() if str(run.get("http_status") or "") not in ("", "200")
         ),
         "truncated": sum(1 for run in runs.values() if run.get("meta", {}).get("truncated")),
+        "execution_err": sum(
+            1 for run in runs.values() if run.get("meta", {}).get("execution_error")
+        ),
     })
     return result
 
@@ -420,6 +441,7 @@ def build_cube(catalog: dict, runs: list[dict]) -> dict:
                     profile_id,
                     source["profile_name"],
                     leaves,
+                    level="profile",
                     extra_runs=runs_by_profile[(repository_id, family_id, profile_id)],
                     ontology_file=source["ontology_file"],
                     ontology_subpath=source["ontology_subpath"],
@@ -432,16 +454,18 @@ def build_cube(catalog: dict, runs: list[dict]) -> dict:
                 family_id,
                 family_config[family_id].get("title") or family_id,
                 sorted(profiles, key=lambda item: item["name"].lower()),
+                level="family",
             )
             families.append(family)
         repository = node(
             repository_id,
             config_repo.get("title") or repository_id,
             sorted(families, key=lambda item: item["name"].lower()),
+            level="repository",
             repo=config_repo,
         )
         repositories.append(repository)
-    return node("all", "All configured repositories", repositories)
+    return node("all", "All configured repositories", repositories, level="global")
 
 
 def assert_rollups(parent: dict, path: str = "all") -> None:
@@ -452,6 +476,13 @@ def assert_rollups(parent: dict, path: str = "all") -> None:
         actual = sum(int(child[key]) for child in children)
         if actual != int(parent[key]):
             raise AssertionError(f"{path}: {key}={parent[key]}, children sum to {actual}")
+    if parent.get("level") != "profile":
+        execution_errors = sum(int(child["execution_err"]) for child in children)
+        if execution_errors != int(parent["execution_err"]):
+            raise AssertionError(
+                f"{path}: execution_err={parent['execution_err']}, "
+                f"children sum to {execution_errors}"
+            )
     expected_runs = set().union(*(set(child["runs"]) for child in children))
     if not expected_runs.issubset(set(parent["runs"])):
         raise AssertionError(f"{path}: child timing runs are missing from parent")
@@ -504,6 +535,17 @@ def summary_tiles(scope: dict, out_dir: Path) -> str:
             if value and value != "—" else esc(value)
         )
         tiles.append(f'<div class="stat"><span>{esc(METRIC_LABEL[metric])}</span><strong>{linked}</strong></div>')
+    if scope.get("level") in EXECUTION_ERROR_TILE_LEVELS:
+        value = metric_value("execution_err", scope.get("execution_err"))
+        href = scope["metric_dir"] / "execution_err" / "index.html"
+        linked = (
+            f'<a href="{esc(rel(out_dir, href))}">{esc(value)}</a>'
+            if value else ""
+        )
+        tiles.append(
+            f'<div class="stat"><span>{esc(METRIC_LABEL["execution_err"])}</span>'
+            f"<strong>{linked}</strong></div>"
+        )
     return f'<div class="stats-panel"><div class="stats">{"".join(tiles)}</div></div>'
 
 
@@ -577,6 +619,53 @@ def pager(page_count: int, current: int) -> str:
     return f'<p class="pager">Pages: {" · ".join(links)}</p>'
 
 
+def write_execution_error_page(
+    scope: dict,
+    breadcrumbs: list[tuple[str, Path]],
+) -> None:
+    runs = sorted(
+        (
+            run for run in scope["runs"].values()
+            if run.get("meta", {}).get("execution_error")
+        ),
+        key=lambda run: (
+            str(run.get("family_id") or ""),
+            str(run.get("profile_name") or ""),
+            str(run.get("shacl_file") or ""),
+        ),
+    )
+    if not runs:
+        return
+    path = scope["metric_dir"] / "execution_err" / "index.html"
+    rows = []
+    for run in runs:
+        report_href = str(run.get("report_href") or "")
+        shacl_file = esc(run.get("shacl_file") or "")
+        report = (
+            f'<a href="{esc(report_href)}" target="_blank" rel="noopener">{shacl_file}</a>'
+            if report_href else shacl_file
+        )
+        rows.append(
+            "<tr>"
+            f'<td>{esc(run.get("family_id") or "")}</td>'
+            f'<td>{esc(run.get("profile_name") or "")}</td>'
+            f"<td>{report}</td>"
+            f'<td class="num">{esc(run.get("http_status") or "Unknown")}</td>'
+            f'<td><pre class="execution-error">{esc(run["meta"]["error_text"])}</pre></td>'
+            "</tr>"
+        )
+    body = f"""
+<p class="crumb">{crumb(breadcrumbs + [(scope["name"], scope["page"])], path.parent, METRIC_LABEL["execution_err"])}</p>
+<h1>{esc(scope["name"])} · {esc(METRIC_LABEL["execution_err"])}</h1>
+<p class="meta">{len(runs)} validation runs returned non-empty error text instead of a SHACL validation report.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Family</th><th>Ontology profile</th><th>SHACL file / response</th><th class="num">HTTP</th><th>Error</th></tr></thead>
+<tbody>{"".join(rows)}</tbody>
+</table></div>
+"""
+    write(path, f'{METRIC_LABEL["execution_err"]} · {scope["name"]}', body)
+
+
 def write_scope_pages(
     scope: dict,
     breadcrumbs: list[tuple[str, Path]],
@@ -633,6 +722,8 @@ def write_scope_pages(
 {page_nav}
 """
             write(metric_path, f"{METRIC_LABEL[metric]} · {scope['name']}", metric_body)
+    if scope.get("level") in EXECUTION_ERROR_TILE_LEVELS:
+        write_execution_error_page(scope, breadcrumbs)
 
 
 def source_link(leaf: dict) -> str:

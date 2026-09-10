@@ -105,6 +105,8 @@ index.html
 - Individual-shape frontmatter links the exact SHACL declaration line.
 - Shape error/warning counts link to focus-node evidence; distinct/good/total
   counts link to source grounding.
+- Landing, repository, and family frontmatter includes a **Validation execution
+  errors** tile linking to affected validation runs and their returned error text.
 
 ### Metrics model (additive, reproducible)
 
@@ -123,6 +125,11 @@ All validation measures are sums of leaves. Error precedence keeps shape buckets
 exclusive. Timing sum/max uses the set of unique SHACL-file runs attached to a
 scope, so shared shapes never multiply runtime. Shape pages repeat the containing
 file-run time as non-additive context until per-shape SPARQL timings are available.
+
+**Validation execution errors** counts unique runs whose
+`validation-report.ttl` is not a SHACL `sh:ValidationReport`, including empty
+or missing response files. It is a run-level measure, not a shape-level measure,
+and is shown only in landing, repository, and family frontmatter.
 
 ### Focus-node link resolution
 
@@ -247,11 +254,13 @@ GraphDB caps reports at **1,000 results per constraint component** and
 counts for those profiles are lower bounds. Do not silently treat truncated counts
 as exact.
 
-### HTTP errors
+### Validation execution errors
 
-Non-200 validation responses store error text in `validation-report.ttl`.
-`collect_validation()` routes these to `http_errors` and generates
-`dashboard/http/<profile>.html`. They contribute no validation rows.
+GraphDB error responses are stored as text in `validation-report.ttl`. Any
+response that is not a SHACL `sh:ValidationReport`, including an empty or missing
+file, contributes one run-level **Validation execution errors** count and appears
+on the tile's evidence page with its SHACL file, HTTP status, and returned text.
+It contributes no SHACL result rows.
 
 ### Do not
 
